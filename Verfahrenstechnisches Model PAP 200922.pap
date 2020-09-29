@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="31CB2212B38EBC76">
+  <PROJECT FORMAT="1.00" NAME="Verfahrenstechnisches Model" AUTHOR="TOEL" CREATED="2020.09.22 08:23:52" MODIFIED="2020.09.22 11:07:45">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Veresterungsanlage.einePortionVerestern()" CREATED="2020.09.22 08:24:07" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="8">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Veresterungsanlage.einePortionVerestern()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[VorlageRechts.befuellen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="29">
+                <TEXT><![CDATA[VorlageLinks.befuellen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="33">
+                <TEXT><![CDATA[Reaktor.befuellen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[Reaktor.verestern()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[Reaktor.entleeren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="26" FROM="1" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="27" TO="29" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="29" TO="33" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="31" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="33" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="36" FROM="35" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Vorlage.entleeren()" CREATED="2020.09.22 08:28:11" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="9">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="13">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Vorlage.entleeren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Ablassventil.oeffnen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[FuellstandssensorLeer.Fuellstand==1?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Ablassventil.schließen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="8" TO="19" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="12" TO="13" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="18" FROM="13" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="21" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="19" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="20" TO="21" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Vorlage.befuellen()" CREATED="2020.09.22 08:32:37" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="4" ROWS="11">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Vorlage.befuellen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[FuellstandssensorVoll.Fuellstand==0?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Einlassventil.oeffnen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="24">
+                <TEXT><![CDATA[FuellstandsventilVoll.Fuellstand==0?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="39">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="43">
+                <TEXT><![CDATA[Einlassventil.schließen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="17">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="31" TO="24" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="24" TO="25" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="25" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="26" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="18" FROM="4" TO="17" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="17" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="19" TO="21" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="21" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="27" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="37" FROM="24" TO="34" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="34" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="40" FROM="35" TO="39" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="44" FROM="43" TO="21" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="39" TO="43" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="3" NAME="Reaktor.entleeren()" CREATED="2020.09.22 08:35:09" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="6">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="9">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Reaktor.entleeren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="13">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Ablassventil.oeffnen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="7">
+                <TEXT><![CDATA[FuellstandssensorNichtLeer.Fuellstand == 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="5" FROM="6" TO="7" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="13" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="8" FROM="7" TO="2" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="7" TO="9" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="12" FROM="9" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="13" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="10" TO="13" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="4" NAME="Reaktor.mischen()" CREATED="2020.09.22 08:35:24" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="6">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Reaktor.mischen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Ruehrer.ruehrenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[warten (1minute)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Ruehrer.ruehrenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="5" NAME="Reaktor.verestern()" CREATED="2020.09.22 08:35:36" MODIFIED="2020.09.22 11:07:45">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="13">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Reaktor.verestern()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[FüllstandssensorNichtLeer.Fuellstand == 1?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Ruehrer.ruehrenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Heizstab.heizenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Kuehler.kuehlenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[warten(Reaktionszeit)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Heizstab.heizenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[Ruehrer.ruehrenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Kuehler.kuehlenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[Reaktor.entleeren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="24">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="18" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="26" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="4" TO="22" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="22" TO="24" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="20" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="24" TO="26" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="6" NAME="Kuehler.kuehlenEin()" CREATED="2020.09.22 08:35:59" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Kuehler.kuehlenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Kuehlventil.oeffnen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="7" NAME="Kuehler.kuehlenAus()" CREATED="2020.09.22 08:36:15" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Kuehler.kuehlenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Kuehlventil.schließen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="8" NAME="Heizstab.heizenEin()" CREATED="2020.09.22 08:36:30" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Heizstab.heizenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem der Heizstab angeschlossen ist, einschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="9" NAME="Heizstab.heizenAus()" CREATED="2020.09.22 08:36:42" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Heizstab.heizenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem der Heizstab angeschlossen ist, ausschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="10" NAME="Ruehrer.ruehrenEin()" CREATED="2020.09.22 08:37:04" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ruehrer.ruehrenEin()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem der Ruehrer angeschlossen ist, einschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="11" NAME="Ruehrer.ruehrenAus()" CREATED="2020.09.22 08:39:20" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ruehrer.ruehrenAus()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem der Ruehrer angeschlossen ist, ausschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="12" NAME="Ventil.oeffnen()" CREATED="2020.09.22 08:40:56" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ventil.oeffnen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem das Ventil angeschlossen ist, einschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="13" NAME="Ventil.schließen()" CREATED="2020.09.22 08:41:07" MODIFIED="2020.09.22 09:17:12">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ventil.schließen()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Den Ausgang, an dem das Ventil angeschlossen ist, ausschalten.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
