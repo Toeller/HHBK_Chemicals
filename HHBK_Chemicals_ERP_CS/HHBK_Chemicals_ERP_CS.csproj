@@ -69,9 +69,13 @@
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="Lieferung.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <EmbeddedResource Include="Kundenverwaltung.resx">
+      <DependentUpon>Kundenverwaltung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

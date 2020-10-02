@@ -16,22 +16,36 @@ namespace HHBK_Chemicals_ERP_CS
         private string ort;
         private int postleitzahl;
         private string emailadresse;
+        
+        public int Postleitzahl
+        {
+            get
+            {
+                return postleitzahl;
+            }
+            set
+            {
+                if(value>=01000 && value<=99999)
+                {
+                    postleitzahl = value;
+                }
+            }
+        }
 
         public int Kundennummer
         {
-            get {
-                return kundennummer;
+            get
+            {
+                return this.kundennummer;
             }
             
+
+
         }
 
-        public int Postleitzahl { 
-            get => postleitzahl;
-            set
-            { 
-                if(value >= 1000 && value <= 99999)
-                    postleitzahl = value;
-            }
+        public string Emailadresse {
+            get => emailadresse;
+            set => emailadresse = value;
         }
     }
 }

@@ -12,9 +12,22 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class Kundenverwaltung : Form
     {
+        Kunde kunde1;
+        Model model;
         public Kundenverwaltung()
         {
             InitializeComponent();
+            kunde1 = model.getKunde();
+        }
+
+        public void init()
+        {
+            textBoxKundeKundennummer.Text = Convert.ToString(kunde1.Kundennummer);
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
