@@ -1,3 +1,7 @@
+#!/usr/bin/env python2
+import RPi.GPIO as GPIO
+import time
+
 class Veresterungsanlage:
 	def __init__ (self):
 		self.__vorlageRechts
