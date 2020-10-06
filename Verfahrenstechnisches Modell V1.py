@@ -8,6 +8,7 @@ Class Programm:
 # Setup
 #
 def setup():
+        GPIO.setup(port_or_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 	GPIO.setmode(GPIO.BCM)
 
