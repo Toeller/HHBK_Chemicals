@@ -16,7 +16,20 @@ namespace HHBK_Chemicals_ERP_CS
         private string ort;
         private int postleitzahl;
         private string emailadresse;
-        
+
+        public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse)
+        {
+            this.kundennummer = kundennummer;
+            this.name = name;
+            this.vorname = vorname;
+            this.strasse = strasse;
+            this.hausnummer = hausnummer;
+            this.ort = ort;
+            this.postleitzahl = postleitzahl;
+            this.emailadresse = emailadresse;
+            
+        }
+
         public int Postleitzahl
         {
             get
