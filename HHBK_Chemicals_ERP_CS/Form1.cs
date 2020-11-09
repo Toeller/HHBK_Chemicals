@@ -15,6 +15,7 @@ namespace HHBK_Chemicals_ERP_CS
         public Form1()
         {
             InitializeComponent();
+            this.TopMost = true;
         }
     }
 }
