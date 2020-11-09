@@ -16,10 +16,5 @@ namespace HHBK_Chemicals_ERP_CS
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
