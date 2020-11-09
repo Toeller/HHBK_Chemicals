@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class Form1 : Form
+    public partial class FormChris : Form
     {
-        public Form1()
+        public FormChris()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
