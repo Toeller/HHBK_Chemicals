@@ -16,7 +16,18 @@ namespace HHBK_Chemicals_ERP_CS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            IModel model = new Model();
+            IView view = new Form1();
+            IController controller = new Controller();
+
+
+            
+
+
+            
+            Application.Run((Form1)view);
         }
     }
 }

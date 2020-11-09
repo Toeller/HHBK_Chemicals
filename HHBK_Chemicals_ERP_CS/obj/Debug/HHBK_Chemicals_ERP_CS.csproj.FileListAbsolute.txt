@@ -1,0 +1,14 @@
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csprojAssemblyReference.cache
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Form1.resources
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Kundenverwaltung.resources
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Properties.Resources.resources
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csproj.GenerateResource.cache
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\HHBK_Chemicals_ERP_CS.exe.config
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\HHBK_Chemicals_ERP_CS.exe
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\HHBK_Chemicals_ERP_CS.pdb
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\MySql.Data.dll
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\Google.Protobuf.dll
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\bin\Debug\MySql.Data.xml
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csproj.CopyComplete
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.exe
+C:\Users\TOEL.HERTZ\Source\Repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.pdb

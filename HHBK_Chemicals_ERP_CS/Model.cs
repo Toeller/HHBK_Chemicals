@@ -8,9 +8,10 @@ using MySql.Data.MySqlClient;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Model
+    class Model:IModel
     {
-        private string myConnectionString = "server=127.0.0.1;uid=erpModel;pwd=555HHBK;database=HHBK_Chemicals;";
+        //private string myConnectionString = "server=127.0.0.1;uid=erpModel;pwd=555HHBK;database=HHBK_Chemicals;";
+        private string myConnectionString = "server=127.0.0.1;uid=root;pwd=;database=HHBK_Chemicals;";
         private MySqlConnection conn;
         private MySqlCommand mycommand;
 
@@ -68,11 +69,11 @@ namespace HHBK_Chemicals_ERP_CS
             MySqlCommand mycommand = conn.CreateCommand();
             mycommand.CommandText = "Select * from testtabelle"; conn.Open();
 
-            mycommand.CommandText = "Insert into testtabelle values(NULL,'" + textBoxName.Text.ToString() + "','" + textBoxVorname.Text.ToString() + "')";
+            //mycommand.CommandText = "Insert into testtabelle values(NULL,'" + textBoxName.Text.ToString() + "','" + textBoxVorname.Text.ToString() + "')";
 
             MySqlDataReader reader = mycommand.ExecuteReader(); while (reader.Read())
             {
-            label1.Text = reader["testTabelleID"].ToString();
+            //label1.Text = reader["testTabelleID"].ToString();
             }
             //Datenbank -> Kunde holen
             Kunde kunde1 = null;
