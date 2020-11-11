@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzizcanAcarba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzizcanAcarba.Designer.cs">
+      <DependentUpon>AzizcanAcarba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
