@@ -55,6 +55,12 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="CHristian Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHristian Form.Designer.cs">
+      <DependentUpon>CHristian Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
