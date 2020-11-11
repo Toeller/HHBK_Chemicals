@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ahmad Sleiman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad Sleiman.Designer.cs">
+      <DependentUpon>Ahmad Sleiman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
