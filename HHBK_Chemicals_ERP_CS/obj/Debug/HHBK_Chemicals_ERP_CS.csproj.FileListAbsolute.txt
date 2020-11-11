@@ -1,0 +1,6 @@
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csprojAssemblyReference.cache
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Form1.resources
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Kundenverwaltung.resources
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.Properties.Resources.resources
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csproj.GenerateResource.cache
+C:\Users\Kania.Julian\Source\Repos\TurboAlman\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\obj\Debug\HHBK_Chemicals_ERP_CS.csproj.CoreCompileInputs.cache
