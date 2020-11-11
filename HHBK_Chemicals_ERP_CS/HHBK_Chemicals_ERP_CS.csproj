@@ -62,6 +62,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="JanRichrath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanRichrath.Designer.cs">
+      <DependentUpon>JanRichrath.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
