@@ -77,6 +77,12 @@
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="Lieferung.cs" />
+    <Compile Include="MichailiK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MichailiK.Designer.cs">
+      <DependentUpon>MichailiK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
