@@ -55,6 +55,12 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="CToellerPriv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CToellerPriv.Designer.cs">
+      <DependentUpon>CToellerPriv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,7 +77,25 @@
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="Lieferung.cs" />
+    <Compile Include="MichailiK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MichailiK.Designer.cs">
+      <DependentUpon>MichailiK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mikail Köse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikail Köse.Designer.cs">
+      <DependentUpon>Mikail Köse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model.cs" />
+    <Compile Include="Nico_Kuhn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nico_Kuhn.Designer.cs">
+      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
