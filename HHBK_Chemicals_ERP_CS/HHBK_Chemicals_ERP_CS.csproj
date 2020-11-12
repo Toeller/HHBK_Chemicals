@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ali_ElMalki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ali_ElMalki.Designer.cs">
+      <DependentUpon>Ali_ElMalki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
