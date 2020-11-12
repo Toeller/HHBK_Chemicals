@@ -61,6 +61,12 @@
     <Compile Include="CToellerPriv.Designer.cs">
       <DependentUpon>CToellerPriv.cs</DependentUpon>
     </Compile>
+    <Compile Include="FatihHanAybirdi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FatihHanAybirdi.Designer.cs">
+      <DependentUpon>FatihHanAybirdi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
