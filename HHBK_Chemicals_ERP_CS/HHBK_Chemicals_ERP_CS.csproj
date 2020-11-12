@@ -83,6 +83,12 @@
     <Compile Include="MichailiK.Designer.cs">
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mikail Köse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikail Köse.Designer.cs">
+      <DependentUpon>Mikail Köse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model.cs" />
     <Compile Include="Nico_Kuhn.cs">
       <SubType>Form</SubType>
