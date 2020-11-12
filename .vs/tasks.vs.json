@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Task-HHBK_Chemicals_ERP_CS",
+      "appliesTo": "HHBK_Chemicals_ERP_CS.sln",
+      "type": "launch"
+    }
+  ]
+}
