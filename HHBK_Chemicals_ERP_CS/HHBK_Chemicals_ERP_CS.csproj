@@ -75,6 +75,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <EmbeddedResource Include="Form_Kersten.Jonas.resx">
+      <DependentUpon>Form_Kersten.Jonas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +92,12 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <Compile Include="Form_Kersten.Designer.Jonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kersten.Jonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
