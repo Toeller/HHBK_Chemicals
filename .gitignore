@@ -2,9 +2,9 @@
 # Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
 ################################################################################
 
+/.vs/
+/HHBK_Chemicals_ERP_CS/.vs/
 /HHBK_Chemicals_ERP_CS/bin/
 /HHBK_Chemicals_ERP_CS/obj/
 /HHBK_Chemicals_ERP_CS/Properties/
-/.vs/
-/HHBK_Chemicals_ERP_CS/.vs/
-/HHBK_Chemicals_ERP_CS/Properties/.vs/
+
