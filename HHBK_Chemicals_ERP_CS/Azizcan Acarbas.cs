@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class AzizcanAcarba : Form
+    public partial class Azizcan_Acarbas : Form
     {
-        public AzizcanAcarba()
+        public Azizcan_Acarbas()
         {
             InitializeComponent();
         }

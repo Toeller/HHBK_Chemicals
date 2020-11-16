@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzizcanAcarba.cs">
+    <Compile Include="Azizcan Acarbas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AzizcanAcarba.Designer.cs">
-      <DependentUpon>AzizcanAcarba.cs</DependentUpon>
+    <Compile Include="Azizcan Acarbas.Designer.cs">
+      <DependentUpon>Azizcan Acarbas.cs</DependentUpon>
     </Compile>
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
@@ -81,6 +81,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <EmbeddedResource Include="Azizcan Acarbas.resx">
+      <DependentUpon>Azizcan Acarbas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
