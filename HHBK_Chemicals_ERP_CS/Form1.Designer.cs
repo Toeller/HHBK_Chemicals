@@ -48,9 +48,9 @@
             this.labelNoah.Location = new System.Drawing.Point(335, 87);
             this.labelNoah.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelNoah.Name = "labelNoah";
-            this.labelNoah.Size = new System.Drawing.Size(63, 25);
+            this.labelNoah.Size = new System.Drawing.Size(78, 25);
             this.labelNoah.TabIndex = 1;
-            this.labelNoah.Text = "Noah";
+            this.labelNoah.Text = "NoahC";
             // 
             // Form1
             // 
