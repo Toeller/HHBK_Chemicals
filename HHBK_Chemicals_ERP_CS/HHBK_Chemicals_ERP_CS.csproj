@@ -62,6 +62,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="Kristof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kristof.Designer.cs">
+      <DependentUpon>Kristof.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -77,6 +83,9 @@
     <Compile Include="RezeptExt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kristof.resx">
+      <DependentUpon>Kristof.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
