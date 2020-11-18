@@ -62,6 +62,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="JanRichrath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanRichrath.Designer.cs">
+      <DependentUpon>JanRichrath.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kristof.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="RezeptExt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanRichrath.resx">
+      <DependentUpon>JanRichrath.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kristof.resx">
       <DependentUpon>Kristof.cs</DependentUpon>
