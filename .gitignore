@@ -6,3 +6,4 @@
 /HHBK_Chemicals_ERP_CS/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
 /HHBK_Chemicals_ERP_CS/obj/Release/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
 *.cache
+slnx.sqlite
