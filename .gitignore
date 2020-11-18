@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs/HHBK_Chemicals_ERP_CS/v15/Server/sqlite3/db.lock
+/.vs/
+*.cache
+/HHBK_Chemicals_ERP_CS/obj/
+/HHBK_Chemicals_ERP_CS/bin/
+/HHBK_Chemicals_ERP_CS/.vs/
+/HHBK_Chemicals/.vs/
+slnx.sqlite
+/HHBK_Chemicals/.vs/slnx.sqlite
