@@ -2,7 +2,11 @@
 # Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
 ################################################################################
 
-<<<<<<< HEAD
+/.vs/
+/HHBK_Chemicals_ERP_CS/.vs/
+/HHBK_Chemicals_ERP_CS/bin/
+/HHBK_Chemicals_ERP_CS/obj/
+/HHBK_Chemicals_ERP_CS/Properties/
 /.vs/HHBK_Chemicals_ERP_CS/v15/Server/sqlite3/db.lock
 /.vs/
 *.cache
@@ -12,10 +16,3 @@
 /HHBK_Chemicals/.vs/
 slnx.sqlite
 /HHBK_Chemicals/.vs/slnx.sqlite
-=======
-/.vs/
-/HHBK_Chemicals_ERP_CS/.vs/
-/HHBK_Chemicals_ERP_CS/bin/
-/HHBK_Chemicals_ERP_CS/obj/
-/HHBK_Chemicals_ERP_CS/Properties/
->>>>>>> 9cb5d6eeb555df34bd1a07602acfa1e140c7f3ca
