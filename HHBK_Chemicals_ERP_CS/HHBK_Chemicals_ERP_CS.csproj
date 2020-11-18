@@ -82,6 +82,12 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lauen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lauen.Designer.cs">
+      <DependentUpon>Lauen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lieferung.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Noah.cs">
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lauen.resx">
+      <DependentUpon>Lauen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Noah.resx">
       <DependentUpon>Noah.cs</DependentUpon>
