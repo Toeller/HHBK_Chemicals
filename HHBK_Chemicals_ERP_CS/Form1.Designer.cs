@@ -59,9 +59,9 @@
             this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.labelNoah);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Noah";
             this.ResumeLayout(false);
             this.PerformLayout();
 
