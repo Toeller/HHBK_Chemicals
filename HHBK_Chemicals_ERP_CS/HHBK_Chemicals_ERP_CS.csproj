@@ -90,7 +90,7 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
-    <Compile Include="Nico Kuhn.cs" />
+    <Compile Include="Nico_Kuhn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
