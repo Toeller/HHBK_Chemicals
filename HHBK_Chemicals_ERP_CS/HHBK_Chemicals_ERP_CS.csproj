@@ -55,6 +55,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test_fatih_han_aybirdi.cs" />
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
     </Compile>
