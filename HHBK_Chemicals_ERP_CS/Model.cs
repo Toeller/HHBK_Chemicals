@@ -68,11 +68,11 @@ namespace HHBK_Chemicals_ERP_CS
             MySqlCommand mycommand = conn.CreateCommand();
             mycommand.CommandText = "Select * from testtabelle"; conn.Open();
 
-            mycommand.CommandText = "Insert into testtabelle values(NULL,'" + textBoxName.Text.ToString() + "','" + textBoxVorname.Text.ToString() + "')";
+            //mycommand.CommandText = "Insert into testtabelle values(NULL,'" + textBoxName.Text.ToString() + "','" + textBoxVorname.Text.ToString() + "')";
 
             MySqlDataReader reader = mycommand.ExecuteReader(); while (reader.Read())
             {
-            label1.Text = reader["testTabelleID"].ToString();
+            //label1.Text = reader["testTabelleID"].ToString();
             }
             //Datenbank -> Kunde holen
             Kunde kunde1 = null;
