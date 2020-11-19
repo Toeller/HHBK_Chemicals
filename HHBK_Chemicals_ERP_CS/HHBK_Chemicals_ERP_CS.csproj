@@ -91,21 +91,7 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
-
-    <Compile Include="Nico_Kuhn.cs" />
-
-
-    <Compile Include="Nico_Kuhn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nico_Kuhn.Designer.cs">
-      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Patrick_Vukoje.cs" />
-
-    <Compile Include="Nico Kuhn.cs" />
-
-
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
@@ -131,6 +117,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <Generator>SettingsSingleFileGenerator</Generator>
     </Compile>
   </ItemGroup>
   <ItemGroup>
