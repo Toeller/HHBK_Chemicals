@@ -96,6 +96,7 @@
     <Compile Include="Nico_Kuhn.Designer.cs">
       <DependentUpon>Nico_Kuhn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patrick_Vukoje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
