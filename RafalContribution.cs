@@ -5,5 +5,6 @@ public class RafalContribution
 	public RafalContribution()
 	{
 		int a;
+		int b;
 	}
 }
