@@ -16,7 +16,7 @@ namespace HHBK_Chemicals_ERP_CS
         private string ort;
         private int postleitzahl;
         private string emailadresse;
-        // test
+
         public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse)
         {
             this.kundennummer = kundennummer;
