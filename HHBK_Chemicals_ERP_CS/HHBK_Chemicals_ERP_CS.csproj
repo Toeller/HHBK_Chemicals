@@ -83,6 +83,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Leon_Truger.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="MichailiK.cs">
       <SubType>Form</SubType>
