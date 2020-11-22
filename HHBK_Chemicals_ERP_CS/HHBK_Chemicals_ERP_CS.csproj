@@ -172,6 +172,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
+      <Generator>ResXFileCodeGenerator</Generator>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
