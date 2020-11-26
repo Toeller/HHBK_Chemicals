@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IProduktverwaltung
     {
+        //Program idee
         /*
         int Artikelnummer { get; set; }
         */

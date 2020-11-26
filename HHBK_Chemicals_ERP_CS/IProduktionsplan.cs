@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IProduktionsplan
     {
+        //Program idee 
         /*
         int ProduktionsplanNummer { get;}
         int Rezept_Nummer { get; set; }

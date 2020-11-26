@@ -9,5 +9,6 @@ namespace HHBK_Chemicals_ERP_CS
     interface IModel
     {
 
+        //Program idee
     }
 }
