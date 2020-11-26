@@ -76,6 +76,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IControllerReklamation.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="koeper.cs" />
     <Compile Include="Kunde.cs" />
