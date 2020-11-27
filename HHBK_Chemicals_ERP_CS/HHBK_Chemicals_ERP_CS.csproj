@@ -81,6 +81,9 @@
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
 
+    <Compile Include="IViewProdukt.cs" />
+
+
     <Compile Include="IControlerProdukt.cs" />
 
 
