@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,12 +61,18 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="ControlerLagerverwaltung.cs" />
+
+    <Compile Include="ControllerBestellungKunde.cs" />
+
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CToellerPriv.Designer.cs">
       <DependentUpon>CToellerPriv.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanielIvezic.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +80,19 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+
     <Compile Include="IViewProdukt.cs" />
+
+
+    <Compile Include="IControlerProdukt.cs" />
+
+
+    <Compile Include="IViewReklamation.cs" />
+
+    <Compile Include="IModel.cs" />
+    <Compile Include="koeper.cs" />
+
+
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -83,6 +101,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Leon_Truger.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="MichailiK.cs">
       <SubType>Form</SubType>
@@ -91,15 +110,17 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
-    <Compile Include="Nico_Kuhn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nico_Kuhn.Designer.cs">
-      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Nils_Walter.cs" />
+    <Compile Include="Patrick_Vukoje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="viewProdukt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProdukt.Designer.cs">
+      <DependentUpon>viewProdukt.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +134,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="viewProdukt.resx">
+      <DependentUpon>viewProdukt.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +146,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <Generator>SettingsSingleFileGenerator</Generator>
     </Compile>
   </ItemGroup>
   <ItemGroup>
