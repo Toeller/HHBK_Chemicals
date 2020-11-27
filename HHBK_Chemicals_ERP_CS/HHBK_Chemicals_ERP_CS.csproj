@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,6 +61,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,7 +76,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+
     <Compile Include="IViewReklamation.cs" />
+
+    <Compile Include="IModel.cs" />
+    <Compile Include="koeper.cs" />
+
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -84,6 +90,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Leon_Truger.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="MichailiK.cs">
       <SubType>Form</SubType>
@@ -92,6 +99,7 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
+    <Compile Include="Nils_Walter.cs" />
     <Compile Include="Patrick_Vukoje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
