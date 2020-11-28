@@ -68,6 +68,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IRechnungsControler.cs" />
     <Compile Include="Julian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +100,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechnungControler.cs" />
     <Compile Include="RezeptExt.cs" />
     <EmbeddedResource Include="FlorianDumke.resx">
       <DependentUpon>FlorianDumke.cs</DependentUpon>
