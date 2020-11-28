@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IRechnungsControler
+    interface IRechnungsControler 
     {
+
+
+
     }
 }
