@@ -68,6 +68,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IViewFertigung.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -99,6 +101,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="ViewZahlungseingang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewZahlungseingang.Designer.cs">
+      <DependentUpon>ViewZahlungseingang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +120,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewZahlungseingang.resx">
+      <DependentUpon>ViewZahlungseingang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
