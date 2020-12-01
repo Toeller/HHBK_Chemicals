@@ -44,7 +44,7 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY(`Produktionspositionsnummer`)," +
             "FOREIGN KEY(`Produkt_Artikelnummer1`)" +
             " REFERENCES `HHBK_Chemicals`.`Produkt` (`Artikelnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Bestellposition` (" +
@@ -58,15 +58,15 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY(`Bestellpositionsnummer`)," +
             "FOREIGN KEY(`Kundennummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Kunde` (`Kundennummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION," +
             "FOREIGN KEY(`Artikelnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Produkt` (`Artikelnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION," +
             "FOREIGN KEY(`Produktionspositionsnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Produktionsposition` (`Produktionspositionsnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Zahlungseingang` (" +
@@ -80,7 +80,7 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY(`Zahlungseingangsnummer`)," +
             "FOREIGN KEY(`Kundennummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Kunde` (`Kundennummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Rechnungsposition` (" +
@@ -92,7 +92,7 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY(`Rechnungspositionsnummer`)," +
             "FOREIGN KEY(`Bestellpositionsnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Bestellposition` (`Bestellpositionsnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Lagerposition` (" +
@@ -109,7 +109,7 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY (`Rezeptnummer`)," +
             "FOREIGN KEY (`Artikelnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Produkt` (`Artikelnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Produktionsplan` (" +
@@ -124,11 +124,11 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY (`Produktionsplannummer`)," +
             "FOREIGN KEY (`Produktionspositionsnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Produktionsposition` (`Produktionspositionsnummer`)" +
-            "ON DELETE NO ACTION" +
+            "ON DELETE NO ACTION " +
             "ON UPDATE NO ACTION," +
             "FOREIGN KEY (`Rezeptnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Rezept` (`Rezeptnummer`)" +
-            " ON DELETE NO ACTION" +
+            " ON DELETE NO ACTION " +
             " ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Lieferposition` (" +
@@ -144,7 +144,7 @@ namespace HHBK_Chemicals_ERP_CS
             "PRIMARY KEY (`idLieferposition`)," +
             "FOREIGN KEY (`Bestellpositionsnummer`)" +
             " REFERENCES `HHBK_Chemicals`.`Bestellposition` (`Bestellpositionsnummer`)" +
-            " ON DELETE NO ACTION" +
+            " ON DELETE NO ACTION " +
             " ON UPDATE NO ACTION);" +
 
             "CREATE TABLE IF NOT EXISTS `HHBK_Chemicals`.`Lagerposition_has_Rezept` (" +

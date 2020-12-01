@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -73,15 +74,17 @@ namespace HHBK_Chemicals_ERP_CS
                 mycommand.CommandText = Commands.createDatabase;
 
                 conn.Open();
+                mycommand.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                MessageBox.Show(e.Message);
 
                 return false;
             }
             finally
             {
-
+                conn.Close();
             }
 
             return true;
