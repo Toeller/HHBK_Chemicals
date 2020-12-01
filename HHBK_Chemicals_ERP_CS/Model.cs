@@ -61,6 +61,78 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
+        bool IModel.BestellpositionAnlegen(int Bestellpositionsnummer, int Bestellungsnummer, int Menge, DateTime Bestelldatum, int Artikelnummer, int Kundennummer, int idLieferposition)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.createDB()
+        {
+            try
+            {
+                mycommand.CommandText = Commands.createDatabase;
+
+                conn.Open();
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+            finally
+            {
+
+            }
+
+            return true;
+
+        }
+
+        bool IModel.KundeAnlegen(int Kundennummer, string Name, string Vorname, string Strasse, int Hausnummer, int Postleitzahl, string Ort, string emaliadresse, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.LagerpositionAnlegen(int Lagerpositionsnummer, string Grundstoffname, int Grundstoffmenge, string Gundstoffeinheit)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.Lagerposition_has_RezeptAnlegen(int Lagerpositionsnummer, int Rezept_Rezeptnummer, int Menge, string Einheit)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.LieferpositionAnlegen(int idLieferposition, string Liefernummer, DateTime Versanddatum, DateTime Lieferdatum, string NameVersandkontrolle, string NameSpedition)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.ProduktAnlegen(int Artikelnummer, string Artikelname, int Verkaufseinheit, string Einheit, double PreisVK)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.ProduktionsplanAnlegen(int Produktionsplannummer, DateTime StartSoll, DateTime StartIst, int Rezeptnummer, int Produktionspositionsnummer, int Bestellpositionsnummer, int Kundennummer)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.ProduktionspositionAnlegen(int Produktionspositionsnummer, int Artikelnummer, DateTime DatumProduktionsfreigabe, DateTime DatumProduktion, string NameProdkutionsfreigabe, string NameProduzent, int Bestellpositionsnummer, int Kundennummer)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.RechnungspositionAnlegen(int Rechnungspositionsnummer, int Rechnungsnummer, int Bestellpositionsnummer, int Artikelnummer, int Kundennummer)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IModel.RezeptAnlegen(int Rezeptnummer, int HerstellungsdauerMin, int Artikelnummer)
+        {
+            throw new NotImplementedException();
+        }
+
         private void testen()
         {
             string myConnectionString = "server=127.0.0.1;uid=root;pwd=;database=test;";
@@ -78,6 +150,11 @@ namespace HHBK_Chemicals_ERP_CS
             //Datenbank -> Kunde holen
             Kunde kunde1 = null;
             //return kunde1;
+        }
+
+        bool IModel.ZahlungseingangAnlegen(int Zahlungseingangsnummer, string VerwendungszweckKdNr, string VerwendungszweckBestNr, DateTime Datum, string NameKontoinhaber, string IBAN, int Kundennummer)
+        {
+            throw new NotImplementedException();
         }
     }
 }

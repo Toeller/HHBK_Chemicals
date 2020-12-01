@@ -22,7 +22,7 @@ namespace HHBK_Chemicals_ERP_CS
             IView view = new Form1();
             IController controller = new Controller();
 
-
+            model.createDB();
             
 
 
