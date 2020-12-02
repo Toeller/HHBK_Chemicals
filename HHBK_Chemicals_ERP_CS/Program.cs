@@ -24,8 +24,6 @@ namespace HHBK_Chemicals_ERP_CS
 
             model.createDB();
             
-
-
             
             Application.Run((Form1)view);
         }
