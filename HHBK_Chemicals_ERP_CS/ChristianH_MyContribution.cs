@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class ChristianH_MyContribution
 {
-	public Class1()
+	public ChristianH_MyContribution()
 	{
 	}
 }
