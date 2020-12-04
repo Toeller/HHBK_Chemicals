@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IViewProdukt_El_Malki
+    interface IViewProdukt
     {
         private int Artikelnummer;
         private string Artikelname;
