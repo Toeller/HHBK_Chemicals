@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bestellung.cs" />
+    <Compile Include="BestellungKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestellungKunde.Designer.cs">
+      <DependentUpon>BestellungKunde.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
     </Compile>
