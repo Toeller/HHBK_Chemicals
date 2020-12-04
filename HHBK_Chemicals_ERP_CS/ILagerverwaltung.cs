@@ -8,6 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface ILagerverwaltung
     {
+        bool LagerpositionSchrieben(Lagerposition lagerposition);
+        bool LagerpositionLöschen(Lagerposition lagerposition);
 
+        bool LagerpositionLöschen(int lagerpositionsnummer);
     }
 }
