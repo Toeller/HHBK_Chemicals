@@ -8,5 +8,11 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class Produktionsplan
     {
+        private int produktionsplannummer;
+        private DateTime startsoll;
+        private DateTime startist;
+         
+        
+
     }
 }
