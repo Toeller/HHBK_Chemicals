@@ -14,9 +14,9 @@ namespace HHBK_Chemicals_ERP_CS
         private String einheit;
 
 
-        public int Lagerposition_has_Lagerpositionsnummer { get; set; }
-        public int Rezept_Rezeptnummer { get; set; }
-        public int Menge { get; set; }
-        public string Einheit { get; set; }
+        public int Lagerposition_Lagerpositionsnummer { get => lagerposition_Lagerpositionsnummer; set => lagerposition_Lagerpositionsnummer = value; }
+        public int Rezept_Rezeptnummer1 { get => rezept_Rezeptnummer; set => rezept_Rezeptnummer = value; }
+        public int Menge1 { get => menge; set => menge = value; }
+        public string Einheit1 { get => einheit; set => einheit = value; }
     }
 }
