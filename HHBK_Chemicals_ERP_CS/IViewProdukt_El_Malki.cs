@@ -8,5 +8,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewProdukt_El_Malki
     {
+        private int Artikelnummer;
+        private string Artikelname;
+        private int Verkaufseinheit;
+        private string Einheit;
+        private double PreisVK;
     }
 }
