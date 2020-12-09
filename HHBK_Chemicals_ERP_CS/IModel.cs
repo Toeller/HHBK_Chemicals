@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HHBK_Chemicals_ERP_CS
 {
@@ -9,8 +10,17 @@ namespace HHBK_Chemicals_ERP_CS
         //Kunde
         Boolean KundeAnlegen(int Kundennummer, String Name, String Vorname, String Strasse, int Hausnummer,
             int Postleitzahl, String Ort, String emaliadresse, String password);
-        Boolean KundeLesen(int Kundennummer, String Name, String Vorname, String Strasse, int Hausnummer,
-            int Postleitzahl, String Ort, String emaliadresse, String password);
+        Boolean KundeAnlegen(Kunde kunde);
+
+        Boolean KundeAendern(Kunde kunde);
+
+        Kunde KundeLesen(int Kundennummer);
+        List<Kunde> KundeLesen();
+        List<Kunde> KundeLesen(String Name, String Vorname, String Strasse, int Hausnummer,
+            int Postleitzahl, String Ort, String emaliadresse);
+        Boolean KundeVerifizieren(String emaliadresse, String password);
+
+
 
         //Produkt
         Boolean ProduktAnlegen(int Artikelnummer, String Artikelname, int Verkaufseinheit,

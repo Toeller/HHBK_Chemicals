@@ -19,13 +19,18 @@ namespace HHBK_Chemicals_ERP_CS
 
 
             IModel model = new Model();
-            IView view = new Form1();
+            IViewKunde viewKunde = new ViewKunde();
+            IControllerKunde controllerKunde = new ControllerKunde();
             IController controller = new Controller();
+
+            viewKunde.controllerKunde = controllerKunde;
+            controllerKunde.Model = model;
+
 
             model.createDB();
             
             
-            Application.Run((Form1)view);
+            Application.Run((ViewKunde)viewKunde);
         }
     }
 }
