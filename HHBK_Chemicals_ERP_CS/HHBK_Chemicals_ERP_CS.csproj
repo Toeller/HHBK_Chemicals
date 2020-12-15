@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Commands.cs" />
     <Compile Include="Controller.cs" />
+    <Compile Include="ControllerKunde.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +66,10 @@
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
     <Compile Include="IController.cs" />
+    <Compile Include="IControllerKunde.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IView.cs" />
+    <Compile Include="IViewKunde.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -75,6 +78,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lieferposition.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
@@ -91,6 +95,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SomeOneElsesContribution.cs" />
+    <Compile Include="ViewKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewKunde.Designer.cs">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,9 +117,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+
     <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewKunde.resx">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
