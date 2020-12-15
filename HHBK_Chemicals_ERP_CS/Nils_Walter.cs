@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Nico_Kuhn
+    class Nils_Walter
     {
     }
 }

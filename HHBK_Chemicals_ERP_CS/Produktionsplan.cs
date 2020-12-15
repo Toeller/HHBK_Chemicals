@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Nico_Kuhn
+    class Produktionsplan
     {
+        private int produktionsplannummer;
+        private DateTime startsoll;
+        private DateTime startist;
+         
+        
+
     }
 }

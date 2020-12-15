@@ -9,7 +9,7 @@ namespace HHBK_Chemicals_ERP_CS
     class HHBK_Chemicals_ERP_Model
     {
         //Typprüfung für speichern
-        if(objectName is Classtype)
+        //if(objectName is Classtype)
         
             
         //'+'/- Operator überladen für Zusammenstellung
