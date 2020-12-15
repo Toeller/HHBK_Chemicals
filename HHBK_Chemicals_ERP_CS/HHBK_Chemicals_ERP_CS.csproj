@@ -55,6 +55,12 @@
       <DependentUpon>Ali_ElMalki.cs</DependentUpon>
     </Compile>
     <Compile Include="Bestellung.cs" />
+    <Compile Include="BestellungKundevonMikailKöseWindowsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestellungKundevonMikailKöseWindowsForms.Designer.cs">
+      <DependentUpon>BestellungKundevonMikailKöseWindowsForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,21 +73,13 @@
     <Compile Include="CToellerPriv.Designer.cs">
       <DependentUpon>CToellerPriv.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanielIvezic.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
-    <Compile Include="koeper.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -90,8 +88,6 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layla.cs" />
-    <Compile Include="Leon_Truger.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="MichailiK.cs">
       <SubType>Form</SubType>
@@ -100,16 +96,16 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
-    <Compile Include="Patrick_Vukoje.cs" />
+    <Compile Include="Nico_Kuhn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nico_Kuhn.Designer.cs">
+      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
-    <Compile Include="ViewKunde.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewKunde.Designer.cs">
-      <DependentUpon>ViewKunde.cs</DependentUpon>
-    </Compile>
+    <Compile Include="SchnitstelleBestellungKunde.cs" />
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,9 +119,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ViewKunde.resx">
-      <DependentUpon>ViewKunde.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -135,7 +128,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <Generator>SettingsSingleFileGenerator</Generator>
     </Compile>
   </ItemGroup>
   <ItemGroup>
