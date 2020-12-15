@@ -11,4 +11,13 @@ slnx.sqlite
 /HHBK_Chemicals_ERP_CS/bin/
 /HHBK_Chemicals_ERP_CS/obj/
 /HHBK_Chemicals_ERP_CS/Properties/
+/Properties/
+Resources.Designer.cs
+Resources.resx
+Settings.Designer.cs
+Settings.settings
+HHBK_Chemicals_ERP_CS.csproj
+/HHBK_Chemicals_ERP_CS/HHBK_Chemicals_ERP_CS.csproj
+*.csproj
+
 

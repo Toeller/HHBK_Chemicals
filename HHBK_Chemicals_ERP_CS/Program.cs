@@ -23,12 +23,13 @@ namespace HHBK_Chemicals_ERP_CS
             IControllerKunde controllerKunde = new ControllerKunde();
             IController controller = new Controller();
 
-            viewKunde.controllerKunde = controllerKunde;
-            controllerKunde.Model = model;
-
 
             model.createDB();
+            model.createTestData();
             
+
+            viewKunde.controllerKunde = controllerKunde;
+            controllerKunde.Model = model;
             
             Application.Run((ViewKunde)viewKunde);
         }
