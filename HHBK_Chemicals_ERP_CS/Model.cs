@@ -71,7 +71,33 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                mycommand.CommandText = Commands.createDatabase;
+                conn.ConnectionString = "server=127.0.0.1;uid=root;pwd=;";
+                mycommand.CommandText = Commands.CreateDatabase;
+
+                conn.Open();
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+                conn.ConnectionString = myConnectionString;
+            }
+
+            return true;
+
+        }
+
+        bool IModel.createTestData()
+        {
+            try
+            {
+                mycommand.CommandText = Commands.CreateTestdata;
 
                 conn.Open();
                 mycommand.ExecuteNonQuery();

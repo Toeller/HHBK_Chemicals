@@ -23,6 +23,7 @@ namespace HHBK_Chemicals_ERP_CS
             IController controller = new Controller();
 
             model.createDB();
+            model.createTestData();
             
 
 

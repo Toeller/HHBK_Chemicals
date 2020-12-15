@@ -6,6 +6,8 @@ namespace HHBK_Chemicals_ERP_CS
     {
         Boolean createDB();
 
+        Boolean createTestData();
+
         //Kunde
         Boolean KundeAnlegen(int Kundennummer, String Name, String Vorname, String Strasse, int Hausnummer,
             int Postleitzahl, String Ort, String emaliadresse, String password);
