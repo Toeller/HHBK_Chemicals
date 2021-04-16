@@ -8,7 +8,6 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IModel
     {
-        Zahlungseingang ZahlungseingangLesen(int Zahlungseingangsnummer);
-        bool ZahlungseingangSchreiben(Zahlungseingang ZahlungseingangNeu);
+        bool Zahlungseingang(Zahlungseingang zahlungseingang);
     }
 }
