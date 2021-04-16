@@ -20,7 +20,7 @@ namespace HHBK_Chemicals_ERP_CS
 
 
 
-        private void buttonAbbrechen_Click(object sender, EventArgs e)
+        private void buttonAbbrechen_Click(object sender, EventArgs e);
         
         private int    Kundennummer;
         private string Name;
