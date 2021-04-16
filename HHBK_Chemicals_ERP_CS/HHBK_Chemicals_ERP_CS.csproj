@@ -63,15 +63,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
-
     <Compile Include="ControllerBestellungKunde.cs" />
-    <Compile Include="CToellerPriv.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CToellerPriv.Designer.cs">
-      <DependentUpon>CToellerPriv.cs</DependentUpon>
-    </Compile>
-
     <Compile Include="ControlerLagerverwaltung.cs" />
     <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="ControllerKunde.cs" />
@@ -79,7 +71,6 @@
     <Compile Include="Controller_Zahlungseingang.cs" />
     <Compile Include="DanielIvezic.cs" />
     <Compile Include="Fatih_Han_Aybirdi.cs" />
-
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +84,7 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
-
     <Compile Include="IModel.cs" />
-
     <Compile Include="IBestellungKunde.cs" />
     <Compile Include="IControlerProdukt.cs" />
     <Compile Include="IControllerLagerverwaltung.cs" />
@@ -107,6 +96,7 @@
     <Compile Include="IModelLagervewaltung.cs" />
     <Compile Include="IModelProduktionsplan.cs" />
     <Compile Include="IModelRechnung.cs" />
+    <Compile Include="IViewKunde.cs" />
     <Compile Include="IViewLieferung.cs" />
     <Compile Include="IViewProduktionsplan.cs" />
     <Compile Include="IVIewProduktverwaltung.cs" />
@@ -115,7 +105,6 @@
     <Compile Include="IViewRezeptverwaltung.cs" />
     <Compile Include="JonasKersten.cs" />
     <Compile Include="KevinMelzer.cs" />
-
     <Compile Include="koeper.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
@@ -139,19 +128,22 @@
     <Compile Include="Nico_Kuhn.Designer.cs">
       <DependentUpon>Nico_Kuhn.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="ViewKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewKunde.Designer.cs">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zahlungseingang.cs" />
-
     <Compile Include="ViewLieferung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewLieferung.Designer.cs">
       <DependentUpon>ViewLieferung.cs</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewKunde.resx">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
