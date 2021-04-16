@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +54,8 @@
     <Compile Include="Ali_ElMalki.Designer.cs">
       <DependentUpon>Ali_ElMalki.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bastianclaestestklasse.cs" />
+    <Compile Include="Bestellposition.cs" />
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
@@ -61,6 +63,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+
     <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
@@ -68,14 +71,51 @@
     <Compile Include="CToellerPriv.Designer.cs">
       <DependentUpon>CToellerPriv.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="ControlerLagerverwaltung.cs" />
+    <Compile Include="ControllerBestellungKunde.cs" />
+    <Compile Include="ControllerKunde.cs" />
+    <Compile Include="ControllerRechnung.cs" />
+    <Compile Include="Controller_Zahlungseingang.cs" />
+    <Compile Include="DanielIvezic.cs" />
+    <Compile Include="Fatih_Han_Aybirdi.cs" />
+
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+
     <Compile Include="IModel.cs" />
+
+    <Compile Include="IBestellungKunde.cs" />
+    <Compile Include="IControlerProdukt.cs" />
+    <Compile Include="IControllerLagerverwaltung.cs" />
+    <Compile Include="IControllerProduktverwaltung.cs" />
+    <Compile Include="IControllerRechnung.cs" />
+    <Compile Include="IControllerReklamation.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IModelKunde.cs" />
+    <Compile Include="IModelLagervewaltung.cs" />
+    <Compile Include="IModelProduktionsplan.cs" />
+    <Compile Include="IModelRechnung.cs" />
+    <Compile Include="IViewLieferung.cs" />
+    <Compile Include="IViewProduktionsplan.cs" />
+    <Compile Include="IVIewProduktverwaltung.cs" />
+    <Compile Include="IViewProdukt_El_Malki.cs" />
+    <Compile Include="IViewReklamation.cs" />
+    <Compile Include="IViewRezeptverwaltung.cs" />
+    <Compile Include="JonasKersten.cs" />
+    <Compile Include="KevinMelzer.cs" />
+
     <Compile Include="koeper.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
@@ -99,10 +139,19 @@
     <Compile Include="Nico_Kuhn.Designer.cs">
       <DependentUpon>Nico_Kuhn.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
     <Compile Include="Zahlungseingang.cs" />
+
+    <Compile Include="ViewLieferung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLieferung.Designer.cs">
+      <DependentUpon>ViewLieferung.cs</DependentUpon>
+    </Compile>
+
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
