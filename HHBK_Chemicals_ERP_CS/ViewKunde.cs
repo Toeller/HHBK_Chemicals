@@ -12,28 +12,16 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class ViewKunde : Form
     {
+        IViewKunde IViewKunde ;
         public ViewKunde()
         {
             InitializeComponent();
         }
 
 
-
-
-        private void buttonAbbrechen_Click(object sender, EventArgs e)
-        
-        private int    Kundennummer;
-        private string Name;
-        private string Vorname;
-        private string Strasse;
-        int            Hausnummer;
-        int            Postleitzahl;
-        private string Ort;
-        private string Emailadresse;
-
-        
-
-
-        
+        private void buttonViewKundenBestaetigen_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
