@@ -100,6 +100,7 @@
     <Compile Include="IModelLagervewaltung.cs" />
     <Compile Include="IModelProduktionsplan.cs" />
     <Compile Include="IModelRechnung.cs" />
+    <Compile Include="IViewLieferung.cs" />
     <Compile Include="IViewProduktionsplan.cs" />
     <Compile Include="IVIewProduktverwaltung.cs" />
     <Compile Include="IViewProdukt_El_Malki.cs" />
@@ -129,6 +130,12 @@
     </Compile>
     <Compile Include="Nico_Kuhn.Designer.cs">
       <DependentUpon>Nico_Kuhn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLieferung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLieferung.Designer.cs">
+      <DependentUpon>ViewLieferung.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
