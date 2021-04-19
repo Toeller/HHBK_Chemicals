@@ -37,7 +37,7 @@ namespace View_Bestellung
             // 
             // buttonBestellung
             // 
-            this.buttonBestellung.Location = new System.Drawing.Point(24, 29);
+            this.buttonBestellung.Location = new System.Drawing.Point(12, 27);
             this.buttonBestellung.Name = "buttonBestellung";
             this.buttonBestellung.Size = new System.Drawing.Size(178, 49);
             this.buttonBestellung.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace View_Bestellung
             // 
             // buttonBestellunganzeigen
             // 
-            this.buttonBestellunganzeigen.Location = new System.Drawing.Point(24, 109);
+            this.buttonBestellunganzeigen.Location = new System.Drawing.Point(12, 100);
             this.buttonBestellunganzeigen.Name = "buttonBestellunganzeigen";
             this.buttonBestellunganzeigen.Size = new System.Drawing.Size(178, 50);
             this.buttonBestellunganzeigen.TabIndex = 1;
