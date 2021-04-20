@@ -106,6 +106,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControllerBestellung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,10 +114,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IController Bestellung.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IProduktionsplan.cs" />
     <Compile Include="IProduktverwaltung.cs" />
+
     <Compile Include="IViewRechnungerstellen.cs" />
+
+    <Compile Include="IView Bestellung.cs" />
+
     <Compile Include="Julian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,12 +161,19 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+
     <Compile Include="ViewRechnungerstellen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewRechnungerstellen.Designer.cs">
       <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="View Bestellung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Bestellung.Designer.cs" />
+
     <EmbeddedResource Include="Aaron_Schneider.resx">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,9 +206,13 @@
       <DesignTime>True</DesignTime>
       <Generator>ResXFileCodeGenerator</Generator>
     </Compile>
+
     <EmbeddedResource Include="ViewRechnungerstellen.resx">
       <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="View Bestellung.resx" />
+
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
