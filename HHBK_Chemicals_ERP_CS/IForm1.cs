@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IModel
+    interface IForm1
     {
-        IForm1 IView { set; }
         IController1 IController1 { set; }
-        //Program idee
-
-        List<int> getKundennummer();
+        IModel IModel1 { set; }
     }
 }
