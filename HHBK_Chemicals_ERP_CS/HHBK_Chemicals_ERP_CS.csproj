@@ -106,6 +106,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlerReklamation.cs" />
     <Compile Include="ControllerBestellung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -114,6 +115,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IControlerReklamation.cs" />
     <Compile Include="IController Bestellung.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IProduktionsplan.cs" />
