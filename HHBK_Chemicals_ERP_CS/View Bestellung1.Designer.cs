@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HHBK_Chemicals_ERP_CS.Properties {
+namespace HHBK_Chemicals_ERP_CS {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace HHBK_Chemicals_ERP_CS.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class View_Bestellung {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal View_Bestellung() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace HHBK_Chemicals_ERP_CS.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HHBK_Chemicals_ERP_CS.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HHBK_Chemicals_ERP_CS.View Bestellung", typeof(View_Bestellung).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,16 +57,6 @@ namespace HHBK_Chemicals_ERP_CS.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap drawersfd {
-            get {
-                object obj = ResourceManager.GetObject("drawersfd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
