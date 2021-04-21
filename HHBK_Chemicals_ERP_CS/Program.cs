@@ -21,6 +21,7 @@ namespace HHBK_Chemicals_ERP_CS
             IController1 controller = new Controller1();
             IModel model = new Model();
 
+
             model.IView = view;
             model.IController1 = controller;
             
