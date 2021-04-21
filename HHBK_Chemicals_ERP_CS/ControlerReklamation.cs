@@ -12,20 +12,23 @@ namespace HHBK_Chemicals_ERP_CS
     private bool y;
     private string antwort;
     private string reklamation;
+        IViewReklamation iView;
+        IModel iModel;
 
     string IControlerReklamation.Reklamation { get => reklamation; set => reklamation = value; }
+        IViewReklamation IControlerReklamation.IView { get => iView; set => iView = value; }
+        IModel IControlerReklamation.IModel { get => iModel; set => iModel = value; }
 
-
-    bool IControlerReklamation.BestelldatenVerifiezieren()
+        bool IControlerReklamation.BestelldatenVerifiezieren()
     {
         IControlerReklamation rek1 = new ControlerReklamation();
-        if (rek1.Bestelldatenladen() == IViewReklamation.BestelldatenAufnehmen)
+        if (rek1.Bestelldatenladen() == IViewReklamation.DatenAufnehmen(1))
         {
             return x = true;
         }
         else
         {
-            IViewReklamation.MessageboxAusgabe.text = "Bestelldaten ungültig";
+            IViewReklamation.textboxAusgabe.text = "Bestelldaten ungültig";
             return x = false;
         }
     }
@@ -44,13 +47,13 @@ namespace HHBK_Chemicals_ERP_CS
     bool IControlerReklamation.KundendatenVerifizieren()
     {
         IControlerReklamation rek1 = new ControlerReklamation();
-        if (rek1.Kundendatenladen() == IViewReklamation.KundendatenAufnehmen)
+        if (rek1.Kundendatenladen() == IViewReklamation.DatenAufnehmen(2))
         {
             return y = true;
         }
         else
         {
-            IViewReklamation.MessageboxAusgabe.text = "Kundendaten ungültig";
+            IViewReklamation.textBoxAusgabe.text = "Kundendaten ungültig";
             return y = false;
         }
     }
