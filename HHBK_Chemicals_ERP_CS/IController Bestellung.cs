@@ -10,6 +10,6 @@ namespace HHBK_Chemicals_ERP_CS
     {
         int Anlegen(Bestellung bestellung);
         int Andern(Bestellung bestellung, Bestellung newBestellung);
-        int loschen(Bestellung bestellung);
+        int Loeschen(Bestellung bestellung);
     }
 }

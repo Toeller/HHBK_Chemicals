@@ -107,6 +107,7 @@
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlerReklamation.cs" />
+    <Compile Include="Controller1.cs" />
     <Compile Include="ControllerBestellung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -117,10 +118,14 @@
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
     <Compile Include="IControlerReklamation.cs" />
     <Compile Include="IController Bestellung.cs" />
+    <Compile Include="IController1.cs" />
+    <Compile Include="IForm1.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IProduktionsplan.cs" />
     <Compile Include="IProduktverwaltung.cs" />
+
     <Compile Include="IViewLagereingang.cs" />
+
     <Compile Include="IViewRechnungerstellen.cs" />
     <Compile Include="IView Bestellung.cs" />
     <Compile Include="Julian.cs">
@@ -161,6 +166,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+
     <Compile Include="View Bestellung1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -172,6 +178,7 @@
     <Compile Include="ViewLagereingang.Designer.cs">
       <DependentUpon>ViewLagereingang.cs</DependentUpon>
     </Compile>
+
     <Compile Include="ViewRechnungerstellen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +221,7 @@
       <DesignTime>True</DesignTime>
       <Generator>ResXFileCodeGenerator</Generator>
     </Compile>
+
     <EmbeddedResource Include="ViewLagereingang.resx">
       <DependentUpon>ViewLagereingang.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +232,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>View Bestellung1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="ViewRechnungerstellen.resx">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Bestellung.resx" />
+
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
