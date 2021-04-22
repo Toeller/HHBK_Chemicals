@@ -106,6 +106,8 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlerReklamation.cs" />
+    <Compile Include="Controller1.cs" />
     <Compile Include="ControllerBestellung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -114,11 +116,17 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IControlerReklamation.cs" />
     <Compile Include="IController Bestellung.cs" />
+    <Compile Include="IController1.cs" />
+    <Compile Include="IForm1.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IProduktionsplan.cs" />
     <Compile Include="IProduktverwaltung.cs" />
+    <Compile Include="IViewLagereingang.cs" />
+    <Compile Include="IViewRechnungerstellen.cs" />
     <Compile Include="IView Bestellung.cs" />
+    <Compile Include="IViewReklamation.cs" />
     <Compile Include="Julian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,10 +165,33 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="View Bestellung1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View Bestellung.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLagereingang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLagereingang.Designer.cs">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRechnungerstellen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRechnungerstellen.Designer.cs">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </Compile>
     <Compile Include="View Bestellung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View Bestellung.Designer.cs" />
+    <Compile Include="ViewReklamation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReklamation.Designer.cs">
+      <DependentUpon>ViewReklamation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Aaron_Schneider.resx">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,7 +224,23 @@
       <DesignTime>True</DesignTime>
       <Generator>ResXFileCodeGenerator</Generator>
     </Compile>
+    <EmbeddedResource Include="ViewLagereingang.resx">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRechnungerstellen.resx">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Bestellung.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>View Bestellung1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRechnungerstellen.resx">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View Bestellung.resx" />
+    <EmbeddedResource Include="ViewReklamation.resx">
+      <DependentUpon>ViewReklamation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -208,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawersfd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

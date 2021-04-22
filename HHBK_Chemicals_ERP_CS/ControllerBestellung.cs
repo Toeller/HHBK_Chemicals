@@ -18,7 +18,7 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
-        int IController_Bestellung.loschen(Bestellung bestellung)
+        int IController_Bestellung.Loeschen(Bestellung bestellung)
         {
             throw new NotImplementedException();
         }

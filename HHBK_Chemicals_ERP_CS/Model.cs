@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Model
+    class Model:IModel
     {
         private string myConnectionString = "server=127.0.0.1;uid=erpModel;pwd=555HHBK;database=HHBK_Chemicals;";
         private MySqlConnection conn;
@@ -20,7 +20,9 @@ namespace HHBK_Chemicals_ERP_CS
             mycommand = conn.CreateCommand();
         }
 
-      
+        IForm1 IModel.IView { set => throw new NotImplementedException(); }
+        IController1 IModel.IController1 { set => throw new NotImplementedException(); }
+
         public Kunde getKunde()
         {
             Kunde kunde1 = null;
@@ -60,6 +62,27 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
+        List<int> IModel.getKundennummer()
+        {
+            List<int> kundennummern=new List<int>();
+
+            mycommand.CommandText = "Select kundennummer from kunde";
+
+            conn.Open();
+
+            MySqlDataReader reader = mycommand.ExecuteReader();
+
+            while (reader.Read())
+            {
+                kundennummern.Add (Convert.ToInt32(reader["kundennummer"]));
+                
+            }
+            reader.Close();
+            conn.Close();
+            
+            return kundennummern;
+        }
+
         private void testen()
         {
             string myConnectionString = "server=127.0.0.1;uid=root;pwd=;database=test;";
@@ -75,7 +98,7 @@ namespace HHBK_Chemicals_ERP_CS
             //label1.Text = reader["testTabelleID"].ToString();
             }
             //Datenbank -> Kunde holen
-            Kunde kunde1 = null;
+            //Kunde kunde1 = null;
             //return kunde1;
         }
     }
