@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ViewProduktverwalten
+    public partial class ViewProduktverwalten
     {
+        IViewProduktverwalten IViewProduktverwalten;
+        public ViewProduktverwalten()
+        { 
+            
+        }
     }
 }
