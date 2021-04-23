@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,11 +61,8 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
-
     <Compile Include="ControlerLagerverwaltung.cs" />
-
     <Compile Include="ControllerBestellungKunde.cs" />
-
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,25 +77,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
-
     <Compile Include="IControllerProduktverwaltung.cs" />
     <Compile Include="IModelRechnung.cs" />
     <Compile Include="IViewProduktionsplan.cs" />
-
-
     <Compile Include="IViewProdukt.cs" />
-
-
     <Compile Include="IControlerProdukt.cs" />
-
-
+    <Compile Include="IViewProduktverwalten.cs" />
     <Compile Include="IViewReklamation.cs" />
-
     <Compile Include="IModel.cs" />
     <Compile Include="koeper.cs" />
-
-
-
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -121,16 +108,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
-
     <Compile Include="SiamLee.cs" />
-
     <Compile Include="viewProdukt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="viewProdukt.Designer.cs">
       <DependentUpon>viewProdukt.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="ViewProduktverwalten.cs" />
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
