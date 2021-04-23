@@ -68,6 +68,7 @@
     <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="ControllerKunde.cs" />
     <Compile Include="ControllerRechnung.cs" />
+    <Compile Include="ControllerRezeptverwalten.cs" />
     <Compile Include="Controller_Zahlungseingang.cs" />
     <Compile Include="DanielIvezic.cs" />
     <Compile Include="Fatih_Han_Aybirdi.cs" />
@@ -84,6 +85,7 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="IControllerRezeptverwalten.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IBestellungKunde.cs" />
     <Compile Include="IControlerProdukt.cs" />
