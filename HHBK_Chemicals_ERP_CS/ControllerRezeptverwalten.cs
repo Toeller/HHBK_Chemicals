@@ -8,7 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerRezeptverwalten : IControllerRezeptverwalten
     {
-        private IControllerRezeptverwalten controllerRezeptverwalten;
-        IControllerRezeptverwalten IControllerRezeptverwalten.IControllerRezeptverwalten { set => this.controllerRezeptverwalten=value; }
+        private IModel model;
+        private IViewRezeptverwalten viewRezeptverwalten;
+        IViewRezeptverwalten IControllerRezeptverwalten.IViewRezeptverwalten1 { set => this.viewRezeptverwalten=value; }
+        IModel IControllerRezeptverwalten.IModel1 { set => this.model=value; }
     }
 }

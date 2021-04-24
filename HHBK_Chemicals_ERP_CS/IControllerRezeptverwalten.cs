@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerRezeptverwalten
     {
-        IControllerRezeptverwalten IControllerRezeptverwalten { set; }
+        IModel IModel1 { set; }
+        IViewRezeptverwalten IViewRezeptverwalten1 { set; }
     }
 }

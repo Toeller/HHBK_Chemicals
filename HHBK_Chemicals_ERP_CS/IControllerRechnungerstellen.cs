@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerRechnungerstellen
     {
-        IControllerRechnungerstellen IControllerRechnungerstellen { set; }
+        IModel IModel1 { set; }
+        IViewRechnungerstellen IViewRechnungerstellen1 { set; }
     }
 }

@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerKunde
     {
-        IControllerKunde IControllerKunde { set; }
+        IModel IModel1 { set; }
+        IViewKunde IViewKunde1 { set; }
     }
 }

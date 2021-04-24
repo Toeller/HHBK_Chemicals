@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerProduktverwalten
     {
-        IControllerProduktverwalten IControllerProduktverwalten { set; }
+        IModel IModel1 { set; }
+        IViewProduktverwalten IViewProduktverwalten1 { set; }
     }
 }

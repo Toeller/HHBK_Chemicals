@@ -8,8 +8,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerReklamation:IControllerReklamation
     {
-        private IControllerReklamation controllerReklamation;
+        private IModel model;
+        private IViewReklamation viewReklamation;
 
-        IControllerReklamation IControllerReklamation.IControllerReklamation { set => this.controllerReklamation=value; }
+        IViewReklamation IControllerReklamation.IViewReklamation1 { set => this.viewReklamation=value; }
+        IModel IControllerReklamation.IModel1 { set => this.model=value; }
     }
 }

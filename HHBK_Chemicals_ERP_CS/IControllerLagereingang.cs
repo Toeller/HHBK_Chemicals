@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerLagereingang
     {
-        IControllerLagereingang IControllerLagereingang { set; }
+        IModel IModel1 { set; }
+        IViewLagereingang IViewLagereingang1 { set; }
     }
 }

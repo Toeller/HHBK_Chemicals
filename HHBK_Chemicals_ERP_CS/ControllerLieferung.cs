@@ -8,8 +8,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerLieferung:IControllerLieferung
     {
-        private IControllerLieferung controllerLieferung;
+        private IModel model;
+        private IViewLieferung viewLieferung;
 
-        IControllerLieferung IControllerLieferung.IControllerLieferung { set => this.controllerLieferung=value; }
+        IViewLieferung IControllerLieferung.IViewLieferung1 { set => this.viewLieferung=value; }
+        IModel IControllerLieferung.IModel1 { set => this.model=value; }
     }
 }

@@ -8,8 +8,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerBestellung:IControllerBestellung
     {
-        private IControllerBestellung controllerBestellung;
+        private IModel model;
+        private IViewBestellung viewBestellung;
 
-        IControllerBestellung IControllerBestellung.IControllerBestellung { set => this.controllerBestellung=value; }
+        IViewBestellung IControllerBestellung.IViewBestellung1 { set => this.viewBestellung=value; }
+        IModel IControllerBestellung.IModel1 { set => this.model=value; }
     }
 }

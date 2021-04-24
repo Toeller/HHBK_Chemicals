@@ -8,7 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerProduktion : IControllerProduktion
     {
-        private IControllerProduktion controllerProduktion;
-        IControllerProduktion IControllerProduktion.IControllerProduktion { set => this.controllerProduktion=value; }
+        private IModel model;
+        private IViewProduktion viewProduktion;
+        IViewProduktion IControllerProduktion.IViewProduktion1 { set => this.viewProduktion=value; }
+        IModel IControllerProduktion.IModel1 { set => this.model=value; }
     }
 }

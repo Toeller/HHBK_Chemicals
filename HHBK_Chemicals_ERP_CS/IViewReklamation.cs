@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewReklamation
     {
-        IViewReklamation IViewReklamation { set; }
+        IModel IModel1 { set; }
+        IControllerReklamation IControllerReklamation1 { set; }
     }
 }

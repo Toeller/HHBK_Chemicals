@@ -8,7 +8,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerProduktverwalten : IControllerProduktverwalten
     {
-        private IControllerProduktverwalten controllerProduktverwalten;
-        IControllerProduktverwalten IControllerProduktverwalten.IControllerProduktverwalten { set => this.controllerProduktverwalten=value; }
+        private IModel model;
+        private IViewProduktverwalten viewProduktverwalten;
+  
+        IViewProduktverwalten IControllerProduktverwalten.IViewProduktverwalten1 { set => this.viewProduktverwalten=value; }
+        IModel IControllerProduktverwalten.IModel1 { set => this.model=value; }
     }
 }
