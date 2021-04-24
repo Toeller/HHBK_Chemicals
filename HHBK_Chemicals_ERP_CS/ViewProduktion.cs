@@ -21,5 +21,12 @@ namespace HHBK_Chemicals_ERP_CS
         {
             Close();
         }
+
+        private void labelName_Produzent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
