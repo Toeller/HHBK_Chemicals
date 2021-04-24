@@ -29,176 +29,176 @@ namespace HHBK_Chemicals_ERP_CS
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelName = new System.Windows.Forms.Label();
-            this.labelVorname = new System.Windows.Forms.Label();
-            this.labelStrasse = new System.Windows.Forms.Label();
-            this.labelHausnummer = new System.Windows.Forms.Label();
-            this.labelPostleitzahl = new System.Windows.Forms.Label();
-            this.labelOrt = new System.Windows.Forms.Label();
-            this.labelEmailadresse = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.buttonAbbrechen = new System.Windows.Forms.Button();
-            this.buttonErstellen = new System.Windows.Forms.Button();
+            this.labelViewKundeName = new System.Windows.Forms.Label();
+            this.labelVIewKundenVornamen = new System.Windows.Forms.Label();
+            this.labelViewKundeStrasse = new System.Windows.Forms.Label();
+            this.labelViewKundeHausnummer = new System.Windows.Forms.Label();
+            this.labelViewKundePostleitzahl = new System.Windows.Forms.Label();
+            this.labelViewKundeOrt = new System.Windows.Forms.Label();
+            this.labelViewKundeEmailadresse = new System.Windows.Forms.Label();
+            this.textBoxViewKundeName = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundeVorname = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundeStrasse = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundePostleitzahl = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundeHausnummer = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundeOrt = new System.Windows.Forms.TextBox();
+            this.textBoxViewKundeEmailadresse = new System.Windows.Forms.TextBox();
+            this.buttonViewKundenAbbrechen = new System.Windows.Forms.Button();
+            this.buttonViewKundenBestaetigen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelName
+            // labelViewKundeName
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(42, 46);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(35, 13);
-            this.labelName.TabIndex = 0;
-            this.labelName.Text = "Name";
+            this.labelViewKundeName.AutoSize = true;
+            this.labelViewKundeName.Location = new System.Drawing.Point(46, 49);
+            this.labelViewKundeName.Name = "labelViewKundeName";
+            this.labelViewKundeName.Size = new System.Drawing.Size(35, 13);
+            this.labelViewKundeName.TabIndex = 0;
+            this.labelViewKundeName.Text = "Name";
             // 
-            // labelVorname
+            // labelVIewKundenVornamen
             // 
-            this.labelVorname.AutoSize = true;
-            this.labelVorname.Location = new System.Drawing.Point(42, 97);
-            this.labelVorname.Name = "labelVorname";
-            this.labelVorname.Size = new System.Drawing.Size(49, 13);
-            this.labelVorname.TabIndex = 1;
-            this.labelVorname.Text = "Vorname";
+            this.labelVIewKundenVornamen.AutoSize = true;
+            this.labelVIewKundenVornamen.Location = new System.Drawing.Point(46, 92);
+            this.labelVIewKundenVornamen.Name = "labelVIewKundenVornamen";
+            this.labelVIewKundenVornamen.Size = new System.Drawing.Size(55, 13);
+            this.labelVIewKundenVornamen.TabIndex = 1;
+            this.labelVIewKundenVornamen.Text = "Vornamen";
             // 
-            // labelStrasse
+            // labelViewKundeStrasse
             // 
-            this.labelStrasse.AutoSize = true;
-            this.labelStrasse.Location = new System.Drawing.Point(42, 146);
-            this.labelStrasse.Name = "labelStrasse";
-            this.labelStrasse.Size = new System.Drawing.Size(42, 13);
-            this.labelStrasse.TabIndex = 2;
-            this.labelStrasse.Text = "Strasse";
+            this.labelViewKundeStrasse.AutoSize = true;
+            this.labelViewKundeStrasse.Location = new System.Drawing.Point(46, 129);
+            this.labelViewKundeStrasse.Name = "labelViewKundeStrasse";
+            this.labelViewKundeStrasse.Size = new System.Drawing.Size(42, 13);
+            this.labelViewKundeStrasse.TabIndex = 2;
+            this.labelViewKundeStrasse.Text = "Strasse";
             // 
-            // labelHausnummer
+            // labelViewKundeHausnummer
             // 
-            this.labelHausnummer.AutoSize = true;
-            this.labelHausnummer.Location = new System.Drawing.Point(42, 195);
-            this.labelHausnummer.Name = "labelHausnummer";
-            this.labelHausnummer.Size = new System.Drawing.Size(69, 13);
-            this.labelHausnummer.TabIndex = 3;
-            this.labelHausnummer.Text = "Hausnummer";
+            this.labelViewKundeHausnummer.AutoSize = true;
+            this.labelViewKundeHausnummer.Location = new System.Drawing.Point(46, 206);
+            this.labelViewKundeHausnummer.Name = "labelViewKundeHausnummer";
+            this.labelViewKundeHausnummer.Size = new System.Drawing.Size(69, 13);
+            this.labelViewKundeHausnummer.TabIndex = 3;
+            this.labelViewKundeHausnummer.Text = "Hausnummer";
             // 
-            // labelPostleitzahl
+            // labelViewKundePostleitzahl
             // 
-            this.labelPostleitzahl.AutoSize = true;
-            this.labelPostleitzahl.Location = new System.Drawing.Point(42, 243);
-            this.labelPostleitzahl.Name = "labelPostleitzahl";
-            this.labelPostleitzahl.Size = new System.Drawing.Size(60, 13);
-            this.labelPostleitzahl.TabIndex = 4;
-            this.labelPostleitzahl.Text = "Postleitzahl";
+            this.labelViewKundePostleitzahl.AutoSize = true;
+            this.labelViewKundePostleitzahl.Location = new System.Drawing.Point(46, 168);
+            this.labelViewKundePostleitzahl.Name = "labelViewKundePostleitzahl";
+            this.labelViewKundePostleitzahl.Size = new System.Drawing.Size(60, 13);
+            this.labelViewKundePostleitzahl.TabIndex = 4;
+            this.labelViewKundePostleitzahl.Text = "Postleitzahl";
             // 
-            // labelOrt
+            // labelViewKundeOrt
             // 
-            this.labelOrt.AutoSize = true;
-            this.labelOrt.Location = new System.Drawing.Point(42, 295);
-            this.labelOrt.Name = "labelOrt";
-            this.labelOrt.Size = new System.Drawing.Size(21, 13);
-            this.labelOrt.TabIndex = 5;
-            this.labelOrt.Text = "Ort";
+            this.labelViewKundeOrt.AutoSize = true;
+            this.labelViewKundeOrt.Location = new System.Drawing.Point(46, 247);
+            this.labelViewKundeOrt.Name = "labelViewKundeOrt";
+            this.labelViewKundeOrt.Size = new System.Drawing.Size(21, 13);
+            this.labelViewKundeOrt.TabIndex = 5;
+            this.labelViewKundeOrt.Text = "Ort";
             // 
-            // labelEmailadresse
+            // labelViewKundeEmailadresse
             // 
-            this.labelEmailadresse.AutoSize = true;
-            this.labelEmailadresse.Location = new System.Drawing.Point(42, 345);
-            this.labelEmailadresse.Name = "labelEmailadresse";
-            this.labelEmailadresse.Size = new System.Drawing.Size(69, 13);
-            this.labelEmailadresse.TabIndex = 6;
-            this.labelEmailadresse.Text = "Emailadresse";
+            this.labelViewKundeEmailadresse.AutoSize = true;
+            this.labelViewKundeEmailadresse.Location = new System.Drawing.Point(46, 289);
+            this.labelViewKundeEmailadresse.Name = "labelViewKundeEmailadresse";
+            this.labelViewKundeEmailadresse.Size = new System.Drawing.Size(72, 13);
+            this.labelViewKundeEmailadresse.TabIndex = 6;
+            this.labelViewKundeEmailadresse.Text = "E-mailadresse";
             // 
-            // textBox1
+            // textBoxViewKundeName
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 7;
+            this.textBoxViewKundeName.Location = new System.Drawing.Point(183, 49);
+            this.textBoxViewKundeName.Name = "textBoxViewKundeName";
+            this.textBoxViewKundeName.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeName.TabIndex = 7;
             // 
-            // textBox2
+            // textBoxViewKundeVorname
             // 
-            this.textBox2.Location = new System.Drawing.Point(131, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBoxViewKundeVorname.Location = new System.Drawing.Point(183, 85);
+            this.textBoxViewKundeVorname.Name = "textBoxViewKundeVorname";
+            this.textBoxViewKundeVorname.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeVorname.TabIndex = 8;
             // 
-            // textBox3
+            // textBoxViewKundeStrasse
             // 
-            this.textBox3.Location = new System.Drawing.Point(131, 139);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 20);
-            this.textBox3.TabIndex = 9;
+            this.textBoxViewKundeStrasse.Location = new System.Drawing.Point(183, 129);
+            this.textBoxViewKundeStrasse.Name = "textBoxViewKundeStrasse";
+            this.textBoxViewKundeStrasse.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeStrasse.TabIndex = 9;
             // 
-            // textBox4
+            // textBoxViewKundePostleitzahl
             // 
-            this.textBox4.Location = new System.Drawing.Point(131, 188);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(144, 20);
-            this.textBox4.TabIndex = 10;
+            this.textBoxViewKundePostleitzahl.Location = new System.Drawing.Point(183, 168);
+            this.textBoxViewKundePostleitzahl.Name = "textBoxViewKundePostleitzahl";
+            this.textBoxViewKundePostleitzahl.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundePostleitzahl.TabIndex = 10;
             // 
-            // textBox5
+            // textBoxViewKundeHausnummer
             // 
-            this.textBox5.Location = new System.Drawing.Point(131, 243);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 20);
-            this.textBox5.TabIndex = 11;
+            this.textBoxViewKundeHausnummer.Location = new System.Drawing.Point(183, 199);
+            this.textBoxViewKundeHausnummer.Name = "textBoxViewKundeHausnummer";
+            this.textBoxViewKundeHausnummer.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeHausnummer.TabIndex = 11;
             // 
-            // textBox6
+            // textBoxViewKundeOrt
             // 
-            this.textBox6.Location = new System.Drawing.Point(131, 295);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(144, 20);
-            this.textBox6.TabIndex = 12;
+            this.textBoxViewKundeOrt.Location = new System.Drawing.Point(183, 240);
+            this.textBoxViewKundeOrt.Name = "textBoxViewKundeOrt";
+            this.textBoxViewKundeOrt.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeOrt.TabIndex = 12;
             // 
-            // textBox7
+            // textBoxViewKundeEmailadresse
             // 
-            this.textBox7.Location = new System.Drawing.Point(131, 345);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(144, 20);
-            this.textBox7.TabIndex = 13;
+            this.textBoxViewKundeEmailadresse.Location = new System.Drawing.Point(183, 282);
+            this.textBoxViewKundeEmailadresse.Name = "textBoxViewKundeEmailadresse";
+            this.textBoxViewKundeEmailadresse.Size = new System.Drawing.Size(215, 20);
+            this.textBoxViewKundeEmailadresse.TabIndex = 13;
             // 
-            // buttonAbbrechen
+            // buttonViewKundenAbbrechen
             // 
-            this.buttonAbbrechen.Location = new System.Drawing.Point(84, 422);
-            this.buttonAbbrechen.Name = "buttonAbbrechen";
-            this.buttonAbbrechen.Size = new System.Drawing.Size(75, 23);
-            this.buttonAbbrechen.TabIndex = 14;
-            this.buttonAbbrechen.Text = "Abbrechen";
-            this.buttonAbbrechen.UseVisualStyleBackColor = true;
-            this.buttonAbbrechen.Click += new System.EventHandler(this.buttonAbbrechen_Click);
+            this.buttonViewKundenAbbrechen.Location = new System.Drawing.Point(83, 365);
+            this.buttonViewKundenAbbrechen.Name = "buttonViewKundenAbbrechen";
+            this.buttonViewKundenAbbrechen.Size = new System.Drawing.Size(92, 32);
+            this.buttonViewKundenAbbrechen.TabIndex = 14;
+            this.buttonViewKundenAbbrechen.Text = "Abbrechen";
+            this.buttonViewKundenAbbrechen.UseVisualStyleBackColor = true;
             // 
-            // buttonErstellen
+            // buttonViewKundenBestaetigen
             // 
-            this.buttonErstellen.Location = new System.Drawing.Point(273, 422);
-            this.buttonErstellen.Name = "buttonErstellen";
-            this.buttonErstellen.Size = new System.Drawing.Size(75, 23);
-            this.buttonErstellen.TabIndex = 15;
-            this.buttonErstellen.Text = "Erstellen";
-            this.buttonErstellen.UseVisualStyleBackColor = true;
+            this.buttonViewKundenBestaetigen.Location = new System.Drawing.Point(306, 365);
+            this.buttonViewKundenBestaetigen.Name = "buttonViewKundenBestaetigen";
+            this.buttonViewKundenBestaetigen.Size = new System.Drawing.Size(92, 32);
+            this.buttonViewKundenBestaetigen.TabIndex = 15;
+            this.buttonViewKundenBestaetigen.Text = "bestätigen";
+            this.buttonViewKundenBestaetigen.UseVisualStyleBackColor = true;
+            this.buttonViewKundenBestaetigen.Click += new System.EventHandler(this.buttonViewKundenBestaetigen_Click);
             // 
             // ViewKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 483);
-            this.Controls.Add(this.buttonErstellen);
-            this.Controls.Add(this.buttonAbbrechen);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.labelEmailadresse);
-            this.Controls.Add(this.labelOrt);
-            this.Controls.Add(this.labelPostleitzahl);
-            this.Controls.Add(this.labelHausnummer);
-            this.Controls.Add(this.labelStrasse);
-            this.Controls.Add(this.labelVorname);
-            this.Controls.Add(this.labelName);
+            this.ClientSize = new System.Drawing.Size(473, 450);
+            this.Controls.Add(this.buttonViewKundenBestaetigen);
+            this.Controls.Add(this.buttonViewKundenAbbrechen);
+            this.Controls.Add(this.textBoxViewKundeEmailadresse);
+            this.Controls.Add(this.textBoxViewKundeOrt);
+            this.Controls.Add(this.textBoxViewKundeHausnummer);
+            this.Controls.Add(this.textBoxViewKundePostleitzahl);
+            this.Controls.Add(this.textBoxViewKundeStrasse);
+            this.Controls.Add(this.textBoxViewKundeVorname);
+            this.Controls.Add(this.textBoxViewKundeName);
+            this.Controls.Add(this.labelViewKundeEmailadresse);
+            this.Controls.Add(this.labelViewKundeOrt);
+            this.Controls.Add(this.labelViewKundePostleitzahl);
+            this.Controls.Add(this.labelViewKundeHausnummer);
+            this.Controls.Add(this.labelViewKundeStrasse);
+            this.Controls.Add(this.labelVIewKundenVornamen);
+            this.Controls.Add(this.labelViewKundeName);
             this.Name = "ViewKunde";
             this.Text = "ViewKunde";
             this.ResumeLayout(false);
@@ -208,21 +208,21 @@ namespace HHBK_Chemicals_ERP_CS
 
         #endregion
 
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelVorname;
-        private System.Windows.Forms.Label labelStrasse;
-        private System.Windows.Forms.Label labelHausnummer;
-        private System.Windows.Forms.Label labelPostleitzahl;
-        private System.Windows.Forms.Label labelOrt;
-        private System.Windows.Forms.Label labelEmailadresse;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button buttonAbbrechen;
-        private System.Windows.Forms.Button buttonErstellen;
+        private System.Windows.Forms.Label labelViewKundeName;
+        private System.Windows.Forms.Label labelVIewKundenVornamen;
+        private System.Windows.Forms.Label labelViewKundeStrasse;
+        private System.Windows.Forms.Label labelViewKundeHausnummer;
+        private System.Windows.Forms.Label labelViewKundePostleitzahl;
+        private System.Windows.Forms.Label labelViewKundeOrt;
+        private System.Windows.Forms.Label labelViewKundeEmailadresse;
+        private System.Windows.Forms.TextBox textBoxViewKundeName;
+        private System.Windows.Forms.TextBox textBoxViewKundeVorname;
+        private System.Windows.Forms.TextBox textBoxViewKundeStrasse;
+        private System.Windows.Forms.TextBox textBoxViewKundePostleitzahl;
+        private System.Windows.Forms.TextBox textBoxViewKundeHausnummer;
+        private System.Windows.Forms.TextBox textBoxViewKundeOrt;
+        private System.Windows.Forms.TextBox textBoxViewKundeEmailadresse;
+        private System.Windows.Forms.Button buttonViewKundenAbbrechen;
+        private System.Windows.Forms.Button buttonViewKundenBestaetigen;
     }
 }

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class CToellerPriv : Form
+    public partial class ViewRechnungErstellen : Form, IViewRechnungErstellen
     {
-        public CToellerPriv()
+        public ViewRechnungErstellen()
         {
             InitializeComponent();
+        }
+
+        private void ViewRechnungErstellen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
