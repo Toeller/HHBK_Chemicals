@@ -61,6 +61,16 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="IViewBestellung.cs" />
+    <Compile Include="IViewKunde.cs" />
+    <Compile Include="IViewLagereingang.cs" />
+    <Compile Include="IViewLieferung.cs" />
+    <Compile Include="IViewProduktion.cs" />
+    <Compile Include="IViewProduktverwalten.cs" />
+    <Compile Include="IViewRechnungerstellen.cs" />
+    <Compile Include="IViewReklamation.cs" />
+    <Compile Include="IViewRezeptverwalten.cs" />
+    <Compile Include="IViewZahlungseingangpruefen.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
