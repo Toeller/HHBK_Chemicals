@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IModel
+    interface IViewReklamation
     {
-        //Kunde
-        Kunde GetKunde(int Kundennummer);
-
-        Lieferposition GetLieferposition(int idLieferposition);
-
-
+        IViewReklamation IViewReklamation { set; }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class Mikail_Köse : Form
+    public partial class ViewProduktion : Form
     {
-        public Mikail_Köse()
+        public ViewProduktion()
         {
             InitializeComponent();
         }

@@ -61,19 +61,36 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
-    <Compile Include="CToellerPriv.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CToellerPriv.Designer.cs">
-      <DependentUpon>CToellerPriv.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+    <Compile Include="ControlleKunde.cs" />
+    <Compile Include="ControllerBestellung.cs" />
+    <Compile Include="ControllerLagereingang.cs" />
+    <Compile Include="ControllerLieferung.cs" />
+    <Compile Include="ControllerProduktion.cs" />
+    <Compile Include="ControllerProduktverwalten.cs" />
+    <Compile Include="ControllerRechnungerstellen.cs" />
+    <Compile Include="ControllerReklamation.cs" />
+    <Compile Include="ControllerRezeptverwalten.cs" />
+    <Compile Include="ControllerZahlungseingangpruefen.cs" />
+    <Compile Include="IControllerBestellung.cs" />
+    <Compile Include="IControllerKunde.cs" />
+    <Compile Include="IControllerLagereingang.cs" />
+    <Compile Include="IControllerLieferung.cs" />
+    <Compile Include="IControllerProduktion.cs" />
+    <Compile Include="IControllerProduktverwalten.cs" />
+    <Compile Include="IControllerRechnungerstellen.cs" />
+    <Compile Include="IControllerReklamation.cs" />
+    <Compile Include="IControllerRezeptverwalten.cs" />
+    <Compile Include="IControllerZahlungseingangpruefen.cs" />
+    <Compile Include="IViewBestellung.cs" />
+    <Compile Include="IViewKunde.cs" />
+    <Compile Include="IViewLagereingang.cs" />
+    <Compile Include="IViewLieferung.cs" />
+    <Compile Include="IViewProduktion.cs" />
+    <Compile Include="IViewProduktverwalten.cs" />
+    <Compile Include="IViewRechnungerstellen.cs" />
+    <Compile Include="IViewReklamation.cs" />
+    <Compile Include="IViewRezeptverwalten.cs" />
+    <Compile Include="IViewZahlungseingangpruefen.cs" />
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -83,28 +100,70 @@
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="Lieferung.cs" />
-    <Compile Include="MichailiK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MichailiK.Designer.cs">
-      <DependentUpon>MichailiK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mikail Köse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mikail Köse.Designer.cs">
-      <DependentUpon>Mikail Köse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model.cs" />
-    <Compile Include="Nico_Kuhn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nico_Kuhn.Designer.cs">
-      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="ViewBestellung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBestellung.Designer.cs">
+      <DependentUpon>ViewBestellung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewKunde.Designer.cs">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLagereingang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLagereingang.Designer.cs">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLieferung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLieferung.Designer.cs">
+      <DependentUpon>ViewLieferung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPrdouktverwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPrdouktverwalten.Designer.cs">
+      <DependentUpon>ViewPrdouktverwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduktion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduktion.Designer.cs">
+      <DependentUpon>ViewProduktion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRechnungerstellen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRechnungerstellen.Designer.cs">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReklamation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReklamation.Designer.cs">
+      <DependentUpon>ViewReklamation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRezeptverwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRezeptverwalten.Designer.cs">
+      <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewZahlungseingangpruefen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewZahlungseingangpruefen.Designer.cs">
+      <DependentUpon>ViewZahlungseingangpruefen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </EmbeddedResource>
