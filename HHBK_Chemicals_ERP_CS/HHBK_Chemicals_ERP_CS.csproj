@@ -61,7 +61,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlleKunde.cs" />
+    <Compile Include="ControllerKunde.cs" />
     <Compile Include="ControllerBestellung.cs" />
     <Compile Include="ControllerLagereingang.cs" />
     <Compile Include="ControllerLieferung.cs" />
@@ -81,6 +81,7 @@
     <Compile Include="IControllerReklamation.cs" />
     <Compile Include="IControllerRezeptverwalten.cs" />
     <Compile Include="IControllerZahlungseingangpruefen.cs" />
+    <Compile Include="IModel.cs" />
     <Compile Include="IViewBestellung.cs" />
     <Compile Include="IViewKunde.cs" />
     <Compile Include="IViewLagereingang.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lieferposition.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />

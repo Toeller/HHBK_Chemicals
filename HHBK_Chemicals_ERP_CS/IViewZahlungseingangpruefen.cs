@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewZahlungseingangpruefen
     {
-        IViewZahlungseingangpruefen IViewZahlungseingangpruefen { set; }
+        IModel IModel1 { set; }
+        IControllerZahlungseingangpruefen IControllerZahlungseingangpruefen1 { set; }
     }
 }

@@ -8,7 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerZahlungseingangpruefen : IControllerZahlungseingangpruefen
     {
-        private IControllerZahlungseingangpruefen controllerZahlungseingangpruefen;
-        IControllerZahlungseingangpruefen IControllerZahlungseingangpruefen.IControllerZahlungseingangpruefen { set => this.controllerZahlungseingangpruefen=value; }
+        private IModel model;
+        private IViewZahlungseingangpruefen viewZahlungseingangpruefen;
+        IViewZahlungseingangpruefen IControllerZahlungseingangpruefen.IViewZahlungseingangpruefen1 { set => this.viewZahlungseingangpruefen=value; }
+        IModel IControllerZahlungseingangpruefen.IModel1 { set => this.model=value; }
     }
 }

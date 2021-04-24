@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class ViewProduktion : Form
+    public partial class ViewProduktion : Form, IViewProduktion
     {
+        private IModel model;
+        private IControllerProduktion controllerProduktion;
+        IModel IViewProduktion.IModel1 { set => this.model=value; }
+        IControllerProduktion IViewProduktion.IControllerProduktion1 { set => this.controllerProduktion=value; }
+
         public ViewProduktion()
         {
             InitializeComponent();
         }
+
     }
 }

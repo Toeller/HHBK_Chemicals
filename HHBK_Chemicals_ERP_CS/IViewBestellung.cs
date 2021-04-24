@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewBestellung
     {
-        IViewBestellung IViewBestellung { set; }
+        IModel IModel1 { set; }
+        IControllerBestellung IControllerBestellung1 { set; }
     }
 }

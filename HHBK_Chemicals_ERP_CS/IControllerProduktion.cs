@@ -8,6 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerProduktion
     {
-        IControllerProduktion IControllerProduktion { set; }
+        IModel IModel1 { set; }
+        IViewProduktion IViewProduktion1 { set; }
     }
 }

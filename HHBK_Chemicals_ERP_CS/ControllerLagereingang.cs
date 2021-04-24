@@ -8,7 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerLagereingang : IControllerLagereingang
     {
-        private IControllerLagereingang controllerLagereingang;
-        IControllerLagereingang IControllerLagereingang.IControllerLagereingang { set => this.controllerLagereingang = value; }
+        private IModel model;
+        private IViewLagereingang viewLagereingang;
+        IViewLagereingang IControllerLagereingang.IViewLagereingang1 { set => this.viewLagereingang = value; }
+        IModel IControllerLagereingang.IModel1 { set => this.model=value; }
     }
 }

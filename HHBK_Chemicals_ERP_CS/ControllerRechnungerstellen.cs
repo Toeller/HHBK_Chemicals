@@ -8,7 +8,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     class ControllerRechnungerstellen : IControllerRechnungerstellen
     {
-        private IControllerRechnungerstellen controllerRechnungerstellen;
-        IControllerRechnungerstellen IControllerRechnungerstellen.IControllerRechnungerstellen { set => this.controllerRechnungerstellen = value; }
+        private IModel model;
+        private IViewRechnungerstellen viewRechnungerstellen;
+        IViewRechnungerstellen IControllerRechnungerstellen.IViewRechnungerstellen1 { set => this.viewRechnungerstellen = value; }
+        IModel IControllerRechnungerstellen.IModel1 { set => this.model=value; }
     }
 }
