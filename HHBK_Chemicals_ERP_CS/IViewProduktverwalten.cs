@@ -8,5 +8,6 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewProduktverwalten
     {
+        IViewProduktverwalten IViewProduktverwalten { set; }
     }
 }
