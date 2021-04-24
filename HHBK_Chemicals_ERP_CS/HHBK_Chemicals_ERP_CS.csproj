@@ -71,6 +71,16 @@
     <Compile Include="ControllerReklamation.cs" />
     <Compile Include="ControllerRezeptverwalten.cs" />
     <Compile Include="ControllerZahlungseingangpruefen.cs" />
+    <Compile Include="IControllerBestellung.cs" />
+    <Compile Include="IControllerKunde.cs" />
+    <Compile Include="IControllerLagereingang.cs" />
+    <Compile Include="IControllerLieferung.cs" />
+    <Compile Include="IControllerProduktion.cs" />
+    <Compile Include="IControllerProduktverwalten.cs" />
+    <Compile Include="IControllerRechnungerstellen.cs" />
+    <Compile Include="IControllerReklamation.cs" />
+    <Compile Include="IControllerRezeptverwalten.cs" />
+    <Compile Include="IControllerZahlungseingangpruefen.cs" />
     <Compile Include="IViewBestellung.cs" />
     <Compile Include="IViewKunde.cs" />
     <Compile Include="IViewLagereingang.cs" />
