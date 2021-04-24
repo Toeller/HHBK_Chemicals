@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerRechnungerstellen
+    class ControllerRechnungerstellen : IControllerRechnungerstellen
     {
+        private IControllerRechnungerstellen controllerRechnungerstellen;
+        IControllerRechnungerstellen IControllerRechnungerstellen.IControllerRechnungerstellen { set => this.controllerRechnungerstellen = value; }
     }
 }

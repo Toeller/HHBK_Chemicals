@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerProduktion
+    class ControllerProduktion : IControllerProduktion
     {
+        private IControllerProduktion controllerProduktion;
+        IControllerProduktion IControllerProduktion.IControllerProduktion { set => this.controllerProduktion=value; }
     }
 }

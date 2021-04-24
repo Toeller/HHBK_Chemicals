@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerLagereingang
+    class ControllerLagereingang : IControllerLagereingang
     {
+        private IControllerLagereingang controllerLagereingang;
+        IControllerLagereingang IControllerLagereingang.IControllerLagereingang { set => this.controllerLagereingang = value; }
     }
 }

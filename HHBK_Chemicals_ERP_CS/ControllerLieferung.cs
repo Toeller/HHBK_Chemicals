@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerLieferung
+    class ControllerLieferung:IControllerLieferung
     {
+        private IControllerLieferung controllerLieferung;
+
+        IControllerLieferung IControllerLieferung.IControllerLieferung { set => this.controllerLieferung=value; }
     }
 }

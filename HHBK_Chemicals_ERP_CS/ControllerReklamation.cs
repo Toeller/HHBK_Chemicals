@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerReklamation
+    class ControllerReklamation:IControllerReklamation
     {
+        private IControllerReklamation controllerReklamation;
+
+        IControllerReklamation IControllerReklamation.IControllerReklamation { set => this.controllerReklamation=value; }
     }
 }

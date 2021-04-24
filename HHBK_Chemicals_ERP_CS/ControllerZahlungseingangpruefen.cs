@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerZahlungseingangpruefen
+    class ControllerZahlungseingangpruefen : IControllerZahlungseingangpruefen
     {
+        private IControllerZahlungseingangpruefen controllerZahlungseingangpruefen;
+        IControllerZahlungseingangpruefen IControllerZahlungseingangpruefen.IControllerZahlungseingangpruefen { set => this.controllerZahlungseingangpruefen=value; }
     }
 }

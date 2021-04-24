@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerRezeptverwalten
+    class ControllerRezeptverwalten : IControllerRezeptverwalten
     {
+        private IControllerRezeptverwalten controllerRezeptverwalten;
+        IControllerRezeptverwalten IControllerRezeptverwalten.IControllerRezeptverwalten { set => this.controllerRezeptverwalten=value; }
     }
 }
