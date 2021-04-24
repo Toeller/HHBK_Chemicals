@@ -63,6 +63,15 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="ControllerProduction.cs" />
+    <Compile Include="CToellerPriv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CToellerPriv.Designer.cs">
+      <DependentUpon>CToellerPriv.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="ControlerLagerverwaltung.cs" />
     <Compile Include="ControllerBestellungKunde.cs" />
@@ -71,6 +80,7 @@
     <Compile Include="Controller_Zahlungseingang.cs" />
     <Compile Include="DanielIvezic.cs" />
     <Compile Include="Fatih_Han_Aybirdi.cs" />
+
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +94,9 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
+
+    <Compile Include="IControllerProduction.cs" />
+
 
     <Compile Include="IViewLagereingang.cs" />
 
@@ -110,6 +123,7 @@
     <Compile Include="JonasKersten.cs" />
     <Compile Include="KevinMelzer.cs" />
     <Compile Include="koeper.cs" />
+
 
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
