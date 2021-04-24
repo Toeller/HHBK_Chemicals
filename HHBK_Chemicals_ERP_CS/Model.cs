@@ -76,6 +76,7 @@ namespace HHBK_Chemicals_ERP_CS
             }
             //Datenbank -> Kunde holen
             Kunde kunde1 = null;
+            
             //return kunde1;
         }
     }

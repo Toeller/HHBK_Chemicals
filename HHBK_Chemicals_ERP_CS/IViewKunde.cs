@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IModel
+    interface IViewKunde
     {
-        bool Zahlungseingang(Zahlungseingang zahlungseingang);
+        IViewKunde IViewKunde { set; }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IModel
+    class ControllerLagereingang
     {
-        bool Zahlungseingang(Zahlungseingang zahlungseingang);
+        
     }
 }
