@@ -9,9 +9,14 @@ namespace HHBK_Chemicals_ERP_CS
     class ControllerBestellungKunde
     {
         
-        public int Bestellungsnummer;                                                    //variable für die Bestellnummer
-        public int Menge;                                                                //variable für die Betstellungsmenge
-        public int Bestellpositionsnummer;                                               //variable für die Bestellungpositionsnummer
+        public int bestellungsnummer;                                                    //variable für die Bestellnummer
+        public int menge;                                                                //variable für die Betstellungsmenge
+        public int bestellpositionsnummer;                                               //variable für die Bestellungpositionsnummer
+        public DateTime bestelldatum;
+        public int artikelnummer;
+        public int  kundennummer;
+        public int idLieferposition;
+
 
 
         public void Speicher_Bestellungsnummer()                                         // Methode zur Speicherung  der Bestellungsnummer
@@ -34,6 +39,9 @@ namespace HHBK_Chemicals_ERP_CS
 
         }
 
-
+        public void Speicher_Bestelldatum() 
+        { 
+        
+        }
     }
 }

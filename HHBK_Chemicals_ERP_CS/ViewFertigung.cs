@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class CToellerPriv : Form
+    public partial class ViewFertigung : Form
     {
-        public CToellerPriv()
+        public ViewFertigung()
         {
             InitializeComponent();
         }

@@ -1,6 +1,7 @@
-﻿namespace HHBK_Chemicals_ERP_CS
+﻿
+namespace HHBK_Chemicals_ERP_CS
 {
-    partial class CToellerPriv
+    partial class Zahlungseingang_Truger
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +32,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "CToellerPriv";
+            this.Text = "Zahlungseingang_Truger";
         }
 
         #endregion

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IModel
+    class Produktionsplan
     {
-        bool Zahlungseingang(Zahlungseingang zahlungseingang);
+        private int produktionsplannummer;
+        private DateTime startsoll;
+        private DateTime startist;
+         
+        
+
     }
 }
