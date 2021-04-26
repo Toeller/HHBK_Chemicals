@@ -12,12 +12,14 @@ namespace HHBK_Chemicals_ERP_CS
     private bool y;
     private string antwort;
     private string reklamation;
+        private int kundenID;
         IViewReklamation iView;
         IModel iModel;
 
     string IControlerReklamation.Reklamation { get => reklamation; set => reklamation = value; }
         IViewReklamation IControlerReklamation.IView { get => iView; set => iView = value; }
         IModel IControlerReklamation.IModel { get => iModel; set => iModel = value; }
+        int IControlerReklamation.KundenID { get => kundenID; set => kundenID = value; }
 
         bool IControlerReklamation.BestelldatenVerifiezieren()
     {
