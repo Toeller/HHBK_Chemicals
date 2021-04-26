@@ -84,7 +84,7 @@ namespace HHBK_Chemicals_ERP_CS
             controllerZahlungseingangpruefen.IModel1 = model;
 
 
-            //Application.Run(new Form1());
+            Application.Run((Form)viewBestellung);
         }
     }
 }
