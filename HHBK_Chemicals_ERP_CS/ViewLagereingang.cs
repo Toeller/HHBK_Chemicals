@@ -16,7 +16,7 @@ namespace HHBK_Chemicals_ERP_CS
         private IControllerLagereingang controllerLagereingang;
 
         IModel IViewLagereingang.IModel1 { set => this.model = value; }
-        IControllerLagereingang IViewLagereingang.IControllerLagereingang1 { set => throw new NotImplementedException(); }
+        IControllerLagereingang IViewLagereingang.IControllerLagereingang1 { set => this.controllerLagereingang=value; }
 
         public ViewLagereingang()
         {

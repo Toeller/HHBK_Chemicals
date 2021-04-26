@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class ViewPrdouktverwalten : Form, IViewProduktverwalten
+    public partial class ViewProduktverwalten : Form, IViewProduktverwalten
     {
         private IControllerProduktverwalten controllerProduktverwalten;
         private IModel model;
-        public ViewPrdouktverwalten()
+        public ViewProduktverwalten()
         {
             InitializeComponent();
         }

@@ -14,8 +14,8 @@ namespace HHBK_Chemicals_ERP_CS
     {
         private IModel model;
         private IControllerKunde controllerKunde;
-        IModel IViewKunde.IModel1 { set => throw new NotImplementedException(); }
-        IControllerKunde IViewKunde.IControllerKunde1 { set => throw new NotImplementedException(); }
+        IModel IViewKunde.IModel1 { set => this.model=value; }
+        IControllerKunde IViewKunde.IControllerKunde1 { set => this.controllerKunde=value; }
 
         public ViewKunde()
         {
