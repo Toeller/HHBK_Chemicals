@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="Lieferposition.cs" />
     <Compile Include="Lieferung.cs" />
+    <Compile Include="Löschmich.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
