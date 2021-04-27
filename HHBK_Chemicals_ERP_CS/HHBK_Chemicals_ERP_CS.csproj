@@ -110,6 +110,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="UserControlKunde.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlKunde.Designer.cs">
+      <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,8 +201,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlKunde.resx">
+      <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlTest.resx">
       <DependentUpon>UserControlTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewProduktverwalten.resx">
       <DependentUpon>ViewProduktverwalten.cs</DependentUpon>
