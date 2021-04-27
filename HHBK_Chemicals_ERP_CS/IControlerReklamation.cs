@@ -11,8 +11,8 @@ namespace HHBK_Chemicals_ERP_CS
         IViewReklamation IView { get; set; }
 
         IModel IModel { get; set; }
-        string Reklamation { get; set; }
-        int KundenID { get; set; }
+        string ReklamationsGrund { get; set; }
+        void Datenspeichern();
         void ReklamationsgrundSpeichern(string a);
 
         bool BestelldatenVerifiezieren();
@@ -21,5 +21,11 @@ namespace HHBK_Chemicals_ERP_CS
         string ReklamationErstellen();
         string Kundendatenladen();
         string Bestelldatenladen();
+
+        string AntwortAI();
+        int Kundennummer { get; set; }
+
+        int Bestellnummer { get; set; }
+
     }
 }
