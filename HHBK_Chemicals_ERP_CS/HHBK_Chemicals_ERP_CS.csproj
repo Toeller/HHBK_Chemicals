@@ -110,11 +110,23 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
+    <Compile Include="UserControlBestellung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBestellung.Designer.cs">
+      <DependentUpon>UserControlBestellung.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlKunde.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlKunde.Designer.cs">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProduktVerwalten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProduktVerwalten.Designer.cs">
+      <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlTest.cs">
       <SubType>UserControl</SubType>
@@ -201,8 +213,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlBestellung.resx">
+      <DependentUpon>UserControlBestellung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlKunde.resx">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProduktVerwalten.resx">
+      <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlTest.resx">
       <DependentUpon>UserControlTest.cs</DependentUpon>

@@ -29,7 +29,8 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage10.Text = "Zahlungseingangprüfen";
 
             this.tabPage2.Controls.Add(new UserControlKunde());
-            
+            this.tabPage6.Controls.Add(new UserControlProduktVerwalten());
+            this.tabPage1.Controls.Add(new UserControlBestellung());
 
         }
 
