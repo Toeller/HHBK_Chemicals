@@ -61,6 +61,7 @@
     <Compile Include="Bestellungsverwaltung.Designer.cs">
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller.cs" />
     <Compile Include="ControllerKunde.cs" />
     <Compile Include="ControllerBestellung.cs" />
     <Compile Include="ControllerLagereingang.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="ControllerReklamation.cs" />
     <Compile Include="ControllerRezeptverwalten.cs" />
     <Compile Include="ControllerZahlungseingangpruefen.cs" />
+    <Compile Include="IController.cs" />
     <Compile Include="IControllerBestellung.cs" />
     <Compile Include="IControllerKunde.cs" />
     <Compile Include="IControllerLagereingang.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="IControllerRezeptverwalten.cs" />
     <Compile Include="IControllerZahlungseingangpruefen.cs" />
     <Compile Include="IModel.cs" />
+    <Compile Include="IView.cs" />
     <Compile Include="IViewBestellung.cs" />
     <Compile Include="IViewKunde.cs" />
     <Compile Include="IViewLagereingang.cs" />
@@ -112,6 +115,12 @@
     </Compile>
     <Compile Include="UserControlTest.Designer.cs">
       <DependentUpon>UserControlTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewBestellung.cs">
       <SubType>Form</SubType>

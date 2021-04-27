@@ -18,7 +18,8 @@ namespace HHBK_Chemicals_ERP_CS
             Application.SetCompatibleTextRenderingDefault(false);
 
             IModel model = new Model();
-            
+
+            IView view = new View();
             IViewBestellung viewBestellung = new ViewBestellung();
             IViewKunde viewKunde = new ViewKunde();
             IViewLagereingang viewLagereingang = new ViewLagereingang();
@@ -30,6 +31,7 @@ namespace HHBK_Chemicals_ERP_CS
             IViewRezeptverwalten viewRezeptverwalten = new ViewRezeptverwalten();
             IViewZahlungseingangpruefen viewZahlungseingangpruefen = new ViewZahlungseingangpruefen();
 
+            IController controller = new Controller();
             IControllerBestellung controllerBestellung = new ControllerBestellung();
             IControllerKunde controllerKunde = new ControllerKunde();
             IControllerLagereingang controllerLagereingang = new ControllerLagereingang();
@@ -41,6 +43,8 @@ namespace HHBK_Chemicals_ERP_CS
             IControllerRezeptverwalten controllerRezeptverwalten = new ControllerRezeptverwalten();
             IControllerZahlungseingangpruefen controllerZahlungseingangpruefen = new ControllerZahlungseingangpruefen();
 
+            view.IController1 = controller;
+            view.IModel1 = model;
             viewBestellung.IControllerBestellung1 = controllerBestellung;
             viewBestellung.IModel1 = model;
             viewKunde.IControllerKunde1 = controllerKunde;
@@ -62,6 +66,8 @@ namespace HHBK_Chemicals_ERP_CS
             viewZahlungseingangpruefen.IControllerZahlungseingangpruefen1 = controllerZahlungseingangpruefen;
             viewZahlungseingangpruefen.IModel1 = model;
 
+            controller.IView1 = view;
+            controller.IModel1 = model;
             controllerBestellung.IViewBestellung1 = viewBestellung;
             controllerBestellung.IModel1 = model;
             controllerKunde.IViewKunde1 = viewKunde;
@@ -84,7 +90,7 @@ namespace HHBK_Chemicals_ERP_CS
             controllerZahlungseingangpruefen.IModel1 = model;
 
 
-            Application.Run((Form)viewBestellung);
+            Application.Run((Form)view);
         }
     }
 }
