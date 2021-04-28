@@ -16,5 +16,24 @@ namespace HHBK_Chemicals_ERP_CS
         {
             InitializeComponent();
         }
+
+        private void buttonNeu_Click(object sender, EventArgs e)
+        {
+            comboBoxArtikelname.Items.Clear();
+            comboBoxArtikelnummer.Items.Clear();
+            textBoxVerkaufseinheit.Text = "";
+            textBoxEinheit.Text = "";
+            textBoxPreisVK.Text = "";
+        }
+
+        private void buttonAendern_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonLoeschen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
