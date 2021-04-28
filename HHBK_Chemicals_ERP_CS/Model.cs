@@ -107,17 +107,65 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
-        void IModel.bestellungSpeichern(List<Bestellposition> bestellung)
+
+        void IModel.aendern(Kunde kunde)
         {
             throw new NotImplementedException();
         }
 
-        Kunde IModel.GetKunde(int Kundennummer)
+        void IModel.aendern(Produkt produkt)
         {
             throw new NotImplementedException();
         }
+
+        void IModel.createDB()
+        {
+            throw new NotImplementedException();
+        }
+
+        
 
         Lieferposition IModel.GetLieferposition(int idLieferposition)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.loeschen(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.loeschen(Produkt produkt)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.speichern(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.speichern(Produkt produkt)
+        {
+            throw new NotImplementedException();
+        }
+
+        Kunde IModel.sucheKunde(int kundennummer)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Kunde> IModel.sucheKunde()
+        {
+            throw new NotImplementedException();
+        }
+
+        Produkt IModel.suchenProdukt(int artikelnummer)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Produkt> IModel.sucheProdukt()
         {
             throw new NotImplementedException();
         }

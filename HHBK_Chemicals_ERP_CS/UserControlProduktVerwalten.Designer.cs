@@ -30,18 +30,20 @@ namespace HHBK_Chemicals_ERP_CS
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxArtikelnummer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxArtikelname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxVerkaufseinheit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxEinheit = new System.Windows.Forms.TextBox();
             this.textBoxPreisVK = new System.Windows.Forms.TextBox();
-            this.buttonLoeschen = new System.Windows.Forms.Button();
-            this.buttonAendern = new System.Windows.Forms.Button();
+
             this.buttonNeu = new System.Windows.Forms.Button();
+            this.buttonAendern = new System.Windows.Forms.Button();
+            this.buttonLoeschen = new System.Windows.Forms.Button();
+            this.comboBoxArtikelnummer = new System.Windows.Forms.ComboBox();
+            this.comboBoxArtikelname = new System.Windows.Forms.ComboBox();
+
             this.SuspendLayout();
             // 
             // label1
@@ -53,13 +55,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.label1.TabIndex = 0;
             this.label1.Text = "Artikelnummer";
             // 
-            // textBoxArtikelnummer
-            // 
-            this.textBoxArtikelnummer.Location = new System.Drawing.Point(102, 4);
-            this.textBoxArtikelnummer.Name = "textBoxArtikelnummer";
-            this.textBoxArtikelnummer.Size = new System.Drawing.Size(141, 20);
-            this.textBoxArtikelnummer.TabIndex = 1;
-            // 
+
             // label2
             // 
             this.label2.AutoSize = true;
@@ -69,13 +65,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.label2.TabIndex = 2;
             this.label2.Text = "Artikelname";
             // 
-            // textBoxArtikelname
-            // 
-            this.textBoxArtikelname.Location = new System.Drawing.Point(102, 30);
-            this.textBoxArtikelname.Name = "textBoxArtikelname";
-            this.textBoxArtikelname.Size = new System.Drawing.Size(141, 20);
-            this.textBoxArtikelname.TabIndex = 3;
-            // 
+
             // label3
             // 
             this.label3.AutoSize = true;
@@ -89,7 +79,9 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxVerkaufseinheit.Location = new System.Drawing.Point(102, 56);
             this.textBoxVerkaufseinheit.Name = "textBoxVerkaufseinheit";
-            this.textBoxVerkaufseinheit.Size = new System.Drawing.Size(141, 20);
+
+            this.textBoxVerkaufseinheit.Size = new System.Drawing.Size(156, 20);
+
             this.textBoxVerkaufseinheit.TabIndex = 5;
             // 
             // label4
@@ -114,15 +106,65 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxEinheit.Location = new System.Drawing.Point(102, 82);
             this.textBoxEinheit.Name = "textBoxEinheit";
-            this.textBoxEinheit.Size = new System.Drawing.Size(141, 20);
+
+            this.textBoxEinheit.Size = new System.Drawing.Size(156, 20);
+
             this.textBoxEinheit.TabIndex = 8;
             // 
             // textBoxPreisVK
             // 
             this.textBoxPreisVK.Location = new System.Drawing.Point(102, 109);
             this.textBoxPreisVK.Name = "textBoxPreisVK";
-            this.textBoxPreisVK.Size = new System.Drawing.Size(141, 20);
+
+            this.textBoxPreisVK.Size = new System.Drawing.Size(156, 20);
             this.textBoxPreisVK.TabIndex = 9;
+            // 
+            // buttonNeu
+            // 
+            this.buttonNeu.Location = new System.Drawing.Point(6, 144);
+            this.buttonNeu.Name = "buttonNeu";
+            this.buttonNeu.Size = new System.Drawing.Size(75, 23);
+            this.buttonNeu.TabIndex = 10;
+            this.buttonNeu.Text = "neu";
+            this.buttonNeu.UseVisualStyleBackColor = true;
+            this.buttonNeu.Click += new System.EventHandler(this.buttonNeu_Click);
+            // 
+            // buttonAendern
+            // 
+            this.buttonAendern.Location = new System.Drawing.Point(102, 144);
+            this.buttonAendern.Name = "buttonAendern";
+            this.buttonAendern.Size = new System.Drawing.Size(156, 23);
+            this.buttonAendern.TabIndex = 12;
+            this.buttonAendern.Text = "speichern/ändern";
+            this.buttonAendern.UseVisualStyleBackColor = true;
+            this.buttonAendern.Click += new System.EventHandler(this.buttonAendern_Click);
+            // 
+            // buttonLoeschen
+            // 
+            this.buttonLoeschen.Location = new System.Drawing.Point(278, 144);
+            this.buttonLoeschen.Name = "buttonLoeschen";
+            this.buttonLoeschen.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoeschen.TabIndex = 13;
+            this.buttonLoeschen.Text = "löschen";
+            this.buttonLoeschen.UseVisualStyleBackColor = true;
+            this.buttonLoeschen.Click += new System.EventHandler(this.buttonLoeschen_Click);
+            // 
+            // comboBoxArtikelnummer
+            // 
+            this.comboBoxArtikelnummer.FormattingEnabled = true;
+            this.comboBoxArtikelnummer.Location = new System.Drawing.Point(102, 4);
+            this.comboBoxArtikelnummer.Name = "comboBoxArtikelnummer";
+            this.comboBoxArtikelnummer.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxArtikelnummer.TabIndex = 14;
+            // 
+            // comboBoxArtikelname
+            // 
+            this.comboBoxArtikelname.FormattingEnabled = true;
+            this.comboBoxArtikelname.Location = new System.Drawing.Point(102, 30);
+            this.comboBoxArtikelname.Name = "comboBoxArtikelname";
+            this.comboBoxArtikelname.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxArtikelname.TabIndex = 15;
+
             // 
             // buttonLoeschen
             // 
@@ -150,26 +192,31 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonNeu.TabIndex = 12;
             this.buttonNeu.Text = "neu";
             this.buttonNeu.UseVisualStyleBackColor = true;
+
             // 
             // UserControlProduktVerwalten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.buttonNeu);
-            this.Controls.Add(this.buttonAendern);
+
+            this.Controls.Add(this.comboBoxArtikelname);
+            this.Controls.Add(this.comboBoxArtikelnummer);
             this.Controls.Add(this.buttonLoeschen);
+            this.Controls.Add(this.buttonAendern);
+            this.Controls.Add(this.buttonNeu);
+
             this.Controls.Add(this.textBoxPreisVK);
             this.Controls.Add(this.textBoxEinheit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxVerkaufseinheit);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxArtikelname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxArtikelnummer);
             this.Controls.Add(this.label1);
             this.Name = "UserControlProduktVerwalten";
+
             this.Size = new System.Drawing.Size(261, 196);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,17 +225,19 @@ namespace HHBK_Chemicals_ERP_CS
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxArtikelnummer;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxArtikelname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxVerkaufseinheit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxEinheit;
         private System.Windows.Forms.TextBox textBoxPreisVK;
-        private System.Windows.Forms.Button buttonLoeschen;
-        private System.Windows.Forms.Button buttonAendern;
+
         private System.Windows.Forms.Button buttonNeu;
+        private System.Windows.Forms.Button buttonAendern;
+        private System.Windows.Forms.Button buttonLoeschen;
+        private System.Windows.Forms.ComboBox comboBoxArtikelnummer;
+        private System.Windows.Forms.ComboBox comboBoxArtikelname;
+
     }
 }

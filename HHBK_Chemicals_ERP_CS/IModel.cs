@@ -32,12 +32,24 @@ namespace HHBK_Chemicals_ERP_CS
         IControllerReklamation IControllerReklamation1 { set; }
         IControllerKunde IControllerKunde1 { set; }
 
-        //Kunde
-        Kunde GetKunde(int Kundennummer);
+        void createDB();
 
         Lieferposition GetLieferposition(int idLieferposition);
 
+
+        void speichern(Kunde kunde);
+        void speichern(Produkt produkt);
+        void aendern(Kunde kunde);
+        void aendern(Produkt produkt);
+        void loeschen(Kunde kunde);
+        void loeschen(Produkt produkt);
+        Kunde sucheKunde(int kundennummer);
+        List<Kunde> sucheKunde();
+        Produkt suchenProdukt(int artikelnummer);
+        List<Produkt> sucheProdukt();
+
         void bestellungSpeichern(List<Bestellposition> bestellung);
+
 
 
     }
