@@ -20,10 +20,14 @@ namespace HHBK_Chemicals_ERP_CS
             IForm1 view = new Form1();
             IController1 controller = new Controller1();
             IModel model = new Model();
+
+            IControlerReklamation controlerReklamation = new ControlerReklamation();
+
             //Bestellung
             IController_Bestellung controller_Bestellung = new ControllerBestellung();
             controller_Bestellung.Model = (Model)model;
             //controller_Bestellung.View_Bestellung = (View_Bestellung)view_Bestellung;
+
 
             model.IView = view;
             model.IController1 = controller;
@@ -36,6 +40,8 @@ namespace HHBK_Chemicals_ERP_CS
             controller.IModel = model;
             controller.IForm1 = view;
 
+            controlerReklamation.IModel = model;
+            controlerReklamation.IView = viewReklamation;
 
 
 
