@@ -118,6 +118,11 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
+        void IModel.bestellungSpeichern(List<Bestellposition> bestellung)
+        {
+            throw new NotImplementedException();
+        }
+
         void IModel.createDB()
         {
             throw new NotImplementedException();
