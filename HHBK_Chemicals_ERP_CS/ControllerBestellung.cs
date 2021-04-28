@@ -13,5 +13,10 @@ namespace HHBK_Chemicals_ERP_CS
 
         IViewBestellung IControllerBestellung.IViewBestellung1 { set => this.viewBestellung=value; }
         IModel IControllerBestellung.IModel1 { set => this.model=value; }
+
+        void IControllerBestellung.bestellungSpeichern(List<Bestellposition> bestellung)
+        {
+            model.bestellungSpeichern(bestellung);
+        }
     }
 }

@@ -31,7 +31,9 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage2.Controls.Add(new UserControlKunde());
             this.tabPage6.Controls.Add(new UserControlProduktVerwalten());
             this.tabPage1.Controls.Add(new UserControlBestellung());
-
+            this.tabPage3.Controls.Add(new UserControlLagereingang());
+            this.tabPage4.Controls.Add(new UserControlLieferung());
+            this.tabPage5.Controls.Add(new UserControlProduktion());
         }
 
         IModel IView.IModel1 { set => this.model=value; }

@@ -107,6 +107,7 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
+
         void IModel.aendern(Kunde kunde)
         {
             throw new NotImplementedException();

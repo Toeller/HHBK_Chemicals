@@ -36,6 +36,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         Lieferposition GetLieferposition(int idLieferposition);
 
+
         void speichern(Kunde kunde);
         void speichern(Produkt produkt);
         void aendern(Kunde kunde);
@@ -46,6 +47,10 @@ namespace HHBK_Chemicals_ERP_CS
         List<Kunde> sucheKunde();
         Produkt suchenProdukt(int artikelnummer);
         List<Produkt> sucheProdukt();
+
+        void bestellungSpeichern(List<Bestellposition> bestellung);
+
+
 
     }
 }

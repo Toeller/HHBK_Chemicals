@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bestellposition.cs" />
     <Compile Include="Bestellung.cs" />
     <Compile Include="BestellungKunde.cs">
       <SubType>Form</SubType>
@@ -122,6 +123,24 @@
     </Compile>
     <Compile Include="UserControlKunde.Designer.cs">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlLagereingang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLagereingang.Designer.cs">
+      <DependentUpon>UserControlLagereingang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlLieferung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLieferung.Designer.cs">
+      <DependentUpon>UserControlLieferung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProduktion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProduktion.Designer.cs">
+      <DependentUpon>UserControlProduktion.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlProduktVerwalten.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +238,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlKunde.resx">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLagereingang.resx">
+      <DependentUpon>UserControlLagereingang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLieferung.resx">
+      <DependentUpon>UserControlLieferung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProduktion.resx">
+      <DependentUpon>UserControlProduktion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduktVerwalten.resx">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
