@@ -39,6 +39,9 @@ namespace HHBK_Chemicals_ERP_CS
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxEinheit = new System.Windows.Forms.TextBox();
             this.textBoxPreisVK = new System.Windows.Forms.TextBox();
+            this.buttonLoeschen = new System.Windows.Forms.Button();
+            this.buttonAendern = new System.Windows.Forms.Button();
+            this.buttonNeu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +57,7 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxArtikelnummer.Location = new System.Drawing.Point(102, 4);
             this.textBoxArtikelnummer.Name = "textBoxArtikelnummer";
-            this.textBoxArtikelnummer.Size = new System.Drawing.Size(100, 20);
+            this.textBoxArtikelnummer.Size = new System.Drawing.Size(141, 20);
             this.textBoxArtikelnummer.TabIndex = 1;
             // 
             // label2
@@ -70,7 +73,7 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxArtikelname.Location = new System.Drawing.Point(102, 30);
             this.textBoxArtikelname.Name = "textBoxArtikelname";
-            this.textBoxArtikelname.Size = new System.Drawing.Size(100, 20);
+            this.textBoxArtikelname.Size = new System.Drawing.Size(141, 20);
             this.textBoxArtikelname.TabIndex = 3;
             // 
             // label3
@@ -86,7 +89,7 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxVerkaufseinheit.Location = new System.Drawing.Point(102, 56);
             this.textBoxVerkaufseinheit.Name = "textBoxVerkaufseinheit";
-            this.textBoxVerkaufseinheit.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVerkaufseinheit.Size = new System.Drawing.Size(141, 20);
             this.textBoxVerkaufseinheit.TabIndex = 5;
             // 
             // label4
@@ -111,20 +114,50 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             this.textBoxEinheit.Location = new System.Drawing.Point(102, 82);
             this.textBoxEinheit.Name = "textBoxEinheit";
-            this.textBoxEinheit.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEinheit.Size = new System.Drawing.Size(141, 20);
             this.textBoxEinheit.TabIndex = 8;
             // 
             // textBoxPreisVK
             // 
             this.textBoxPreisVK.Location = new System.Drawing.Point(102, 109);
             this.textBoxPreisVK.Name = "textBoxPreisVK";
-            this.textBoxPreisVK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPreisVK.Size = new System.Drawing.Size(141, 20);
             this.textBoxPreisVK.TabIndex = 9;
+            // 
+            // buttonLoeschen
+            // 
+            this.buttonLoeschen.Location = new System.Drawing.Point(6, 156);
+            this.buttonLoeschen.Name = "buttonLoeschen";
+            this.buttonLoeschen.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoeschen.TabIndex = 10;
+            this.buttonLoeschen.Text = "löschen";
+            this.buttonLoeschen.UseVisualStyleBackColor = true;
+            // 
+            // buttonAendern
+            // 
+            this.buttonAendern.Location = new System.Drawing.Point(87, 156);
+            this.buttonAendern.Name = "buttonAendern";
+            this.buttonAendern.Size = new System.Drawing.Size(75, 23);
+            this.buttonAendern.TabIndex = 11;
+            this.buttonAendern.Text = "ändern";
+            this.buttonAendern.UseVisualStyleBackColor = true;
+            // 
+            // buttonNeu
+            // 
+            this.buttonNeu.Location = new System.Drawing.Point(168, 156);
+            this.buttonNeu.Name = "buttonNeu";
+            this.buttonNeu.Size = new System.Drawing.Size(75, 23);
+            this.buttonNeu.TabIndex = 12;
+            this.buttonNeu.Text = "neu";
+            this.buttonNeu.UseVisualStyleBackColor = true;
             // 
             // UserControlProduktVerwalten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonNeu);
+            this.Controls.Add(this.buttonAendern);
+            this.Controls.Add(this.buttonLoeschen);
             this.Controls.Add(this.textBoxPreisVK);
             this.Controls.Add(this.textBoxEinheit);
             this.Controls.Add(this.label5);
@@ -136,7 +169,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.Controls.Add(this.textBoxArtikelnummer);
             this.Controls.Add(this.label1);
             this.Name = "UserControlProduktVerwalten";
-            this.Size = new System.Drawing.Size(207, 138);
+            this.Size = new System.Drawing.Size(261, 196);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +187,8 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxEinheit;
         private System.Windows.Forms.TextBox textBoxPreisVK;
+        private System.Windows.Forms.Button buttonLoeschen;
+        private System.Windows.Forms.Button buttonAendern;
+        private System.Windows.Forms.Button buttonNeu;
     }
 }
