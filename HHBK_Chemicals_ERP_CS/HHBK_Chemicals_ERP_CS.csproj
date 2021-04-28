@@ -119,6 +119,7 @@
     <Compile Include="IControlerReklamation.cs" />
     <Compile Include="IControllerBestellung.cs" />
     <Compile Include="IController1.cs" />
+    <Compile Include="IControllerLagereingang.cs" />
     <Compile Include="IForm1.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IProduktionsplan.cs" />
