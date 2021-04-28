@@ -108,7 +108,7 @@
     </Compile>
     <Compile Include="ControlerReklamation.cs" />
     <Compile Include="Controller1.cs" />
-    <Compile Include="ControllerBestellung.cs" />
+    <Compile Include="Controller Bestellung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,7 +117,7 @@
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
     <Compile Include="IControlerReklamation.cs" />
-    <Compile Include="IController Bestellung.cs" />
+    <Compile Include="IControllerBestellung.cs" />
     <Compile Include="IController1.cs" />
     <Compile Include="IControllerLagereingang.cs" />
     <Compile Include="IForm1.cs" />
