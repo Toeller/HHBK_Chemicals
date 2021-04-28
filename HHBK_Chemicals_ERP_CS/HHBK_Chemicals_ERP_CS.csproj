@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bestellposition.cs" />
     <Compile Include="Bestellung.cs" />
     <Compile Include="BestellungKunde.cs">
       <SubType>Form</SubType>

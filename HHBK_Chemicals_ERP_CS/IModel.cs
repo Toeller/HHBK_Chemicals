@@ -37,6 +37,8 @@ namespace HHBK_Chemicals_ERP_CS
 
         Lieferposition GetLieferposition(int idLieferposition);
 
+        void bestellungSpeichern(List<Bestellposition> bestellung);
+
 
     }
 }

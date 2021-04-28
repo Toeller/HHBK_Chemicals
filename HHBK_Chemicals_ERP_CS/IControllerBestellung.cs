@@ -10,5 +10,7 @@ namespace HHBK_Chemicals_ERP_CS
     {
         IModel IModel1 { set; }
         IViewBestellung IViewBestellung1 { set; }
+
+        void bestellungSpeichern(List<Bestellposition> bestellung);
     }
 }

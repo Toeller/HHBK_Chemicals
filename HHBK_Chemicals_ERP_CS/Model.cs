@@ -107,6 +107,11 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
+        void IModel.bestellungSpeichern(List<Bestellposition> bestellung)
+        {
+            throw new NotImplementedException();
+        }
+
         Kunde IModel.GetKunde(int Kundennummer)
         {
             throw new NotImplementedException();
