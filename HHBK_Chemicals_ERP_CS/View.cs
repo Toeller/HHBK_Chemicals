@@ -28,15 +28,30 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage9.Text = "Rezeptverwaltung";
             this.tabPage10.Text = "Zahlungseingangprüfen";
 
+            UserControlProduktion ucProduktion = new UserControlProduktion();
             this.tabPage2.Controls.Add(new UserControlKunde());
             this.tabPage6.Controls.Add(new UserControlProduktVerwalten());
             this.tabPage1.Controls.Add(new UserControlBestellung());
             this.tabPage3.Controls.Add(new UserControlLagereingang());
             this.tabPage4.Controls.Add(new UserControlLieferung());
-            this.tabPage5.Controls.Add(new UserControlProduktion());
+            this.tabPage5.Controls.Add(ucProduktion);
+            ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
         }
 
         IModel IView.IModel1 { set => this.model=value; }
         IController IView.IController1 { set => this.controller=value; }
+
+        void onProduktionFreigegeben(object sender, EventArgs e)
+        {
+            MessageBox.Show("Produktion Freigegeben");
+        }
+
+        public event EventHandler ViewProduktionFreigegeben;
+
+        protected virtual void OnViewProduktionFreigegeben(EventArgs e)
+        {
+            EventHandler handler = ViewProduktionFreigegeben;
+            handler?.Invoke(this, e);
+        }
     }
 }

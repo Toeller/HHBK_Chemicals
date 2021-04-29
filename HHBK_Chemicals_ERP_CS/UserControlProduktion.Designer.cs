@@ -180,6 +180,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonProduktionsfreigabe.TabIndex = 14;
             this.buttonProduktionsfreigabe.Text = "Produktionsfreigabe";
             this.buttonProduktionsfreigabe.UseVisualStyleBackColor = true;
+            this.buttonProduktionsfreigabe.Click += new System.EventHandler(this.buttonProduktionsfreigabe_Click);
             // 
             // label8
             // 

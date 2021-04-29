@@ -10,7 +10,13 @@ namespace HHBK_Chemicals_ERP_CS
     {
         private IModel model;
         private IView view;
-        IModel IController.IModel1 { set => this.model=value; }
-        IView IController.IView1 { set => this.view=value; }
+        IModel IController.IModel1 { set => this.model = value; }
+        IView IController.IView1 { set => this.view = value; }
+
+        View(view).ViewProduktionFreigegeben += onProduktionFreigegeben;
+        private void doStuff(){
+        //View(this.view).
+        
+        }
     }
 }

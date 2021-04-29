@@ -16,5 +16,18 @@ namespace HHBK_Chemicals_ERP_CS
         {
             InitializeComponent();
         }
+
+        public event EventHandler ProduktionFreigegeben;
+
+        protected virtual void OnProduktionFreigegeben(EventArgs e)
+        {
+            EventHandler handler = ProduktionFreigegeben;
+            handler?.Invoke(this, e);
+        }
+
+        private void buttonProduktionsfreigabe_Click(object sender, EventArgs e)
+        {
+            OnProduktionFreigegeben(e);
+        }
     }
 }
