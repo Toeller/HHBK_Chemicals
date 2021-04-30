@@ -133,12 +133,6 @@
     <Compile Include="Julian.Designer.cs">
       <DependentUpon>Julian.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kristof.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kristof.Designer.cs">
-      <DependentUpon>Kristof.cs</DependentUpon>
-    </Compile>
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -200,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Julian.resx">
       <DependentUpon>Julian.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kristof.resx">
-      <DependentUpon>Kristof.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
