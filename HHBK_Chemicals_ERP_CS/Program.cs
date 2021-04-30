@@ -25,8 +25,8 @@ namespace HHBK_Chemicals_ERP_CS
 
             //Bestellung
             IController_Bestellung controller_Bestellung = new ControllerBestellung();
-            controller_Bestellung.Model = (Model)model;
-            //controller_Bestellung.View_Bestellung = (View_Bestellung)view_Bestellung;
+            controller_Bestellung.Model = model;
+            //controller_Bestellung.View_Bestellung = view_Bestellung;
 
 
             model.IView = view;

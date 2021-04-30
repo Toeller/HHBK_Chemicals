@@ -99,6 +99,7 @@
     <Compile Include="Aaron_Schneider.Designer.cs">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bestellposition.cs" />
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>

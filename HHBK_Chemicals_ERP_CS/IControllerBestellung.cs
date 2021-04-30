@@ -8,10 +8,12 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IController_Bestellung
     {
-        Model Model { set; }
-        View_Bestellung View_Bestellung { set; }
-        int Anlegen(Bestellung bestellung);
+        IModel Model { set; }
+        IView_Bestellung View_Bestellung { set; }
+        int Anlegen(Bestellung bestellung, Kunde kunde);
         int Andern(Bestellung bestellung, Bestellung newBestellung);
-        int Loeschen(Bestellung bestellung);
+        int Loeschen(List<Bestellposition> bestellpositionen);
+
+        int bestellungSpeichern(List<Bestellposition> bestellposition);
     }
 }
