@@ -93,12 +93,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aaron_Schneider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Aaron_Schneider.Designer.cs">
-      <DependentUpon>Aaron_Schneider.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
@@ -159,9 +153,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View Bestellung.Designer.cs" />
-    <EmbeddedResource Include="Aaron_Schneider.resx">
-      <DependentUpon>Aaron_Schneider.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
