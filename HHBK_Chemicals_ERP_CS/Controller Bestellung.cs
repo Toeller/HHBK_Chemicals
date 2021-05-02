@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -64,6 +66,9 @@ namespace HHBK_Chemicals_ERP_CS
                 return bil.Nachricht();
             }
         }
+
+
+
         /// <summary>
         /// Löschd die bestellpositionen wenn vorhanden ist.
         /// </summary>
@@ -102,12 +107,59 @@ namespace HHBK_Chemicals_ERP_CS
                 return ex.Nachricht();
             }
         }
+        /// <summary>
+        /// Speichert die akktuelles Class
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Gegebene classe</param>
+        /// <param name="fileName">File Name</param>
+        /// <returns></returns>
+        string IController_Bestellung.SpeicherAktuellesStatus<T>(T obj, string fileName)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream;
 
-        
-        
+            string message = "successful";
+            if (obj == null) return "Given object is null";
+            try
+            {
+                stream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+                formatter.Serialize(stream, obj);
+                stream.Close();
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+            return message;
+        }
+        /// <summary>
+        /// Lade die Gegebene Class zuruck
+        /// </summary>
+        /// <typeparam name="T">Classe mit dem CurrentSatus</typeparam>
+        /// <param name="fileName">File Name</param>
+        /// <returns></returns>
+        T IController_Bestellung.Ladenaktuellestatus<T>(string fileName)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream;
+            T objectOut = default(T);
+            try
+            {
+                stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+                objectOut = (T)formatter.Deserialize(stream);
+                stream.Close();
+            }
+            catch (Exception)
+            {
+                //Error
+            }
+            return objectOut;
+        }
     }
-    
-    
+
+
     [Serializable]
     internal class KunndeIstNichtVorhandenInDatabase : Exception
     {
@@ -134,4 +186,9 @@ namespace HHBK_Chemicals_ERP_CS
             return 3;
         }
     }
+    //[Serializable]
+    //internal class Data()
+    //{
+
+    //}
 }

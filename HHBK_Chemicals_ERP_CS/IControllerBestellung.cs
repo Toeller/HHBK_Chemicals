@@ -15,5 +15,9 @@ namespace HHBK_Chemicals_ERP_CS
         int Loeschen(List<Bestellposition> bestellpositionen);
 
         int bestellungSpeichern(List<Bestellposition> bestellposition);
+
+        string SpeicherAktuellesStatus<T>(T obj,string fileName);
+
+        T Ladenaktuellestatus<T>(string fileName);
     }
 }
