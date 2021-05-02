@@ -8,7 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IControllerLieferung
     {
-        IModel IModel { set; }
-        IViewLieferung IViewLieferung { set; }
+        IModel IModel1 { set; }
+      //  IViewLieferung IViewLieferung1 { set; }
     }
 }
