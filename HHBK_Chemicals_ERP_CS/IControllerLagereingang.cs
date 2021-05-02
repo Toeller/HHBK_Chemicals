@@ -9,7 +9,9 @@ namespace HHBK_Chemicals_ERP_CS
     interface IControllerLagereingang
     {
         IModel1 IModel1 { set; }
-        IViewLagereingang IViewLageeingang1 { set; }
+        IViewLagereingang IViewLagereingang { set; }
+
+        void GrundstoffmengeErhoehen();
 
     }
 }
