@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class ControllerLagereingang : IControllerLagereingang
+    class ControllerLagereingang:IControllerLagereingang
     {
         private IModel model;
-        private IViewLagereingang viewlagereingang;
-        IViewLagereingang IControllerLagereingang.IViewLagereingang { set => this.viewlagereingang = value; }
+        private IViewLagereingang viewLagereingang;
+        IViewLagereingang IControllerLagereingang.IViewLagereingang1 { set => this.viewLagereingang = value; }
         IModel IControllerLagereingang.IModel1 { set => this.model = value; }
-
-        void GrundsstoffmengeErhoehen()
-        {
-            model.grundstoffmengeErhoehen();
-        }
     }
 }
