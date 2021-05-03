@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,7 +64,7 @@
       <DependentUpon>Bestellungsverwaltung.cs</DependentUpon>
     </Compile>
 
-    <Compile Include="ControllerBestellungKunde.cs" />
+    <Compile Include="ControllerProduction.cs" />
     <Compile Include="CToellerPriv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +72,7 @@
       <DependentUpon>CToellerPriv.cs</DependentUpon>
     </Compile>
 
+    <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="ControlerLagerverwaltung.cs" />
     <Compile Include="ControllerBestellungKunde.cs" />
     <Compile Include="ControllerKunde.cs" />
@@ -94,8 +95,12 @@
     </Compile>
     <Compile Include="HHBK_Chemicals_ERP_Model.cs" />
 
-    <Compile Include="IModel.cs" />
+    <Compile Include="IControllerProduction.cs" />
 
+
+    <Compile Include="IViewLagereingang.cs" />
+
+    <Compile Include="IModel.cs" />
     <Compile Include="IBestellungKunde.cs" />
     <Compile Include="IControlerProdukt.cs" />
     <Compile Include="IControllerLagerverwaltung.cs" />
@@ -107,6 +112,8 @@
     <Compile Include="IModelLagervewaltung.cs" />
     <Compile Include="IModelProduktionsplan.cs" />
     <Compile Include="IModelRechnung.cs" />
+    <Compile Include="IViewKunde.cs" />
+    <Compile Include="IViewLagereingang.cs" />
     <Compile Include="IViewLieferung.cs" />
     <Compile Include="IViewProduktionsplan.cs" />
     <Compile Include="IVIewProduktverwaltung.cs" />
@@ -115,8 +122,9 @@
     <Compile Include="IViewRezeptverwaltung.cs" />
     <Compile Include="JonasKersten.cs" />
     <Compile Include="KevinMelzer.cs" />
-
     <Compile Include="koeper.cs" />
+
+
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
     <Compile Include="Kundenverwaltung.cs">
@@ -133,18 +141,51 @@
       <DependentUpon>MichailiK.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.cs" />
-    <Compile Include="Nico_Kuhn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nico_Kuhn.Designer.cs">
-      <DependentUpon>Nico_Kuhn.cs</DependentUpon>
-    </Compile>
-
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />
-    <Compile Include="Zahlungseingang.cs" />
 
+    <Compile Include="SchnitstelleBestellungKunde.cs" />
+
+    <Compile Include="ViewFertigung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFertigung.Designer.cs">
+      <DependentUpon>ViewFertigung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewKunde.Designer.cs">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </Compile>
+
+    <Compile Include="ViewLagereingang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLagereingang.Designer.cs">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </Compile>
+
+    <Compile Include="viewProdukt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProdukt.Designer.cs">
+      <DependentUpon>viewProdukt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduktion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduktion.Designer.cs">
+      <DependentUpon>ViewProduktion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRechnungErstellen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRechnungErstellen.Designer.cs">
+      <DependentUpon>ViewRechnungErstellen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zahlungseingang.cs" />
     <Compile Include="ViewLieferung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +206,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+
+    <EmbeddedResource Include="ViewLagereingang.resx">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="ViewFertigung.resx">
+      <DependentUpon>ViewFertigung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewKunde.resx">
+      <DependentUpon>ViewKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLagereingang.resx">
+      <DependentUpon>ViewLagereingang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProdukt.resx">
+      <DependentUpon>viewProdukt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduktion.resx">
+      <DependentUpon>ViewProduktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRechnungErstellen.resx">
+      <DependentUpon>ViewRechnungErstellen.cs</DependentUpon>
+    </EmbeddedResource>
+
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -180,4 +245,5 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
