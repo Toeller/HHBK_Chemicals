@@ -17,13 +17,21 @@ namespace HHBK_Chemicals_ERP_CS
         {
             InitializeComponent();
         }
-
+        private int Kundennummer;
+        private string Name;
+        private string Vorname;
+        private string Strasse;
+        int Hausnummer;
+        int Postleitzahl;
+        private string Ort;
+        private string Emailadresse;
 
 
         private void buttonViewKundenBestaetigen_Click(object sender, EventArgs e)
         {
             
         }
+
 
 
 
@@ -37,6 +45,7 @@ namespace HHBK_Chemicals_ERP_CS
             //int            Postleitzahl;
             //private string Ort;
             //private string Emailadresse;
+
 
         }
 
