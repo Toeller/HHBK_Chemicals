@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class Noah : Form
+    public partial class ViewRezeptverwalten : Form
     {
-        public Noah()
+        public ViewRezeptverwalten()
         {
             InitializeComponent();
         }

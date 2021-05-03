@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IControllerLieferung
+    class IControllerRezeptverwaltung
     {
-        IModel IModel1 { set; }
-      //  IViewLieferung IViewLieferung1 { set; }
+        //Warten auf Pull Request @Azizcan
     }
 }

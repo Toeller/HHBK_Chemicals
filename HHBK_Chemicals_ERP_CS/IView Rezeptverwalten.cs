@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IControllerLieferung
+    interface IView_Rezeptverwalten
     {
         IModel IModel1 { set; }
-      //  IViewLieferung IViewLieferung1 { set; }
+        IControllerRezeptverwalten IControllerRezeptverwalten1 { set; }
     }
 }
