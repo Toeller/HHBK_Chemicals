@@ -31,39 +31,51 @@ namespace HHBK_Chemicals_ERP_CS
         {
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelSuchen = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ZahlenUpDown = new System.Windows.Forms.NumericUpDown();
             this.SuchergroupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonSuchen = new System.Windows.Forms.Button();
+            this.panelLagereingang = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.listBoxListehinzugefügteware = new System.Windows.Forms.ListBox();
+            this.labelM = new System.Windows.Forms.Label();
+            this.AuswahlfeldMenge = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxLagereingang = new System.Windows.Forms.GroupBox();
+            this.labelProduktnummer = new System.Windows.Forms.Label();
+            this.radioButtonEinlagern = new System.Windows.Forms.RadioButton();
+            this.radioButtonAbrufen = new System.Windows.Forms.RadioButton();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.labelNamedesProdukts = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.labelKathegorie = new System.Windows.Forms.Label();
+            this.AuswahlfeldKathegorie = new System.Windows.Forms.NumericUpDown();
+            this.buttonhinzufügen = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Auwahlfeldsuchenkathegorie = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textsuchenProduktnummerEingeben = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textSuchenNameDesProdukts = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZahlenUpDown)).BeginInit();
+            this.panelSuchen.SuspendLayout();
             this.SuchergroupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelLagereingang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AuswahlfeldMenge)).BeginInit();
+            this.groupBoxLagereingang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AuswahlfeldKathegorie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Auwahlfeldsuchenkathegorie)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -79,29 +91,28 @@ namespace HHBK_Chemicals_ERP_CS
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.listBox2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(425, 12);
+            this.panel2.Location = new System.Drawing.Point(847, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(416, 373);
             this.panel2.TabIndex = 17;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(26, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(363, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Anzeigen";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(26, 94);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(363, 212);
+            this.listBox2.Size = new System.Drawing.Size(363, 264);
             this.listBox2.TabIndex = 1;
             // 
             // pictureBox2
@@ -123,215 +134,317 @@ namespace HHBK_Chemicals_ERP_CS
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // panelSuchen
             // 
-            this.panel3.BackColor = System.Drawing.Color.Tomato;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.listBox3);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.ZahlenUpDown);
-            this.panel3.Controls.Add(this.SuchergroupBox1);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(847, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(416, 373);
-            this.panel3.TabIndex = 16;
+            this.panelSuchen.BackColor = System.Drawing.Color.Tomato;
+            this.panelSuchen.Controls.Add(this.SuchergroupBox1);
+            this.panelSuchen.Controls.Add(this.buttonSuchen);
+            this.panelSuchen.Location = new System.Drawing.Point(425, 12);
+            this.panelSuchen.Name = "panelSuchen";
+            this.panelSuchen.Size = new System.Drawing.Size(416, 373);
+            this.panelSuchen.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(166, 243);
+            this.label6.Location = new System.Drawing.Point(153, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Suchergebnisse";
             // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(22, 259);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(371, 95);
-            this.listBox3.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(231, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
-            // 
-            // ZahlenUpDown
-            // 
-            this.ZahlenUpDown.Location = new System.Drawing.Point(25, 191);
-            this.ZahlenUpDown.Name = "ZahlenUpDown";
-            this.ZahlenUpDown.Size = new System.Drawing.Size(209, 20);
-            this.ZahlenUpDown.TabIndex = 8;
-            // 
             // SuchergroupBox1
             // 
-            this.SuchergroupBox1.Controls.Add(this.label4);
-            this.SuchergroupBox1.Controls.Add(this.label3);
-            this.SuchergroupBox1.Controls.Add(this.radioButton2);
-            this.SuchergroupBox1.Controls.Add(this.radioButton1);
-            this.SuchergroupBox1.Controls.Add(this.textBox4);
-            this.SuchergroupBox1.Controls.Add(this.textBox3);
-            this.SuchergroupBox1.Controls.Add(this.label2);
-            this.SuchergroupBox1.Controls.Add(this.checkBox1);
-            this.SuchergroupBox1.Controls.Add(this.textBox2);
-            this.SuchergroupBox1.Controls.Add(this.textBox1);
-            this.SuchergroupBox1.Controls.Add(this.label1);
+            this.SuchergroupBox1.Controls.Add(this.label17);
+            this.SuchergroupBox1.Controls.Add(this.textsuchenProduktnummerEingeben);
+            this.SuchergroupBox1.Controls.Add(this.label19);
+            this.SuchergroupBox1.Controls.Add(this.textSuchenNameDesProdukts);
+            this.SuchergroupBox1.Controls.Add(this.Auwahlfeldsuchenkathegorie);
+            this.SuchergroupBox1.Controls.Add(this.label14);
             this.SuchergroupBox1.Location = new System.Drawing.Point(16, 17);
             this.SuchergroupBox1.Name = "SuchergroupBox1";
-            this.SuchergroupBox1.Size = new System.Drawing.Size(389, 156);
+            this.SuchergroupBox1.Size = new System.Drawing.Size(389, 97);
             this.SuchergroupBox1.TabIndex = 0;
             this.SuchergroupBox1.TabStop = false;
-            this.SuchergroupBox1.Text = "Sucher";
+            this.SuchergroupBox1.Text = "Suchen";
+            this.SuchergroupBox1.Enter += new System.EventHandler(this.SuchergroupBox1_Enter);
             // 
-            // label4
+            // buttonSuchen
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(126, 133);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "label4";
+            this.buttonSuchen.Location = new System.Drawing.Point(16, 331);
+            this.buttonSuchen.Name = "buttonSuchen";
+            this.buttonSuchen.Size = new System.Drawing.Size(371, 23);
+            this.buttonSuchen.TabIndex = 12;
+            this.buttonSuchen.Text = "Suchen";
+            this.buttonSuchen.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // panelLagereingang
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "label3";
+            this.panelLagereingang.BackColor = System.Drawing.Color.Tomato;
+            this.panelLagereingang.Controls.Add(this.buttonhinzufügen);
+            this.panelLagereingang.Controls.Add(this.label7);
+            this.panelLagereingang.Controls.Add(this.listBoxListehinzugefügteware);
+            this.panelLagereingang.Controls.Add(this.groupBoxLagereingang);
+            this.panelLagereingang.Location = new System.Drawing.Point(3, 12);
+            this.panelLagereingang.Name = "panelLagereingang";
+            this.panelLagereingang.Size = new System.Drawing.Size(416, 373);
+            this.panelLagereingang.TabIndex = 20;
             // 
-            // radioButton2
+            // label7
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(286, 107);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton1";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(162, 243);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Suchergebnisse";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // radioButton1
+            // listBoxListehinzugefügteware
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(165, 107);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.listBoxListehinzugefügteware.FormattingEnabled = true;
+            this.listBoxListehinzugefügteware.Location = new System.Drawing.Point(22, 259);
+            this.listBoxListehinzugefügteware.Name = "listBoxListehinzugefügteware";
+            this.listBoxListehinzugefügteware.Size = new System.Drawing.Size(371, 95);
+            this.listBoxListehinzugefügteware.TabIndex = 13;
             // 
-            // textBox4
+            // labelM
             // 
-            this.textBox4.Location = new System.Drawing.Point(165, 130);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 20);
-            this.textBox4.TabIndex = 7;
+            this.labelM.AutoSize = true;
+            this.labelM.Location = new System.Drawing.Point(221, 158);
+            this.labelM.Name = "labelM";
+            this.labelM.Size = new System.Drawing.Size(98, 13);
+            this.labelM.TabIndex = 9;
+            this.labelM.Text = "←Menge der Ware";
             // 
-            // textBox3
+            // AuswahlfeldMenge
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(111, 20);
-            this.textBox3.TabIndex = 6;
+            this.AuswahlfeldMenge.Location = new System.Drawing.Point(6, 156);
+            this.AuswahlfeldMenge.Name = "AuswahlfeldMenge";
+            this.AuswahlfeldMenge.Size = new System.Drawing.Size(209, 20);
+            this.AuswahlfeldMenge.TabIndex = 8;
+            this.AuswahlfeldMenge.ValueChanged += new System.EventHandler(this.AuswahlfeldMenge_ValueChanged);
             // 
-            // label2
+            // groupBoxLagereingang
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.groupBoxLagereingang.Controls.Add(this.AuswahlfeldKathegorie);
+            this.groupBoxLagereingang.Controls.Add(this.labelProduktnummer);
+            this.groupBoxLagereingang.Controls.Add(this.radioButtonEinlagern);
+            this.groupBoxLagereingang.Controls.Add(this.labelM);
+            this.groupBoxLagereingang.Controls.Add(this.radioButtonAbrufen);
+            this.groupBoxLagereingang.Controls.Add(this.AuswahlfeldMenge);
+            this.groupBoxLagereingang.Controls.Add(this.textBox6);
+            this.groupBoxLagereingang.Controls.Add(this.labelNamedesProdukts);
+            this.groupBoxLagereingang.Controls.Add(this.textBox7);
+            this.groupBoxLagereingang.Controls.Add(this.labelKathegorie);
+            this.groupBoxLagereingang.Location = new System.Drawing.Point(16, 17);
+            this.groupBoxLagereingang.Name = "groupBoxLagereingang";
+            this.groupBoxLagereingang.Size = new System.Drawing.Size(389, 180);
+            this.groupBoxLagereingang.TabIndex = 0;
+            this.groupBoxLagereingang.TabStop = false;
+            this.groupBoxLagereingang.Text = "Lagereingang";
             // 
-            // checkBox1
+            // labelProduktnummer
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(291, 44);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.labelProduktnummer.AutoSize = true;
+            this.labelProduktnummer.Location = new System.Drawing.Point(123, 133);
+            this.labelProduktnummer.Name = "labelProduktnummer";
+            this.labelProduktnummer.Size = new System.Drawing.Size(145, 13);
+            this.labelProduktnummer.TabIndex = 9;
+            this.labelProduktnummer.Text = "←  Produktnummer eingeben";
             // 
-            // textBox2
+            // radioButtonEinlagern
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 20);
-            this.textBox2.TabIndex = 2;
+            this.radioButtonEinlagern.AutoSize = true;
+            this.radioButtonEinlagern.Location = new System.Drawing.Point(126, 41);
+            this.radioButtonEinlagern.Name = "radioButtonEinlagern";
+            this.radioButtonEinlagern.Size = new System.Drawing.Size(69, 17);
+            this.radioButtonEinlagern.TabIndex = 8;
+            this.radioButtonEinlagern.TabStop = true;
+            this.radioButtonEinlagern.Text = "Einlagern";
+            this.radioButtonEinlagern.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // radioButtonAbrufen
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 20);
-            this.textBox1.TabIndex = 1;
+            this.radioButtonAbrufen.AutoSize = true;
+            this.radioButtonAbrufen.Location = new System.Drawing.Point(6, 41);
+            this.radioButtonAbrufen.Name = "radioButtonAbrufen";
+            this.radioButtonAbrufen.Size = new System.Drawing.Size(62, 17);
+            this.radioButtonAbrufen.TabIndex = 8;
+            this.radioButtonAbrufen.TabStop = true;
+            this.radioButtonAbrufen.Text = "Abrufen";
+            this.radioButtonAbrufen.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textBox6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.textBox6.Location = new System.Drawing.Point(6, 130);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(111, 20);
+            this.textBox6.TabIndex = 6;
             // 
-            // button4
+            // labelNamedesProdukts
             // 
-            this.button4.Location = new System.Drawing.Point(22, 217);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(371, 23);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Suchen";
-            this.button4.UseVisualStyleBackColor = true;
+            this.labelNamedesProdukts.AutoSize = true;
+            this.labelNamedesProdukts.Location = new System.Drawing.Point(230, 109);
+            this.labelNamedesProdukts.Name = "labelNamedesProdukts";
+            this.labelNamedesProdukts.Size = new System.Drawing.Size(111, 13);
+            this.labelNamedesProdukts.TabIndex = 4;
+            this.labelNamedesProdukts.Tag = "";
+            this.labelNamedesProdukts.Text = "←Name des Produkts";
             // 
-            // panel1
+            // textBox7
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(416, 373);
-            this.panel1.TabIndex = 15;
+            this.textBox7.Location = new System.Drawing.Point(6, 104);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(218, 20);
+            this.textBox7.TabIndex = 2;
             // 
-            // button1
+            // labelKathegorie
             // 
-            this.button1.Location = new System.Drawing.Point(26, 323);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(363, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Anzeigen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.labelKathegorie.AutoSize = true;
+            this.labelKathegorie.Location = new System.Drawing.Point(230, 79);
+            this.labelKathegorie.Name = "labelKathegorie";
+            this.labelKathegorie.Size = new System.Drawing.Size(123, 13);
+            this.labelKathegorie.TabIndex = 0;
+            this.labelKathegorie.Text = "←Kathegorie auswählen";
             // 
-            // listBox1
+            // AuswahlfeldKathegorie
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(26, 94);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(363, 212);
-            this.listBox1.TabIndex = 1;
+            this.AuswahlfeldKathegorie.Location = new System.Drawing.Point(6, 77);
+            this.AuswahlfeldKathegorie.Name = "AuswahlfeldKathegorie";
+            this.AuswahlfeldKathegorie.Size = new System.Drawing.Size(209, 20);
+            this.AuswahlfeldKathegorie.TabIndex = 12;
             // 
-            // pictureBox1
+            // buttonhinzufügen
             // 
-            this.pictureBox1.Image = global::HHBK_Chemicals_ERP_CS.Properties.Resources.drawersfd;
-            this.pictureBox1.Location = new System.Drawing.Point(146, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.buttonhinzufügen.Location = new System.Drawing.Point(165, 203);
+            this.buttonhinzufügen.Name = "buttonhinzufügen";
+            this.buttonhinzufügen.Size = new System.Drawing.Size(75, 23);
+            this.buttonhinzufügen.TabIndex = 15;
+            this.buttonhinzufügen.Text = "Hinzufügen";
+            this.buttonhinzufügen.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 58);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(18, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "→";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 88);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(18, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "→";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 121);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 13);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "→";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 150);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(18, 13);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "→";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 184);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(18, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "→";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 222);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(18, 13);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "→";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 293);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(18, 13);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "→";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 259);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(18, 13);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "→";
+            // 
+            // Auwahlfeldsuchenkathegorie
+            // 
+            this.Auwahlfeldsuchenkathegorie.Location = new System.Drawing.Point(6, 19);
+            this.Auwahlfeldsuchenkathegorie.Name = "Auwahlfeldsuchenkathegorie";
+            this.Auwahlfeldsuchenkathegorie.Size = new System.Drawing.Size(209, 20);
+            this.Auwahlfeldsuchenkathegorie.TabIndex = 14;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(230, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(123, 13);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "←Kathegorie auswählen";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(123, 74);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(145, 13);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "←  Produktnummer eingeben";
+            // 
+            // textsuchenProduktnummerEingeben
+            // 
+            this.textsuchenProduktnummerEingeben.Location = new System.Drawing.Point(6, 71);
+            this.textsuchenProduktnummerEingeben.Name = "textsuchenProduktnummerEingeben";
+            this.textsuchenProduktnummerEingeben.Size = new System.Drawing.Size(111, 20);
+            this.textsuchenProduktnummerEingeben.TabIndex = 17;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(230, 50);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(111, 13);
+            this.label19.TabIndex = 16;
+            this.label19.Tag = "";
+            this.label19.Text = "←Name des Produkts";
+            // 
+            // textSuchenNameDesProdukts
+            // 
+            this.textSuchenNameDesProdukts.Location = new System.Drawing.Point(6, 45);
+            this.textSuchenNameDesProdukts.Name = "textSuchenNameDesProdukts";
+            this.textSuchenNameDesProdukts.Size = new System.Drawing.Size(218, 20);
+            this.textSuchenNameDesProdukts.TabIndex = 15;
             // 
             // ViewLagereingang
             // 
@@ -339,23 +452,27 @@ namespace HHBK_Chemicals_ERP_CS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1265, 427);
+            this.Controls.Add(this.panelLagereingang);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSuchen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewLagereingang";
             this.Text = "ViewLagereingang";
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZahlenUpDown)).EndInit();
+            this.panelSuchen.ResumeLayout(false);
             this.SuchergroupBox1.ResumeLayout(false);
             this.SuchergroupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelLagereingang.ResumeLayout(false);
+            this.panelLagereingang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AuswahlfeldMenge)).EndInit();
+            this.groupBoxLagereingang.ResumeLayout(false);
+            this.groupBoxLagereingang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AuswahlfeldKathegorie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Auwahlfeldsuchenkathegorie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,31 +482,41 @@ namespace HHBK_Chemicals_ERP_CS
 
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelSuchen;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown ZahlenUpDown;
         private System.Windows.Forms.GroupBox SuchergroupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonSuchen;
+        private System.Windows.Forms.Panel panelLagereingang;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox listBoxListehinzugefügteware;
+        private System.Windows.Forms.Label labelM;
+        private System.Windows.Forms.NumericUpDown AuswahlfeldMenge;
+        private System.Windows.Forms.GroupBox groupBoxLagereingang;
+        private System.Windows.Forms.Label labelProduktnummer;
+        private System.Windows.Forms.RadioButton radioButtonEinlagern;
+        private System.Windows.Forms.RadioButton radioButtonAbrufen;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label labelNamedesProdukts;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label labelKathegorie;
+        private System.Windows.Forms.NumericUpDown AuswahlfeldKathegorie;
+        private System.Windows.Forms.Button buttonhinzufügen;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textsuchenProduktnummerEingeben;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textSuchenNameDesProdukts;
+        private System.Windows.Forms.NumericUpDown Auwahlfeldsuchenkathegorie;
+        private System.Windows.Forms.Label label14;
     }
 }
