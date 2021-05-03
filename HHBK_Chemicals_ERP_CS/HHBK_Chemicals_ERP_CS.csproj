@@ -99,6 +99,7 @@
     <Compile Include="Aaron_Schneider.Designer.cs">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bestellposition.cs" />
     <Compile Include="Bestellung.cs" />
     <Compile Include="Bestellungsverwaltung.cs">
       <SubType>Form</SubType>
@@ -133,12 +134,6 @@
     </Compile>
     <Compile Include="Julian.Designer.cs">
       <DependentUpon>Julian.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Kristof.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kristof.Designer.cs">
-      <DependentUpon>Kristof.cs</DependentUpon>
     </Compile>
     <Compile Include="Kunde.cs" />
     <Compile Include="KundeExt.cs" />
@@ -201,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Julian.resx">
       <DependentUpon>Julian.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kristof.resx">
-      <DependentUpon>Kristof.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>

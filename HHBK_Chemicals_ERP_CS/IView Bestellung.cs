@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace View_Bestellung
+namespace HHBK_Chemicals_ERP_CS
 {
     interface IView_Bestellung
     {
