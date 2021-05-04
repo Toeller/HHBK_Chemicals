@@ -33,6 +33,7 @@ namespace HHBK_Chemicals_ERP_CS
         IControllerKunde IControllerKunde1 { set; }
 
         void createDB();
+        bool createTestData();
 
         Lieferposition GetLieferposition(int idLieferposition);
 

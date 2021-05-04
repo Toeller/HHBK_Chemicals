@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -125,10 +126,57 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IModel.createDB()
         {
-            throw new NotImplementedException();
+            try
+            {
+                conn.ConnectionString = "server=127.0.0.1;uid=root;pwd=;";
+                mycommand.CommandText = Commands.CreateDatabase;
+
+                conn.Open();
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+
+                //return false;
+            }
+            finally
+            {
+                conn.Close();
+                conn.ConnectionString = myConnectionString;
+            }
+
+            //return true;
+
         }
 
-        
+       
+
+        bool IModel.createTestData()
+        {
+            try
+            {
+                mycommand.CommandText = Commands.CreateTestdata;
+
+                conn.Open();
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return true;
+
+        }
+
+
 
         Lieferposition IModel.GetLieferposition(int idLieferposition)
         {
