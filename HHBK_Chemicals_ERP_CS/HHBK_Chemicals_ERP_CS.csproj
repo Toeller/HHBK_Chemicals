@@ -220,9 +220,6 @@
     <EmbeddedResource Include="ViewLagereingang.resx">
       <DependentUpon>ViewLagereingang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewRechnungerstellen.resx">
-      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View Bestellung.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>View Bestellung1.Designer.cs</LastGenOutput>
