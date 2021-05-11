@@ -20,14 +20,21 @@ namespace HHBK_Chemicals_ERP_CS
         public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse)
         {
             this.kundennummer = kundennummer;
-            this.name = name;
-            this.vorname = vorname;
-            this.strasse = strasse;
-            this.hausnummer = hausnummer;
-            this.ort = ort;
+            this.Name = name;
+            this.Vorname = vorname;
+            this.Strasse = strasse;
+            this.Hausnummer = hausnummer;
+            this.Ort = ort;
             this.postleitzahl = postleitzahl;
             this.emailadresse = emailadresse;
             
+        }
+
+        public Kunde()
+
+        {
+
+
         }
 
         public int Postleitzahl
@@ -51,7 +58,8 @@ namespace HHBK_Chemicals_ERP_CS
             {
                 return this.kundennummer;
             }
-            
+
+            set { this.kundennummer = value; }
 
 
         }
@@ -60,5 +68,10 @@ namespace HHBK_Chemicals_ERP_CS
             get => emailadresse;
             set => emailadresse = value;
         }
+        public string Name { get => name; set => name = value; }
+        public string Vorname { get => vorname; set => vorname = value; }
+        public string Strasse { get => strasse; set => strasse = value; }
+        public string Hausnummer { get => hausnummer; set => hausnummer = value; }
+        public string Ort { get => ort; set => ort = value; }
     }
 }

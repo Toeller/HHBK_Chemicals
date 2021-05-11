@@ -34,6 +34,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         void createDB();
         bool createTestData();
+        List<Kunde> getKunden();
 
         Lieferposition GetLieferposition(int idLieferposition);
 
