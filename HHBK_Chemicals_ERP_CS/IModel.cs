@@ -36,6 +36,8 @@ namespace HHBK_Chemicals_ERP_CS
         bool createTestData();
         List<Kunde> getKunden();
 
+        List<Produkt> getProdukte();
+
         Lieferposition GetLieferposition(int idLieferposition);
 
 

@@ -248,5 +248,10 @@ namespace HHBK_Chemicals_ERP_CS
             ;
 
         public static String CreateTestdata { get => createTestdata; }
+        public static string GetProduktIDandName { get => getProduktIDandName; set => getProduktIDandName = value; }
+
+        private static String getProduktIDandName = "SELECT * FROM produkt";
+
+
     }
 }

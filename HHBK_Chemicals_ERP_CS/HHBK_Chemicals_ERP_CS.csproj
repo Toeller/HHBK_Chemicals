@@ -110,6 +110,7 @@
     <Compile Include="Löschmich.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Produkt.cs" />
+    <Compile Include="Produkte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezeptExt.cs" />

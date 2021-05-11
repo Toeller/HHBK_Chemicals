@@ -237,5 +237,26 @@ namespace HHBK_Chemicals_ERP_CS
             Kunde kunde1 = null;
             //return kunde1;
         }
+
+        List<Produkt> IModel.getProdukte()
+        {
+            MySqlConnection conn = new MySqlConnection(this.myConnectionString);
+
+            MySqlCommand mycommand = conn.CreateCommand();
+
+            mycommand.CommandText = Commands.GetProduktIDandName;
+
+            List<Produkt> produkte = new List<Produkt>();
+
+            conn.Open();
+
+            MySqlDataReader reader = mycommand.ExecuteReader(); while (reader.Read())
+            {
+                //label1.Text = reader["testTabelleID"].ToString();
+            }
+            
+
+            return produkte;
+        }
     }
 }

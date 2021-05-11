@@ -17,7 +17,7 @@ namespace HHBK_Chemicals_ERP_CS
         public Kundenverwaltung()
         {
             InitializeComponent();
-            kundenliste = model.getKunde();
+            //kundenliste = model.getKunde();
         }
 
         public void init()
