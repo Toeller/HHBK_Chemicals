@@ -14,16 +14,7 @@ namespace HHBK_Chemicals_ERP_CS
     {
         private List<Produkt> produktliste=null;
 
-        internal List<Produkt> Produktliste
-        {
-            get => produktliste;
-            set
-            {
-               
-                produktliste = value;
-                
-            }
-        }
+        internal List<Produkt> Produktliste {get => produktliste; set =>produktliste = value;}
 
         public UserControlProduktVerwalten()
         {
