@@ -39,6 +39,8 @@ namespace HHBK_Chemicals_ERP_CS
         private MySqlConnection conn;
         private MySqlCommand mycommand;
 
+        private List<Produkt> produkte=new List<Produkt>();
+
         public Model()
         {
             conn = new MySqlConnection(myConnectionString);
@@ -246,14 +248,28 @@ namespace HHBK_Chemicals_ERP_CS
 
             mycommand.CommandText = Commands.GetProduktIDandName;
 
-            List<Produkt> produkte = new List<Produkt>();
+           produkte.Clear();
+
+            
 
             conn.Open();
 
-            MySqlDataReader reader = mycommand.ExecuteReader(); while (reader.Read())
+            MySqlDataReader reader = mycommand.ExecuteReader();
+            
+            while (reader.Read())
             {
-                //label1.Text = reader["testTabelleID"].ToString();
+                Produkt p = new Produkt();
+                p.Artikelnummer = Convert.ToInt32(reader["Artikelnummer"]);
+                p.Artikelname = reader["Artikelname"].ToString();
+                p.Verkaufseinheit = Convert.ToInt32(reader["Verkaufseinheit"]);
+                p.Einheit = reader["Einheit"].ToString();
+                p.PreisVK = Convert.ToDouble(reader["PreisVK"]);
+                p.ChemischeBezeichnung = reader["ChemischeBezeichnung"].ToString();
+               
+                produkte.Add(p);
             }
+
+            
             
 
             return produkte;

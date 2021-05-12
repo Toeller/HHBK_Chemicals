@@ -12,6 +12,19 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class UserControlProduktVerwalten : UserControl
     {
+        private List<Produkt> produktliste=null;
+
+        internal List<Produkt> Produktliste
+        {
+            get => produktliste;
+            set
+            {
+               
+                produktliste = value;
+                
+            }
+        }
+
         public UserControlProduktVerwalten()
         {
             InitializeComponent();
@@ -34,6 +47,31 @@ namespace HHBK_Chemicals_ERP_CS
         private void buttonLoeschen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserControlProduktVerwalten_VisibleChanged(object sender, EventArgs e)
+        {
+
+            if (produktliste != null)
+            {
+                comboBoxArtikelnummer.Items.Clear();
+               
+            
+                foreach (Produkt p in produktliste)
+                {
+                    comboBoxArtikelnummer.Items.Add(p.Artikelnummer.ToString());
+                    comboBoxArtikelname.Items.Add(p.Artikelname.ToString());
+                }
+            }
+        }
+
+        private void comboBoxArtikelnummer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxArtikelname.SelectedIndex=comboBoxArtikelnummer.SelectedIndex;
+            textBoxVerkaufseinheit.Text = produktliste[Convert.ToInt32(comboBoxArtikelnummer.SelectedIndex)].Verkaufseinheit.ToString();
+            textBoxPreisVK.Text = produktliste[Convert.ToInt32(comboBoxArtikelnummer.SelectedIndex)].PreisVK.ToString();
+            textBoxEinheit.Text= produktliste[Convert.ToInt32(comboBoxArtikelnummer.SelectedIndex)].Einheit.ToString();
+            textBoxChemischeBezeichnung.Text= produktliste[Convert.ToInt32(comboBoxArtikelnummer.SelectedIndex)].ChemischeBezeichnung.ToString();
         }
     }
 }

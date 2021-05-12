@@ -37,13 +37,13 @@ namespace HHBK_Chemicals_ERP_CS
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxEinheit = new System.Windows.Forms.TextBox();
             this.textBoxPreisVK = new System.Windows.Forms.TextBox();
-
             this.buttonNeu = new System.Windows.Forms.Button();
             this.buttonAendern = new System.Windows.Forms.Button();
             this.buttonLoeschen = new System.Windows.Forms.Button();
             this.comboBoxArtikelnummer = new System.Windows.Forms.ComboBox();
             this.comboBoxArtikelname = new System.Windows.Forms.ComboBox();
-
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxChemischeBezeichnung = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +55,6 @@ namespace HHBK_Chemicals_ERP_CS
             this.label1.TabIndex = 0;
             this.label1.Text = "Artikelnummer";
             // 
-
             // label2
             // 
             this.label2.AutoSize = true;
@@ -65,7 +64,6 @@ namespace HHBK_Chemicals_ERP_CS
             this.label2.TabIndex = 2;
             this.label2.Text = "Artikelname";
             // 
-
             // label3
             // 
             this.label3.AutoSize = true;
@@ -77,11 +75,9 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             // textBoxVerkaufseinheit
             // 
-            this.textBoxVerkaufseinheit.Location = new System.Drawing.Point(102, 56);
+            this.textBoxVerkaufseinheit.Location = new System.Drawing.Point(137, 56);
             this.textBoxVerkaufseinheit.Name = "textBoxVerkaufseinheit";
-
             this.textBoxVerkaufseinheit.Size = new System.Drawing.Size(156, 20);
-
             this.textBoxVerkaufseinheit.TabIndex = 5;
             // 
             // label4
@@ -104,47 +100,44 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             // textBoxEinheit
             // 
-            this.textBoxEinheit.Location = new System.Drawing.Point(102, 82);
+            this.textBoxEinheit.Location = new System.Drawing.Point(137, 82);
             this.textBoxEinheit.Name = "textBoxEinheit";
-
             this.textBoxEinheit.Size = new System.Drawing.Size(156, 20);
-
             this.textBoxEinheit.TabIndex = 8;
             // 
             // textBoxPreisVK
             // 
-            this.textBoxPreisVK.Location = new System.Drawing.Point(102, 109);
+            this.textBoxPreisVK.Location = new System.Drawing.Point(137, 109);
             this.textBoxPreisVK.Name = "textBoxPreisVK";
-
             this.textBoxPreisVK.Size = new System.Drawing.Size(156, 20);
             this.textBoxPreisVK.TabIndex = 9;
             // 
             // buttonNeu
             // 
-            this.buttonNeu.Location = new System.Drawing.Point(6, 144);
+            this.buttonNeu.Location = new System.Drawing.Point(218, 172);
             this.buttonNeu.Name = "buttonNeu";
             this.buttonNeu.Size = new System.Drawing.Size(75, 23);
-            this.buttonNeu.TabIndex = 10;
+            this.buttonNeu.TabIndex = 12;
             this.buttonNeu.Text = "neu";
             this.buttonNeu.UseVisualStyleBackColor = true;
             this.buttonNeu.Click += new System.EventHandler(this.buttonNeu_Click);
             // 
             // buttonAendern
             // 
-            this.buttonAendern.Location = new System.Drawing.Point(102, 144);
+            this.buttonAendern.Location = new System.Drawing.Point(109, 172);
             this.buttonAendern.Name = "buttonAendern";
-            this.buttonAendern.Size = new System.Drawing.Size(156, 23);
-            this.buttonAendern.TabIndex = 12;
-            this.buttonAendern.Text = "speichern/ändern";
+            this.buttonAendern.Size = new System.Drawing.Size(75, 23);
+            this.buttonAendern.TabIndex = 11;
+            this.buttonAendern.Text = "ändern";
             this.buttonAendern.UseVisualStyleBackColor = true;
             this.buttonAendern.Click += new System.EventHandler(this.buttonAendern_Click);
             // 
             // buttonLoeschen
             // 
-            this.buttonLoeschen.Location = new System.Drawing.Point(278, 144);
+            this.buttonLoeschen.Location = new System.Drawing.Point(6, 172);
             this.buttonLoeschen.Name = "buttonLoeschen";
             this.buttonLoeschen.Size = new System.Drawing.Size(75, 23);
-            this.buttonLoeschen.TabIndex = 13;
+            this.buttonLoeschen.TabIndex = 10;
             this.buttonLoeschen.Text = "löschen";
             this.buttonLoeschen.UseVisualStyleBackColor = true;
             this.buttonLoeschen.Click += new System.EventHandler(this.buttonLoeschen_Click);
@@ -152,59 +145,47 @@ namespace HHBK_Chemicals_ERP_CS
             // comboBoxArtikelnummer
             // 
             this.comboBoxArtikelnummer.FormattingEnabled = true;
-            this.comboBoxArtikelnummer.Location = new System.Drawing.Point(102, 4);
+            this.comboBoxArtikelnummer.Location = new System.Drawing.Point(137, 4);
             this.comboBoxArtikelnummer.Name = "comboBoxArtikelnummer";
             this.comboBoxArtikelnummer.Size = new System.Drawing.Size(156, 21);
             this.comboBoxArtikelnummer.TabIndex = 14;
+            this.comboBoxArtikelnummer.SelectedIndexChanged += new System.EventHandler(this.comboBoxArtikelnummer_SelectedIndexChanged);
             // 
             // comboBoxArtikelname
             // 
             this.comboBoxArtikelname.FormattingEnabled = true;
-            this.comboBoxArtikelname.Location = new System.Drawing.Point(102, 30);
+            this.comboBoxArtikelname.Location = new System.Drawing.Point(137, 30);
             this.comboBoxArtikelname.Name = "comboBoxArtikelname";
             this.comboBoxArtikelname.Size = new System.Drawing.Size(156, 21);
             this.comboBoxArtikelname.TabIndex = 15;
-
             // 
-            // buttonLoeschen
+            // label6
             // 
-            this.buttonLoeschen.Location = new System.Drawing.Point(6, 156);
-            this.buttonLoeschen.Name = "buttonLoeschen";
-            this.buttonLoeschen.Size = new System.Drawing.Size(75, 23);
-            this.buttonLoeschen.TabIndex = 10;
-            this.buttonLoeschen.Text = "löschen";
-            this.buttonLoeschen.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Chemische Bezeichnung";
             // 
-            // buttonAendern
+            // textBoxChemischeBezeichnung
             // 
-            this.buttonAendern.Location = new System.Drawing.Point(87, 156);
-            this.buttonAendern.Name = "buttonAendern";
-            this.buttonAendern.Size = new System.Drawing.Size(75, 23);
-            this.buttonAendern.TabIndex = 11;
-            this.buttonAendern.Text = "ändern";
-            this.buttonAendern.UseVisualStyleBackColor = true;
-            // 
-            // buttonNeu
-            // 
-            this.buttonNeu.Location = new System.Drawing.Point(168, 156);
-            this.buttonNeu.Name = "buttonNeu";
-            this.buttonNeu.Size = new System.Drawing.Size(75, 23);
-            this.buttonNeu.TabIndex = 12;
-            this.buttonNeu.Text = "neu";
-            this.buttonNeu.UseVisualStyleBackColor = true;
-
+            this.textBoxChemischeBezeichnung.Location = new System.Drawing.Point(137, 136);
+            this.textBoxChemischeBezeichnung.Name = "textBoxChemischeBezeichnung";
+            this.textBoxChemischeBezeichnung.Size = new System.Drawing.Size(156, 20);
+            this.textBoxChemischeBezeichnung.TabIndex = 17;
             // 
             // UserControlProduktVerwalten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
+            this.Controls.Add(this.textBoxChemischeBezeichnung);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxArtikelname);
             this.Controls.Add(this.comboBoxArtikelnummer);
             this.Controls.Add(this.buttonLoeschen);
             this.Controls.Add(this.buttonAendern);
             this.Controls.Add(this.buttonNeu);
-
             this.Controls.Add(this.textBoxPreisVK);
             this.Controls.Add(this.textBoxEinheit);
             this.Controls.Add(this.label5);
@@ -214,9 +195,8 @@ namespace HHBK_Chemicals_ERP_CS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserControlProduktVerwalten";
-
-            this.Size = new System.Drawing.Size(261, 196);
-
+            this.Size = new System.Drawing.Size(302, 203);
+            this.VisibleChanged += new System.EventHandler(this.UserControlProduktVerwalten_VisibleChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,6 +218,7 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.Button buttonLoeschen;
         private System.Windows.Forms.ComboBox comboBoxArtikelnummer;
         private System.Windows.Forms.ComboBox comboBoxArtikelname;
-
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxChemischeBezeichnung;
     }
 }

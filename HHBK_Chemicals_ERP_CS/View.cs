@@ -15,10 +15,21 @@ namespace HHBK_Chemicals_ERP_CS
         private IModel model;
         private IController controller;
         private List<Kunde> kundenliste = new List<Kunde>();
-        private UserControlKunde uck = new UserControlKunde();
+        private List<Produkt> produktliste = new List<Produkt>();
+        private UserControlKunde ucKunde = new UserControlKunde();
+        private UserControlProduktion ucProduktion = new UserControlProduktion();
+        private UserControlProduktVerwalten ucProduktverwalten = new UserControlProduktVerwalten();
+        private UserControlBestellung ucBestellung = new UserControlBestellung();
+        private UserControlLagereingang ucLagereingang = new UserControlLagereingang();
+        private UserControlLieferung ucLieferung = new UserControlLieferung();
+
+        public event EventHandler ViewProduktionFreigegeben;
+        
+
         public View()
         {
             InitializeComponent();
+            
             this.tabPage1.Text = "Bestellung";
             this.tabPage2.Text = "Kunde";
             this.tabPage3.Text = "Lagereingang";
@@ -29,15 +40,21 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage8.Text = "Reklamation";
             this.tabPage9.Text = "Rezeptverwaltung";
             this.tabPage10.Text = "Zahlungseingangprüfen";
-
-            UserControlProduktion ucProduktion = new UserControlProduktion();
-            this.tabPage2.Controls.Add(uck);
-            this.tabPage6.Controls.Add(new UserControlProduktVerwalten());
-            this.tabPage1.Controls.Add(new UserControlBestellung());
-            this.tabPage3.Controls.Add(new UserControlLagereingang());
-            this.tabPage4.Controls.Add(new UserControlLieferung());
+            
+            this.tabPage2.Controls.Add(ucKunde);
+            this.tabPage6.Controls.Add(ucProduktverwalten);
+            this.tabPage1.Controls.Add(ucBestellung);
+            this.tabPage3.Controls.Add(ucLagereingang);
+            this.tabPage4.Controls.Add(ucLieferung);
             this.tabPage5.Controls.Add(ucProduktion);
             ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
+            ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
+        }
+
+        private void onProduktverwaltenGotVisible(object sender, EventArgs e)
+        {
+            ucProduktverwalten.Produktliste = model.getProdukte();
+            
         }
 
         IModel IView.IModel1 { set => this.model=value; }
@@ -48,7 +65,7 @@ namespace HHBK_Chemicals_ERP_CS
             MessageBox.Show("Produktion Freigegeben");
         }
 
-        public event EventHandler ViewProduktionFreigegeben;
+        
 
         protected virtual void OnViewProduktionFreigegeben(EventArgs e)
         {
@@ -58,6 +75,9 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
+
             switch(this.tabControl1.SelectedIndex.ToString())
             {
                 case "0":
@@ -74,6 +94,7 @@ namespace HHBK_Chemicals_ERP_CS
                 case "4":
                     break;
                 case "5":
+                    
                     break;
                 case "6":
                     break;
