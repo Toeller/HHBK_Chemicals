@@ -114,7 +114,40 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IModel.aendern(Produkt produkt)
         {
-            throw new NotImplementedException();
+            mycommand.CommandText = Commands.change(produkt);
+
+            conn.Open();
+            try
+            {
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        void IModel.loeschen(Produkt produkt)
+        {
+           mycommand.CommandText = Commands.delete(produkt);
+
+            conn.Open();
+            try
+            {
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         void IModel.bestellungSpeichern(List<Bestellposition> bestellung)
@@ -161,7 +194,7 @@ namespace HHBK_Chemicals_ERP_CS
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                //MessageBox.Show(e.Message);
 
                 return false;
             }
@@ -186,10 +219,7 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
-        void IModel.loeschen(Produkt produkt)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         void IModel.speichern(Kunde kunde)
         {
@@ -242,11 +272,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         List<Produkt> IModel.getProdukte()
         {
-            MySqlConnection conn = new MySqlConnection(this.myConnectionString);
-
-            MySqlCommand mycommand = conn.CreateCommand();
-
-            mycommand.CommandText = Commands.GetProduktIDandName;
+           mycommand.CommandText = Commands.GetProduktIDandName;
 
            produkte.Clear();
 
@@ -269,10 +295,13 @@ namespace HHBK_Chemicals_ERP_CS
                 produkte.Add(p);
             }
 
-            
-            
 
+
+            conn.Close();
             return produkte;
+
         }
+
+       
     }
 }

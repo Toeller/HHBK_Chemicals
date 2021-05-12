@@ -37,6 +37,7 @@ namespace HHBK_Chemicals_ERP_CS
         List<Kunde> getKunden();
 
         List<Produkt> getProdukte();
+       
 
         Lieferposition GetLieferposition(int idLieferposition);
 

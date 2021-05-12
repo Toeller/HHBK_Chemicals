@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
@@ -251,6 +252,20 @@ namespace HHBK_Chemicals_ERP_CS
         public static string GetProduktIDandName { get => getProduktIDandName; set => getProduktIDandName = value; }
 
         private static String getProduktIDandName = "SELECT * FROM produkt";
+
+        public static string change(Produkt p)
+        {
+            MessageBox.Show("Uuups... \n Query zum Produktändern fehlt!");
+
+            return "                     ";
+        }
+
+        public static string delete(Produkt p)
+        {
+            MessageBox.Show("Uuups... \n Query zum Produktlöschen fehlt!");
+
+            return "                     ";
+        }
 
 
     }

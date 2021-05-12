@@ -158,6 +158,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.comboBoxArtikelname.Name = "comboBoxArtikelname";
             this.comboBoxArtikelname.Size = new System.Drawing.Size(156, 21);
             this.comboBoxArtikelname.TabIndex = 15;
+            this.comboBoxArtikelname.SelectedIndexChanged += new System.EventHandler(this.comboBoxArtikelname_SelectedIndexChanged);
             // 
             // label6
             // 

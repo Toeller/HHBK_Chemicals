@@ -49,6 +49,18 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage5.Controls.Add(ucProduktion);
             ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
             ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
+            ucProduktverwalten.UCProduktVerwaltenAendern += onUCProduktverwaltenAendern;
+            ucProduktverwalten.UCProduktVerwaltenLoeschen += onUCProduktverwaltenLoeschen;
+        }
+
+        private void onUCProduktverwaltenAendern(object sender, EventArgs e)
+        {
+            model.aendern(ucProduktverwalten.Produkt);
+        }
+
+        private void onUCProduktverwaltenLoeschen(object sender, EventArgs e)
+        {
+            model.loeschen(ucProduktverwalten.Produkt);
         }
 
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
