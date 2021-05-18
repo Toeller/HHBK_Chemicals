@@ -32,6 +32,7 @@ namespace HHBK_Chemicals_ERP_CS
             "`Verkaufseinheit` INT NOT NULL, " +
             "`Einheit` VARCHAR(45) NOT NULL, " +
             "`PreisVK` DOUBLE NOT NULL, " +
+            "`ChemischeBezeichnung` VARCHAR(45) NULL, " +
             "PRIMARY KEY(`Artikelnummer`)) " +
             "ENGINE = InnoDB; " +
 
@@ -264,7 +265,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             MessageBox.Show("Uuups... \n Query zum Produktlöschen fehlt!");
 
-            return "                     ";
+            return "                    ";
         }
 
 
