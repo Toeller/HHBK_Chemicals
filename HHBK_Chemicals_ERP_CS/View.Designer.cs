@@ -170,6 +170,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.Controls.Add(this.tabControl1);
             this.Name = "View";
             this.Text = "HHBK-ERP V0.1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.View_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 

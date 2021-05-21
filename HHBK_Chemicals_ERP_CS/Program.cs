@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace HHBK_Chemicals_ERP_CS
 {
@@ -14,6 +16,8 @@ namespace HHBK_Chemicals_ERP_CS
         [STAThread]
         static void Main()
         {
+            Process.Start("C:/xampp/xampp_start.exe");
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

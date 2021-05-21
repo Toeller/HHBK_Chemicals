@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -118,6 +119,11 @@ namespace HHBK_Chemicals_ERP_CS
                     break;
             }
             
+        }
+
+        private void View_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Process.Start("C:/xampp/xampp_stop.exe");
         }
     }
 }
