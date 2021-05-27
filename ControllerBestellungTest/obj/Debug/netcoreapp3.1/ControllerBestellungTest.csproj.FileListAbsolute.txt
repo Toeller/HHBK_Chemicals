@@ -1,0 +1,4 @@
+C:\Users\KRIShark\source\repos\HHBKKEMICALS3\ControllerBestellungTest\obj\Debug\netcoreapp3.1\ControllerBestellungTest.csprojAssemblyReference.cache
+C:\Users\KRIShark\source\repos\HHBKKEMICALS3\ControllerBestellungTest\obj\Debug\netcoreapp3.1\ControllerBestellungTest.AssemblyInfoInputs.cache
+C:\Users\KRIShark\source\repos\HHBKKEMICALS3\ControllerBestellungTest\obj\Debug\netcoreapp3.1\ControllerBestellungTest.AssemblyInfo.cs
+C:\Users\KRIShark\source\repos\HHBKKEMICALS3\ControllerBestellungTest\obj\Debug\netcoreapp3.1\ControllerBestellungTest.csproj.CoreCompileInputs.cache
