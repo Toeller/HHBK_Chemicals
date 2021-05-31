@@ -132,6 +132,7 @@
     <Compile Include="IViewRechnungerstellen.cs" />
     <Compile Include="IView Bestellung.cs" />
     <Compile Include="IViewReklamation.cs" />
+    <Compile Include="IViewZahlungseingangPruefen.cs" />
     <Compile Include="Julian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +192,12 @@
     <Compile Include="ViewRezeptverwalten.Designer.cs">
       <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewZahlungseingangPruefen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewZahlungseingangPruefen.Designer.cs">
+      <DependentUpon>ViewZahlungseingangPruefen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Aaron_Schneider.resx">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewRezeptverwalten.resx">
       <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewZahlungseingangPruefen.resx">
+      <DependentUpon>ViewZahlungseingangPruefen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
