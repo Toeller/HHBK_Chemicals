@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
+[assembly: InternalsVisibleToAttribute("TestProjectAIF21")]
+
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IController_Bestellung
+    internal interface IController_Bestellung
     {
         IModel Model { set; }
         IView_Bestellung View_Bestellung { set; }

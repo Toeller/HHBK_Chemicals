@@ -1,30 +1,13 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
-        "projectName": "HHBK_Chemicals_ERP_CS",
-        "projectPath": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
+
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
-        "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\TestProject1\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Tom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,8 +21,7 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-                "projectPath": "C:\\Users\\Tom\\Source\\Repos\\TomBach772\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
+
               }
             }
           }
@@ -86,7 +68,9 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+
         }
       }
     }

@@ -110,8 +110,6 @@
     <Compile Include="ControlerReklamation.cs" />
     <Compile Include="Controller1.cs" />
     <Compile Include="Controller Bestellung.cs" />
-    <Compile Include="ControllerLagereingang.cs" />
-    <Compile Include="ControllerLieferung.cs" />
     <Compile Include="ControllerRezeptverwaltung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -124,7 +122,6 @@
     <Compile Include="IControllerBestellung.cs" />
     <Compile Include="IController1.cs" />
     <Compile Include="IControllerLagereingang.cs" />
-    <Compile Include="IControllerLieferung.cs" />
     <Compile Include="IControllerRezeptverwaltung.cs" />
     <Compile Include="IForm1.cs" />
     <Compile Include="IModel.cs" />
@@ -135,7 +132,6 @@
     <Compile Include="IViewRechnungerstellen.cs" />
     <Compile Include="IView Bestellung.cs" />
     <Compile Include="IViewReklamation.cs" />
-    <Compile Include="IViewZahlungseingangPruefen.cs" />
     <Compile Include="Julian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,12 +191,6 @@
     <Compile Include="ViewRezeptverwalten.Designer.cs">
       <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewZahlungseingangPruefen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewZahlungseingangPruefen.Designer.cs">
-      <DependentUpon>ViewZahlungseingangPruefen.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Aaron_Schneider.resx">
       <DependentUpon>Aaron_Schneider.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,22 +220,22 @@
     <EmbeddedResource Include="ViewLagereingang.resx">
       <DependentUpon>ViewLagereingang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewRechnungerstellen.resx">
+      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View Bestellung.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>View Bestellung1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewRechnungerstellen.resx">
+    <None Include="ViewRechnungerstellen.resx">
       <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
-    </EmbeddedResource>
+    </None>
     <EmbeddedResource Include="View Bestellung.resx" />
     <EmbeddedResource Include="ViewReklamation.resx">
       <DependentUpon>ViewReklamation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewRezeptverwalten.resx">
       <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewZahlungseingangPruefen.resx">
-      <DependentUpon>ViewZahlungseingangPruefen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
