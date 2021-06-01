@@ -202,11 +202,11 @@ namespace HHBK_Chemicals_ERP_CS
 
             "INSERT INTO Produkt " +
             "VALUES " +
-            "(1, \"Orangenaroma\", 1, \"l\", 12.89), " +
-            "(2, \"Zitronenaroma\", 1, \"l\", 11.99), " +
-            "(3, \"Birnenaroma\", 2, \"l\", 25.00), " +
-            "(4, \"Zimtaroma\", 2, \"l\", 12.89), " +
-            "(5, \"Rumaroma\", 1, \"l\", 17.90); " +
+            "(1, \"Orangenaroma\", 1, \"l\", 12.89, NULL), " +
+            "(2, \"Zitronenaroma\", 1, \"l\", 11.99, NULL), " +
+            "(3, \"Birnenaroma\", 2, \"l\", 25.00, NULL), " +
+            "(4, \"Zimtaroma\", 2, \"l\", 12.89, NULL), " +
+            "(5, \"Rumaroma\", 1, \"l\", 17.90, NULL); " +
 
             "INSERT INTO bestellposition " +
             "VALUES " +
