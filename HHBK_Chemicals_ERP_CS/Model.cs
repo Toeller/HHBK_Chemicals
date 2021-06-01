@@ -134,6 +134,7 @@ namespace HHBK_Chemicals_ERP_CS
         void IModel.loeschen(Produkt produkt)
         {
            mycommand.CommandText = Commands.delete(produkt);
+            //MessageBox.Show("Querry:" + mycommand.CommandText);
 
             conn.Open();
             try

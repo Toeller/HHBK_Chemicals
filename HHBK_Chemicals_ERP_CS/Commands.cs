@@ -263,9 +263,9 @@ namespace HHBK_Chemicals_ERP_CS
 
         public static string delete(Produkt p)
         {
-            MessageBox.Show("Uuups... \n Query zum Produktlöschen fehlt!");
+            //MessageBox.Show("Artikelnummer:"+ p.Artikelnummer);
 
-            return "                    ";
+            return "DELETE from produkt WHERE artikelnummer="+p.Artikelnummer+";";
         }
 
 
