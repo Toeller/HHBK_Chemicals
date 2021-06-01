@@ -110,6 +110,8 @@
     <Compile Include="ControlerReklamation.cs" />
     <Compile Include="Controller1.cs" />
     <Compile Include="Controller Bestellung.cs" />
+    <Compile Include="ControllerLagereingang.cs" />
+    <Compile Include="ControllerLieferung.cs" />
     <Compile Include="ControllerRezeptverwaltung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -122,6 +124,7 @@
     <Compile Include="IControllerBestellung.cs" />
     <Compile Include="IController1.cs" />
     <Compile Include="IControllerLagereingang.cs" />
+    <Compile Include="IControllerLieferung.cs" />
     <Compile Include="IControllerRezeptverwaltung.cs" />
     <Compile Include="IForm1.cs" />
     <Compile Include="IModel.cs" />
