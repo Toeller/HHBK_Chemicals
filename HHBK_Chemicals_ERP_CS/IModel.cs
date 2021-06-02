@@ -10,7 +10,9 @@ namespace HHBK_Chemicals_ERP_CS
     {
         IForm1 IView { set; }
         IController1 IController1 { set; }
-        //Program idee
+
+        Bestellung GetBestellung(int bestellnummer);
+        bool SetBestellung(Bestellung bestellung);
 
         List<int> getKundennummer();
     }

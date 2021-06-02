@@ -22,12 +22,26 @@ namespace HHBK_Chemicals_ERP_CS
         /// </summary>
         /// <param name="bestellung"></param>
         /// <param name="newBestellung"></param>
-        /// <returns>Wenn das Program fählerfrei galeufen ist gitp eine 0 zürück.</returns>
+        /// <returns>Wenn das Program fehlerfrei gelaufen ist, wird eine 0 zurück gegeben.</returns>
         int IController_Bestellung.Andern(Bestellung bestellung, Bestellung newBestellung)
         {
-            return -1;
-            //model.GetBestellung(Bestellung bestellung) 
-            //model.SetBestellung(Bestellung bestellung)
+
+            try
+            {
+                Bestellung bestellungsRueckgabe=model.GetBestellung(bestellung.Bestellungsnummer);
+                model.SetBestellung(newBestellung);
+                return 0;
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+
+            }
+            
+
         }
 
         /// <summary>

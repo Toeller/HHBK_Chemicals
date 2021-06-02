@@ -62,6 +62,11 @@ namespace HHBK_Chemicals_ERP_CS
             return kunde1;
         }
 
+        Bestellung IModel.GetBestellung(int bestellnummer)
+        {
+            throw new NotImplementedException();
+        }
+
         List<int> IModel.getKundennummer()
         {
             List<int> kundennummern=new List<int>();
@@ -81,6 +86,11 @@ namespace HHBK_Chemicals_ERP_CS
             conn.Close();
             
             return kundennummern;
+        }
+
+        bool IModel.SetBestellung(Bestellung bestellung)
+        {
+            throw new NotImplementedException();
         }
 
         private void testen()
