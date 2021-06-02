@@ -8,7 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IViewReklamation
     {
-        int DatenAufnehmen(int);
+        int DatenAufnehmen(int a);
 
 
     }
