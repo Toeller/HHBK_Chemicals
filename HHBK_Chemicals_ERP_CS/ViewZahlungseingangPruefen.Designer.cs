@@ -187,7 +187,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonAendern.TabIndex = 17;
             this.buttonAendern.Text = "Ändern";
             this.buttonAendern.UseVisualStyleBackColor = true;
-            this.buttonAendern.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAendern.Click += new System.EventHandler(this.buttonAendern_Click);
             // 
             // buttonLoeschen
             // 
@@ -197,7 +197,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonLoeschen.TabIndex = 18;
             this.buttonLoeschen.Text = "Löschen";
             this.buttonLoeschen.UseVisualStyleBackColor = true;
-            this.buttonLoeschen.Click += new System.EventHandler(this.button3_Click);
+            this.buttonLoeschen.Click += new System.EventHandler(this.buttonLoeschen_Click);
             // 
             // ViewZahlungseingangPruefen
             // 

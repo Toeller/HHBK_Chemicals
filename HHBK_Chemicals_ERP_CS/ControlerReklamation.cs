@@ -30,38 +30,38 @@ namespace HHBK_Chemicals_ERP_CS
         bool IControlerReklamation.BestelldatenVerifiezieren()
     {
         IControlerReklamation rek1 = new ControlerReklamation();
-        if (rek1.Bestelldatenladen() == IView.DatenAufnehmen(1))
+        if (rek1.Bestelldatenladen() == /*IView.DatenAufnehmen(1)*/"")
         {
             return x = true;
         }
         else
         {
-            IView.textboxAusgabe.text = "Bestelldaten ungültig";
+            /*IView.textboxAusgabe.text = "Bestelldaten ungültig";*/
             return x = false;
         }
     }
     string IControlerReklamation.Bestelldatenladen()
     {
-        return IModel.Bestelldatenladen();
+            return ""; // IModel.Bestelldatenladen();
     }
 
 
 
     string IControlerReklamation.Kundendatenladen()
     {
-        return IModel.KundendatenLaden();
+            return ""; // IModel.KundendatenLaden();
     }
 
     bool IControlerReklamation.KundendatenVerifizieren()
     {
         IControlerReklamation rek1 = new ControlerReklamation();
-        if (rek1.Kundendatenladen() == IView.DatenAufnehmen(2))
+        if (rek1.Kundendatenladen() == /*IView.DatenAufnehmen(2)*/"")
         {
             return y = true;
         }
         else
         {
-            IView.textBoxAusgabe.text = "Kundendaten ungültig";
+            //IView.textBoxAusgabe.text = "Kundendaten ungültig";
             return y = false;
         }
     }
@@ -97,10 +97,15 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IControlerReklamation.Datenspeichern()
         {
+            throw new NotImplementedException();
+        }
+
+        /*void IControlerReklamation.Datenspeichern()
+        {
            this.bestellnummer = iView.Bestellnummer1;
             this.kundennummer = iView.Kundennummer1;
-
         }
+        */
     }
-
 }
+

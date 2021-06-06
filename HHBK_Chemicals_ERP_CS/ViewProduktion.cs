@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class ViewRechnungerstellen : Form
+    public partial class ViewProduktion : Form
     {
-        public ViewRechnungerstellen()
+        public ViewProduktion()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

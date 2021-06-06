@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class ViewRechnungerstellen : Form
+    public partial class ViewLieferung : Form
     {
-        public ViewRechnungerstellen()
+        public ViewLieferung()
         {
             InitializeComponent();
         }
