@@ -254,6 +254,25 @@ namespace HHBK_Chemicals_ERP_CS
 
         private static String getProduktIDandName = "SELECT * FROM produkt";
 
+        public static string newEntity(Produkt p)
+        {
+            /*
+            MessageBox.Show("UPDATE produkt SET " +
+                "artikelname='" + p.Artikelname +"', "+
+                "verkaufseinheit='" + p.Verkaufseinheit + "', "+
+                "einheit='" + p.Einheit + "', "+
+                "preisVK='" + p.PreisVK + "', "+
+                "chemischeBezeichnung='" +p.ChemischeBezeichnung + "' "+
+                "WHERE artikelnummer='" + p.Artikelnummer + "';");
+            */
+            return "INSERT INTO produkt VALUES( "+
+                "NULL, '"+
+                p.Artikelname + "', '" +
+                p.Verkaufseinheit + "', '" +
+                p.Einheit + "', '" +
+                p.PreisVK + "', '" +
+                p.ChemischeBezeichnung + "'); ";
+        }
         public static string change(Produkt p)
         {
             /*

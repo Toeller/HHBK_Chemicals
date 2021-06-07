@@ -40,22 +40,29 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void buttonNeu_Click(object sender, EventArgs e)
         {
-            comboBoxArtikelname.Items.Clear();
-            comboBoxArtikelnummer.Items.Clear();
+            comboBoxArtikelnummer.Enabled = false;
+            comboBoxArtikelname.Text="";
+            comboBoxArtikelnummer.Text="";
             textBoxVerkaufseinheit.Text = "";
             textBoxEinheit.Text = "";
             textBoxPreisVK.Text = "";
+            buttonAendern.Text = "speichern";
         }
 
         private void buttonAendern_Click(object sender, EventArgs e)
         {
-            Produkt.Artikelnummer = Convert.ToInt32(comboBoxArtikelnummer.SelectedItem.ToString());
+            if(buttonAendern.Text=="ändern")
+                Produkt.Artikelnummer = Convert.ToInt32(comboBoxArtikelnummer.SelectedItem.ToString());
+            else if (buttonAendern.Text == "speichern")
+                Produkt.Artikelnummer = -1;
             Produkt.Artikelname= comboBoxArtikelname.Text;
             Produkt.PreisVK= Convert.ToDouble(textBoxPreisVK.Text);
             Produkt.Verkaufseinheit = Convert.ToInt32(textBoxVerkaufseinheit.Text);
             Produkt.Einheit = textBoxEinheit.Text;
             Produkt.ChemischeBezeichnung = textBoxChemischeBezeichnung.Text;
 
+            buttonAendern.Text = "ändern";
+            comboBoxArtikelnummer.Enabled = true;
             //MessageBox.Show(Produkt.Artikelname + " " + produkt.ChemischeBezeichnung);
 
             OnUCProduktVerwaltenAendern(this, e);
@@ -96,6 +103,7 @@ namespace HHBK_Chemicals_ERP_CS
             if (produktliste != null)
             {
                 comboBoxArtikelnummer.Items.Clear();
+                comboBoxArtikelname.Items.Clear();
 
 
                 foreach (Produkt p in produktliste)

@@ -114,7 +114,13 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IModel.aendern(Produkt produkt)
         {
-            mycommand.CommandText = Commands.change(produkt);
+            if (produkt.Artikelnummer != -1)
+                mycommand.CommandText = Commands.change(produkt);
+            else
+                mycommand.CommandText = Commands.newEntity(produkt);
+
+            MessageBox.Show(mycommand.CommandText);
+
 
             conn.Open();
             try
