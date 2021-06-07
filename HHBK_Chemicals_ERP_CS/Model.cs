@@ -129,6 +129,9 @@ namespace HHBK_Chemicals_ERP_CS
             {
                 conn.Close();
             }
+
+            //Über Event lösen!
+            view.ShowProduktliste();
         }
 
         void IModel.loeschen(Produkt produkt)

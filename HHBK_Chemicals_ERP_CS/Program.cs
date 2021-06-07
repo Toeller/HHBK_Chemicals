@@ -22,8 +22,9 @@ namespace HHBK_Chemicals_ERP_CS
             Application.SetCompatibleTextRenderingDefault(false);
 
             IModel model = new Model();
-
             IView view = new View();
+            IController controller = new Controller();
+
             IViewBestellung viewBestellung = new ViewBestellung();
             IViewKunde viewKunde = new ViewKunde();
             IViewLagereingang viewLagereingang = new ViewLagereingang();
@@ -35,7 +36,7 @@ namespace HHBK_Chemicals_ERP_CS
             IViewRezeptverwalten viewRezeptverwalten = new ViewRezeptverwalten();
             IViewZahlungseingangpruefen viewZahlungseingangpruefen = new ViewZahlungseingangpruefen();
 
-            IController controller = new Controller();
+            
             IControllerBestellung controllerBestellung = new ControllerBestellung();
             IControllerKunde controllerKunde = new ControllerKunde();
             IControllerLagereingang controllerLagereingang = new ControllerLagereingang();
@@ -93,6 +94,7 @@ namespace HHBK_Chemicals_ERP_CS
             controllerZahlungseingangpruefen.IViewZahlungseingangpruefen1 = viewZahlungseingangpruefen;
             controllerZahlungseingangpruefen.IModel1 = model;
 
+            model.IView = view;
             model.createDB();
             model.createTestData();
 

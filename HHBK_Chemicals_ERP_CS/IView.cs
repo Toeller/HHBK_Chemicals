@@ -10,5 +10,7 @@ namespace HHBK_Chemicals_ERP_CS
     {
         IModel IModel1 { set; }
         IController IController1 { set; }
+
+        void ShowProduktliste();
     }
 }

@@ -256,9 +256,22 @@ namespace HHBK_Chemicals_ERP_CS
 
         public static string change(Produkt p)
         {
-            MessageBox.Show("Uuups... \n Query zum Produktändern fehlt!");
-
-            return "                     ";
+            /*
+            MessageBox.Show("UPDATE produkt SET " +
+                "artikelname='" + p.Artikelname +"', "+
+                "verkaufseinheit='" + p.Verkaufseinheit + "', "+
+                "einheit='" + p.Einheit + "', "+
+                "preisVK='" + p.PreisVK + "', "+
+                "chemischeBezeichnung='" +p.ChemischeBezeichnung + "' "+
+                "WHERE artikelnummer='" + p.Artikelnummer + "';");
+            */
+            return "UPDATE produkt SET " +
+                "artikelname='" + p.Artikelname + "', " +
+                "verkaufseinheit='" + p.Verkaufseinheit + "', " +
+                "einheit='" + p.Einheit + "', " +
+                "preisVK='" + p.PreisVK + "', " +
+                "chemischeBezeichnung='" + p.ChemischeBezeichnung + "' " +
+                "WHERE artikelnummer='" + p.Artikelnummer + "';";            
         }
 
         public static string delete(Produkt p)

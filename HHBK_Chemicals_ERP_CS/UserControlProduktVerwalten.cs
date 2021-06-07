@@ -50,11 +50,13 @@ namespace HHBK_Chemicals_ERP_CS
         private void buttonAendern_Click(object sender, EventArgs e)
         {
             Produkt.Artikelnummer = Convert.ToInt32(comboBoxArtikelnummer.SelectedItem.ToString());
-            Produkt.Artikelname= comboBoxArtikelname.SelectedItem.ToString();
+            Produkt.Artikelname= comboBoxArtikelname.Text;
             Produkt.PreisVK= Convert.ToDouble(textBoxPreisVK.Text);
             Produkt.Verkaufseinheit = Convert.ToInt32(textBoxVerkaufseinheit.Text);
             Produkt.Einheit = textBoxEinheit.Text;
             Produkt.ChemischeBezeichnung = textBoxChemischeBezeichnung.Text;
+
+            //MessageBox.Show(Produkt.Artikelname + " " + produkt.ChemischeBezeichnung);
 
             OnUCProduktVerwaltenAendern(this, e);
 
@@ -80,6 +82,22 @@ namespace HHBK_Chemicals_ERP_CS
                 comboBoxArtikelnummer.Items.Clear();
                
             
+                foreach (Produkt p in produktliste)
+                {
+                    comboBoxArtikelnummer.Items.Add(p.Artikelnummer.ToString());
+                    comboBoxArtikelname.Items.Add(p.Artikelname.ToString());
+                }
+            }
+        }
+        //Event abfragen statt public!
+        public void FillCombos()
+        {
+
+            if (produktliste != null)
+            {
+                comboBoxArtikelnummer.Items.Clear();
+
+
                 foreach (Produkt p in produktliste)
                 {
                     comboBoxArtikelnummer.Items.Add(p.Artikelnummer.ToString());

@@ -67,6 +67,7 @@ namespace HHBK_Chemicals_ERP_CS
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
         {
             ucProduktverwalten.Produktliste = model.getProdukte();
+            ucProduktverwalten.FillCombos();
             
         }
 
@@ -97,7 +98,7 @@ namespace HHBK_Chemicals_ERP_CS
                     break;
                 case "1":
 
-                    this.kundenliste=model.getKunden();
+                    //this.kundenliste=model.getKunden();
                     //uck.
                     break;
                 case "2":
@@ -124,6 +125,12 @@ namespace HHBK_Chemicals_ERP_CS
         private void View_FormClosing(object sender, FormClosingEventArgs e)
         {
             Process.Start("C:/xampp/xampp_stop.exe");
+        }
+
+        void IView.ShowProduktliste()
+        {
+            ucProduktverwalten.Produktliste = model.getProdukte();
+            ucProduktverwalten.FillCombos();
         }
     }
 }
