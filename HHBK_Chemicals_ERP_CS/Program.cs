@@ -41,7 +41,7 @@ namespace HHBK_Chemicals_ERP_CS
             controller.IForm1 = view;
 
             controlerReklamation.IModel = model;
-            controlerReklamation.IView = viewReklamation;
+            //controlerReklamation.IView = viewReklamation;
 
 
 

@@ -131,6 +131,7 @@
     <Compile Include="IProduktionsplan.cs" />
     <Compile Include="IProduktverwaltung.cs" />
     <Compile Include="IView Rezeptverwalten.cs" />
+    <Compile Include="IView.cs" />
     <Compile Include="IViewLagereingang.cs" />
     <Compile Include="IViewRechnungerstellen.cs" />
     <Compile Include="IView Bestellung.cs" />
@@ -173,16 +174,34 @@
     <Compile Include="ViewLagereingang.Designer.cs">
       <DependentUpon>ViewLagereingang.cs</DependentUpon>
     </Compile>
+    <Compile Include="View Bestellung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Bestellung.Designer.cs" />
+    <Compile Include="ViewLieferung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLieferung.Designer.cs">
+      <DependentUpon>ViewLieferung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduktion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduktion.Designer.cs">
+      <DependentUpon>ViewProduktion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduktverwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduktverwalten.Designer.cs">
+      <DependentUpon>ViewProduktverwalten.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewRechnungerstellen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewRechnungerstellen.Designer.cs">
       <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
     </Compile>
-    <Compile Include="View Bestellung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View Bestellung.Designer.cs" />
     <Compile Include="ViewReklamation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,10 +253,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>View Bestellung1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View Bestellung.resx" />
+    <EmbeddedResource Include="ViewLieferung.resx">
+      <DependentUpon>ViewLieferung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduktion.resx">
+      <DependentUpon>ViewProduktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduktverwalten.resx">
+      <DependentUpon>ViewProduktverwalten.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewRechnungerstellen.resx">
       <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View Bestellung.resx" />
     <EmbeddedResource Include="ViewReklamation.resx">
       <DependentUpon>ViewReklamation.cs</DependentUpon>
     </EmbeddedResource>

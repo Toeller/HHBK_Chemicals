@@ -27,7 +27,8 @@ namespace View_Bestellung
         /// Erforderliche Methode für die Designerunterstützung.
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
-        private void InitializeComponent()
+        
+        /*private void InitializeComponent()
         {
             this.SuspendLayout();
             // 
@@ -40,9 +41,9 @@ namespace View_Bestellung
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-
+        
         }
-
+        */
         #endregion
     }
 }
