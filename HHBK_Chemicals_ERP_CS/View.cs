@@ -130,13 +130,12 @@ namespace HHBK_Chemicals_ERP_CS
         void IView.Show(List<Produkt> produktliste)
         {
             ucProduktverwalten.Produktliste = produktliste;
-            ucProduktverwalten.FillCombos();
+            //ucProduktverwalten.FillCombos();
         }
 
         void IView.Show(List<Kunde> kundenListe)
         {
-            ucKunde.Kundeliste = kundenListe;
-            ucKunde.FillCombos();
+            ucKunde.KundenListe = kundenListe;
         }
     }
 }

@@ -46,7 +46,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxOrt = new System.Windows.Forms.TextBox();
             this.textBoxEmailadresse = new System.Windows.Forms.TextBox();
             this.buttonNeu = new System.Windows.Forms.Button();
-            this.buttonSpeichern = new System.Windows.Forms.Button();
+            this.buttonAendern = new System.Windows.Forms.Button();
             this.buttonLoeschen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -186,15 +186,17 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonNeu.TabIndex = 16;
             this.buttonNeu.Text = "neu";
             this.buttonNeu.UseVisualStyleBackColor = true;
+            this.buttonNeu.Click += new System.EventHandler(this.buttonNeu_Click);
             // 
-            // buttonSpeichern
+            // buttonAendern
             // 
-            this.buttonSpeichern.Location = new System.Drawing.Point(182, 149);
-            this.buttonSpeichern.Name = "buttonSpeichern";
-            this.buttonSpeichern.Size = new System.Drawing.Size(75, 23);
-            this.buttonSpeichern.TabIndex = 17;
-            this.buttonSpeichern.Text = "speichern";
-            this.buttonSpeichern.UseVisualStyleBackColor = true;
+            this.buttonAendern.Location = new System.Drawing.Point(182, 149);
+            this.buttonAendern.Name = "buttonAendern";
+            this.buttonAendern.Size = new System.Drawing.Size(75, 23);
+            this.buttonAendern.TabIndex = 17;
+            this.buttonAendern.Text = "ändern";
+            this.buttonAendern.UseVisualStyleBackColor = true;
+            this.buttonAendern.Click += new System.EventHandler(this.buttonAendern_Click);
             // 
             // buttonLoeschen
             // 
@@ -210,7 +212,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buttonLoeschen);
-            this.Controls.Add(this.buttonSpeichern);
+            this.Controls.Add(this.buttonAendern);
             this.Controls.Add(this.buttonNeu);
             this.Controls.Add(this.textBoxEmailadresse);
             this.Controls.Add(this.textBoxOrt);
@@ -254,7 +256,7 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.TextBox textBoxOrt;
         private System.Windows.Forms.TextBox textBoxEmailadresse;
         private System.Windows.Forms.Button buttonNeu;
-        private System.Windows.Forms.Button buttonSpeichern;
+        private System.Windows.Forms.Button buttonAendern;
         private System.Windows.Forms.Button buttonLoeschen;
     }
 }

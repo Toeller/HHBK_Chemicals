@@ -21,7 +21,7 @@ namespace HHBK_Chemicals_ERP_CS
             "`Hausnummer` INT NULL, " +
             "`Postleitzahl` INT NULL, " +
             "`Ort` VARCHAR(45) NULL, " +
-            "`emaliadresse` VARCHAR(45) NULL, " +
+            "`emailadresse` VARCHAR(45) NULL, " +
             "`passwort` VARCHAR(45) NULL, " +
             "PRIMARY KEY(`Kundennummer`)) " +
             "ENGINE = InnoDB; " +
@@ -303,18 +303,20 @@ namespace HHBK_Chemicals_ERP_CS
         
         public static string newEntity(Kunde k)
         {
-            return "INSERT INTO produkt VALUES( " +
+            /*return "INSERT INTO produkt VALUES( " +
                 "NULL, '" +
                 p.Artikelname + "', '" +
                 p.Verkaufseinheit + "', '" +
                 p.Einheit + "', '" +
                 p.PreisVK + "', '" +
                 p.ChemischeBezeichnung + "'); ";
+            */
+            return "Null";
         }
         public static string change(Kunde k)
         {
-            
-            
+
+            /*
             return "UPDATE produkt SET " +
                 "artikelname='" + p.Artikelname + "', " +
                 "verkaufseinheit='" + p.Verkaufseinheit + "', " +
@@ -322,11 +324,16 @@ namespace HHBK_Chemicals_ERP_CS
                 "preisVK='" + p.PreisVK + "', " +
                 "chemischeBezeichnung='" + p.ChemischeBezeichnung + "' " +
                 "WHERE artikelnummer='" + p.Artikelnummer + "';";
+            */
+            return "Null";
         }
 
         public static string delete(Kunde k)
         {
+            /*
             return "DELETE from produkt WHERE artikelnummer=" + p.Artikelnummer + ";";
+            */
+            return "Null";
         }
     
     }

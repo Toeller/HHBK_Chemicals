@@ -15,8 +15,37 @@ namespace HHBK_Chemicals_ERP_CS
         private List<Produkt> produktliste=null;
         private Produkt produkt = new Produkt();
 
-        internal List<Produkt> Produktliste {get => produktliste; set =>produktliste = value;}
-        internal Produkt Produkt { get => produkt; set => produkt = value; }
+        internal List<Produkt> Produktliste
+        {
+            get => produktliste;
+            set
+            {
+                produktliste = value;
+
+                if (produktliste != null)
+                {
+                    comboBoxArtikelnummer.Items.Clear();
+                    comboBoxArtikelname.Items.Clear();
+
+
+                    foreach (Produkt p in produktliste)
+                    {
+                        comboBoxArtikelnummer.Items.Add(p.Artikelnummer.ToString());
+                        comboBoxArtikelname.Items.Add(p.Artikelname.ToString());
+                    }
+                }
+            }
+        }
+        internal Produkt Produkt
+        {
+            get => produkt;
+            set
+            {
+                produkt = value;
+
+
+            }
+        }
 
         public event EventHandler UCProduktVerwaltenAendern;
         public event EventHandler UCProduktVerwaltenLoeschen;
