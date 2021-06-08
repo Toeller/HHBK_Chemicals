@@ -127,10 +127,16 @@ namespace HHBK_Chemicals_ERP_CS
             Process.Start("C:/xampp/xampp_stop.exe");
         }
 
-        void IView.ShowProduktliste()
+        void IView.Show(List<Produkt> produktliste)
         {
-            ucProduktverwalten.Produktliste = model.getProdukte();
+            ucProduktverwalten.Produktliste = produktliste;
             ucProduktverwalten.FillCombos();
+        }
+
+        void IView.Show(List<Kunde> kundenListe)
+        {
+            ucKunde.Kundeliste = kundenListe;
+            ucKunde.FillCombos();
         }
     }
 }

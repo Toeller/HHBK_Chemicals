@@ -300,7 +300,7 @@ namespace HHBK_Chemicals_ERP_CS
             return "DELETE from produkt WHERE artikelnummer="+p.Artikelnummer+";";
         }
 
-        /*
+        
         public static string newEntity(Kunde k)
         {
             return "INSERT INTO produkt VALUES( " +
@@ -326,10 +326,8 @@ namespace HHBK_Chemicals_ERP_CS
 
         public static string delete(Kunde k)
         {
-            //MessageBox.Show("Artikelnummer:"+ p.Artikelnummer);
-
             return "DELETE from produkt WHERE artikelnummer=" + p.Artikelnummer + ";";
         }
-    */
+    
     }
 }

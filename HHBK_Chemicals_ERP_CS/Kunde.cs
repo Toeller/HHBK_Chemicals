@@ -16,6 +16,7 @@ namespace HHBK_Chemicals_ERP_CS
         private string ort;
         private int postleitzahl;
         private string emailadresse;
+        private string passwort;
 
         public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse)
         {
@@ -73,5 +74,6 @@ namespace HHBK_Chemicals_ERP_CS
         public string Strasse { get => strasse; set => strasse = value; }
         public string Hausnummer { get => hausnummer; set => hausnummer = value; }
         public string Ort { get => ort; set => ort = value; }
+        public string Passwort { get => passwort; set => passwort = value; }
     }
 }

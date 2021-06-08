@@ -12,9 +12,12 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class UserControlKunde : UserControl
     {
+        private List<Kunde> kundeliste = new List<Kunde>();
         public UserControlKunde()
         {
             InitializeComponent();
         }
+
+        internal List<Kunde> Kundeliste { get => kundeliste; set => kundeliste = value; }
     }
 }

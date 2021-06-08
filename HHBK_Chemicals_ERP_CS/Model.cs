@@ -40,6 +40,7 @@ namespace HHBK_Chemicals_ERP_CS
         private MySqlCommand mycommand;
 
         private List<Produkt> produkte=new List<Produkt>();
+        private List<Kunde> kunden = new List<Kunde>();
 
         public Model()
         {
@@ -107,10 +108,7 @@ namespace HHBK_Chemicals_ERP_CS
         }
 
 
-        void IModel.aendern(Kunde kunde)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         void IModel.aendern(Produkt produkt)
         {
@@ -137,7 +135,8 @@ namespace HHBK_Chemicals_ERP_CS
             }
 
             //Über Event lösen!
-            view.ShowProduktliste();
+            IModel a = this;
+            view.Show(a.getProdukte());
         }
 
         void IModel.loeschen(Produkt produkt)
@@ -224,6 +223,35 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
+        void IModel.aendern(Kunde kunde)
+        {
+            if (kunde.Kundennummer != -1)
+                mycommand.CommandText = Commands.change(kunde);
+            else
+                mycommand.CommandText = Commands.newEntity(kunde);
+
+            MessageBox.Show(mycommand.CommandText);
+
+
+            conn.Open();
+            try
+            {
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            //Über Event lösen!
+            
+            IModel a = this;
+            view.Show(a.getKunden());
+        }
         void IModel.loeschen(Kunde kunde)
         {
             throw new NotImplementedException();
