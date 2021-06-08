@@ -300,6 +300,36 @@ namespace HHBK_Chemicals_ERP_CS
             return "DELETE from produkt WHERE artikelnummer="+p.Artikelnummer+";";
         }
 
+        /*
+        public static string newEntity(Kunde k)
+        {
+            return "INSERT INTO produkt VALUES( " +
+                "NULL, '" +
+                p.Artikelname + "', '" +
+                p.Verkaufseinheit + "', '" +
+                p.Einheit + "', '" +
+                p.PreisVK + "', '" +
+                p.ChemischeBezeichnung + "'); ";
+        }
+        public static string change(Kunde k)
+        {
+            
+            
+            return "UPDATE produkt SET " +
+                "artikelname='" + p.Artikelname + "', " +
+                "verkaufseinheit='" + p.Verkaufseinheit + "', " +
+                "einheit='" + p.Einheit + "', " +
+                "preisVK='" + p.PreisVK + "', " +
+                "chemischeBezeichnung='" + p.ChemischeBezeichnung + "' " +
+                "WHERE artikelnummer='" + p.Artikelnummer + "';";
+        }
 
+        public static string delete(Kunde k)
+        {
+            //MessageBox.Show("Artikelnummer:"+ p.Artikelnummer);
+
+            return "DELETE from produkt WHERE artikelnummer=" + p.Artikelnummer + ";";
+        }
+    */
     }
 }
