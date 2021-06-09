@@ -22,10 +22,12 @@ namespace HHBK_Chemicals_ERP_CS
         public Form1()
         {
             InitializeComponent();
-            foreach (int s in icontroller1.getKundennummern())
-                this.comboBoxKundennummer.Items.Add(s);
+            /*foreach (int s in icontroller1.getKundennummern())
+                this.comboBoxKundennummer.Items.Add(s);*/
 
         }
+        
 
-         }
+    }
+    
 }

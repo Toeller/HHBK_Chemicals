@@ -61,18 +61,18 @@ namespace HHBK_Chemicals_ERP_CS
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(29, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.Size = new System.Drawing.Size(131, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Zahlungseingangsnummer (INT)";
+            this.label1.Text = "Zahlungseingangsnummer";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 13);
+            this.label2.Size = new System.Drawing.Size(127, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "VerwendungszweckKdNr (VARCHAR 45)";
+            this.label2.Text = "VerwendungszweckKdNr";
             // 
             // textBox2
             // 
@@ -86,9 +86,9 @@ namespace HHBK_Chemicals_ERP_CS
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 13);
+            this.label3.Size = new System.Drawing.Size(135, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "VerwendungszweckBestNr (VARCHAR 45)";
+            this.label3.Text = "VerwendungszweckBestNr";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox3
@@ -103,36 +103,36 @@ namespace HHBK_Chemicals_ERP_CS
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(262, 43);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 13);
+            this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Datum (VARCHAR 45)";
+            this.label4.Text = "Datum";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(262, 112);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 13);
+            this.label5.Size = new System.Drawing.Size(101, 13);
             this.label5.TabIndex = 7;
-            this.label5.Text = "NameKontoinhaber (VARCHAR 45)";
+            this.label5.Text = "Name Kontoinhaber";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(262, 192);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "IBAN (VARCHAR 45)";
+            this.label6.Text = "IBAN";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(483, 43);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 13);
+            this.label7.Size = new System.Drawing.Size(81, 13);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Kunde_Kundennummer (INT FK)";
+            this.label7.Text = "Kundennummer";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox4

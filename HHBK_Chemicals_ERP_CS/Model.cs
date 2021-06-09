@@ -13,15 +13,16 @@ namespace HHBK_Chemicals_ERP_CS
         private string myConnectionString = "server=127.0.0.1;uid=erpModel;pwd=555HHBK;database=HHBK_Chemicals;";
         private MySqlConnection conn;
         private MySqlCommand mycommand;
-
+        private IForm1 iView;
+        private IController1 iController;
         public Model()
         {
             conn = new MySqlConnection(myConnectionString);
             mycommand = conn.CreateCommand();
         }
 
-        IForm1 IModel.IView { set => throw new NotImplementedException(); }
-        IController1 IModel.IController1 { set => throw new NotImplementedException(); }
+        IForm1 IModel.IView { set => iView = value; }
+        IController1 IModel.IController1 { set => iController = value; }
 
         public Kunde getKunde()
         {
