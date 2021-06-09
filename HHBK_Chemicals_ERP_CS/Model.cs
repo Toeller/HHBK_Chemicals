@@ -340,6 +340,14 @@ namespace HHBK_Chemicals_ERP_CS
 
         }
 
-       
+        List<Bestellung> IModel.getBestellungen()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Lagerposition> IModel.getLagerpositionen()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

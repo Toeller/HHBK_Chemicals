@@ -105,6 +105,7 @@
     <Compile Include="Kundenverwaltung.Designer.cs">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lagerposition.cs" />
     <Compile Include="Lieferposition.cs" />
     <Compile Include="Lieferung.cs" />
     <Compile Include="Löschmich.cs" />
@@ -150,77 +151,11 @@
     <Compile Include="UserControlProduktVerwalten.Designer.cs">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlTest.Designer.cs">
-      <DependentUpon>UserControlTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="View.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View.Designer.cs">
       <DependentUpon>View.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewBestellung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewBestellung.Designer.cs">
-      <DependentUpon>ViewBestellung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewKunde.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewKunde.Designer.cs">
-      <DependentUpon>ViewKunde.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewLagereingang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewLagereingang.Designer.cs">
-      <DependentUpon>ViewLagereingang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewLieferung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewLieferung.Designer.cs">
-      <DependentUpon>ViewLieferung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewProduktverwalten.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewProduktverwalten.Designer.cs">
-      <DependentUpon>ViewProduktverwalten.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewProduktion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewProduktion.Designer.cs">
-      <DependentUpon>ViewProduktion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewRechnungerstellen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewRechnungerstellen.Designer.cs">
-      <DependentUpon>ViewRechnungerstellen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewReklamation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewReklamation.Designer.cs">
-      <DependentUpon>ViewReklamation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewRezeptverwalten.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewRezeptverwalten.Designer.cs">
-      <DependentUpon>ViewRezeptverwalten.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewZahlungseingangpruefen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewZahlungseingangpruefen.Designer.cs">
-      <DependentUpon>ViewZahlungseingangpruefen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Kundenverwaltung.resx">
       <DependentUpon>Kundenverwaltung.cs</DependentUpon>
@@ -253,14 +188,8 @@
     <EmbeddedResource Include="UserControlProduktVerwalten.resx">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlTest.resx">
-      <DependentUpon>UserControlTest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewProduktverwalten.resx">
-      <DependentUpon>ViewProduktverwalten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">

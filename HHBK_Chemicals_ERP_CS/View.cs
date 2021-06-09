@@ -52,6 +52,9 @@ namespace HHBK_Chemicals_ERP_CS
             ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
             ucProduktverwalten.UCProduktVerwaltenAendern += onUCProduktverwaltenAendern;
             ucProduktverwalten.UCProduktVerwaltenLoeschen += onUCProduktverwaltenLoeschen;
+
+            ucBestellung.VisibleChanged += onBestellungGotVisible;
+            ucKunde.VisibleChanged += onKundeGotVisible;
         }
 
         private void onUCProduktverwaltenAendern(object sender, EventArgs e)
@@ -64,11 +67,57 @@ namespace HHBK_Chemicals_ERP_CS
             model.loeschen(ucProduktverwalten.Produkt);
         }
 
+       
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
         {
             ucProduktverwalten.Produktliste = model.getProdukte();
             ucProduktverwalten.FillCombos();
             
+        }
+       
+
+        private void onKundeGotVisible(object sender, EventArgs e)
+        {
+            
+            
+            try
+            {
+                ucKunde.KundenListe = model.getKunden();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        private void onBestellungGotVisible(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                ucBestellung.Bestellungen = model.getBestellungen();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void onLagereingangGotVisible(object sender, EventArgs e)
+        {
+            try
+            {
+                ucLagereingang.Lagerpositionen = model.getLagerpositionen();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
         IModel IView.IModel1 { set => this.model=value; }
@@ -87,40 +136,7 @@ namespace HHBK_Chemicals_ERP_CS
             handler?.Invoke(this, e);
         }
 
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-
-            switch(this.tabControl1.SelectedIndex.ToString())
-            {
-                case "0":
-                    break;
-                case "1":
-
-                    //this.kundenliste=model.getKunden();
-                    //uck.
-                    break;
-                case "2":
-                    break;
-                case "3":
-                    break;
-                case "4":
-                    break;
-                case "5":
-                    
-                    break;
-                case "6":
-                    break;
-                case "7":
-                    break;
-                case "8":
-                    break;
-                case "9":
-                    break;
-            }
-            
-        }
+        
 
         private void View_FormClosing(object sender, FormClosingEventArgs e)
         {
