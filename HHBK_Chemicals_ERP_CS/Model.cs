@@ -77,9 +77,6 @@ namespace HHBK_Chemicals_ERP_CS
             Kunde kunde1 = new Kunde();
             List<Kunde> kundenliste = new List<Kunde>(); 
 
-
-           
-           
             mycommand.CommandText = "Select * from kunde";
             
             conn.Open();
@@ -342,7 +339,33 @@ namespace HHBK_Chemicals_ERP_CS
 
         List<Bestellung> IModel.getBestellungen()
         {
-            throw new NotImplementedException();
+            Bestellung bestellung1 = new Bestellung();
+            List<Bestellung> bestellungen = new List<Bestellung>();
+
+            mycommand.CommandText = "SELECT * FROM bestellposition";
+
+            conn.Open();
+
+            MySqlDataReader reader = mycommand.ExecuteReader();
+
+            while (reader.Read())
+            {
+                bestellung1.Bestellpositionsnummer = Convert.ToInt32(reader["Bestellpositionsnummer"].ToString());
+                bestellung1.Bestellungsnummer = Convert.ToInt32(reader["Bestellungsnummer"].ToString());
+                bestellung1.Menge = Convert.ToInt32(reader["Menge"].ToString());
+                //bestellung1.Bestelldatum =Convert.ToDateTime(reader["Bestelldatum"].ToString());
+                bestellung1.Produkt.Artikelnummer = Convert.ToInt32(reader["Artikelnummer"].ToString());
+                bestellung1.Kunde.Kundennummer = Convert.ToInt32(reader["Kundennummer"].ToString());
+                if(int.TryParse(reader["Lieferpositionsnummer"].ToString(), out int result))
+                  bestellung1.Lieferung.IdLieferposition = result;
+
+                bestellungen.Add(bestellung1);
+
+            }
+            reader.Close();
+            conn.Close();
+            
+            return bestellungen;
         }
 
         List<Lagerposition> IModel.getLagerpositionen()

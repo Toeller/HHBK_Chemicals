@@ -26,9 +26,9 @@ namespace HHBK_Chemicals_ERP_CS
         private UserControlLieferung ucLieferung = new UserControlLieferung();
 
         private UserControlRechnungstellen ucRechnungstellen = new UserControlRechnungstellen();
-        private UserControlReklamation userControlReklamation = new UserControlReklamation();
-        private UserControlRezeptverwaltung
-
+        private UserControlReklamation ucReklamation = new UserControlReklamation();
+        private UserControlRezeptverwaltung ucRezeptverwaltung = new UserControlRezeptverwaltung();
+        private UserControlZahlungseingangpruefen ucZahlungseingangpruefen = new UserControlZahlungseingangpruefen();
 
         public event EventHandler ViewProduktionFreigegeben;
         
@@ -55,19 +55,79 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage4.Controls.Add(ucLieferung);
             this.tabPage5.Controls.Add(ucProduktion);
             this.tabPage6.Controls.Add(ucProduktverwalten);
-            this.tabPage7.Controls.Add();
-            this.tabPage8.Controls.Add();
-            this.tabPage9.Controls.Add();
-            this.tabPage10.Controls.Add();
+            this.tabPage7.Controls.Add(ucRechnungstellen);
+            this.tabPage8.Controls.Add(ucReklamation);
+            this.tabPage9.Controls.Add(ucRezeptverwaltung);
+            this.tabPage10.Controls.Add(ucZahlungseingangpruefen);
            
             
             ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
-            ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
             ucProduktverwalten.UCProduktVerwaltenAendern += onUCProduktverwaltenAendern;
             ucProduktverwalten.UCProduktVerwaltenLoeschen += onUCProduktverwaltenLoeschen;
 
             ucBestellung.VisibleChanged += onBestellungGotVisible;
             ucKunde.VisibleChanged += onKundeGotVisible;
+            ucLagereingang.VisibleChanged += onLagereingangGotVisible;
+            ucLieferung.VisibleChanged += onLieferungGotVisible;
+            ucProduktion.VisibleChanged += onProduktionGotVisible;
+            ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
+            ucRechnungstellen.VisibleChanged += onRechnungstellenGotVisible;
+            ucReklamation.VisibleChanged += onReklamationGotVisible;
+
+            
+           
+        }
+
+        private void onReklamationGotVisible(object sender, EventArgs e)
+        {
+            try
+            {
+                //ucReklamation.Reklamationen = model.getReklamationen();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void onRechnungstellenGotVisible(object sender, EventArgs e)
+        {
+            try
+            {
+                //ucRechnungstellen.BestellungenOhneRechnung = model.getBestellungenOhneRechnung();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void onProduktionGotVisible(object sender, EventArgs e)
+        {
+            try
+            {
+                //ucProduktion.Produktionsliste = model.getProduktionsliste();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void onLieferungGotVisible(object sender, EventArgs e)
+        {
+            try
+            {
+                //ucLieferung.Lieferungen = model.getLieferungen();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void onUCProduktverwaltenAendern(object sender, EventArgs e)
@@ -83,9 +143,17 @@ namespace HHBK_Chemicals_ERP_CS
        
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
         {
-            ucProduktverwalten.Produktliste = model.getProdukte();
-            ucProduktverwalten.FillCombos();
-            
+           
+            try
+            {
+                ucProduktverwalten.Produktliste = model.getProdukte();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
        
 
@@ -159,7 +227,6 @@ namespace HHBK_Chemicals_ERP_CS
         void IView.Show(List<Produkt> produktliste)
         {
             ucProduktverwalten.Produktliste = produktliste;
-            //ucProduktverwalten.FillCombos();
         }
 
         void IView.Show(List<Kunde> kundenListe)

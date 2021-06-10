@@ -184,6 +184,14 @@ namespace HHBK_Chemicals_ERP_CS
             "ADD FOREIGN KEY (`Rezeptnummer`) " +
             "REFERENCES `Rezept` (`Rezeptnummer`) " +
             "ON DELETE NO ACTION ON UPDATE NO ACTION;";
+            
+            /*
+            +
+            "CREATE USER 'erpModel'@'localhost' IDENTIFIED VIA mysql_native_password USING '555HHBK';"+
+            "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, INDEX, ALTER, CREATE TEMPORARY TABLES,"+
+            "CREATE VIEW, EVENT, TRIGGER, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON*.* TO 'erpModel'@'localhost'"+
+            "REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;";
+            */
         public static String CreateDatabase { get => createDatabase; }
 
         private static String createTestdata =
