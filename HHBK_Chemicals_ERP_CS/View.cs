@@ -17,12 +17,18 @@ namespace HHBK_Chemicals_ERP_CS
         private IController controller;
         private List<Kunde> kundenliste = new List<Kunde>();
         private List<Produkt> produktliste = new List<Produkt>();
+
         private UserControlKunde ucKunde = new UserControlKunde();
         private UserControlProduktion ucProduktion = new UserControlProduktion();
         private UserControlProduktVerwalten ucProduktverwalten = new UserControlProduktVerwalten();
         private UserControlBestellung ucBestellung = new UserControlBestellung();
         private UserControlLagereingang ucLagereingang = new UserControlLagereingang();
         private UserControlLieferung ucLieferung = new UserControlLieferung();
+
+        private UserControlRechnungstellen ucRechnungstellen = new UserControlRechnungstellen();
+        private UserControlReklamation userControlReklamation = new UserControlReklamation();
+        private UserControlRezeptverwaltung
+
 
         public event EventHandler ViewProduktionFreigegeben;
         
@@ -37,17 +43,24 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage4.Text = "Lieferung";
             this.tabPage5.Text = "Produktion";
             this.tabPage6.Text = "Produktverwalten";
+
             this.tabPage7.Text = "Rechnungstellen";
             this.tabPage8.Text = "Reklamation";
             this.tabPage9.Text = "Rezeptverwaltung";
             this.tabPage10.Text = "Zahlungseingangprüfen";
-            
-            this.tabPage2.Controls.Add(ucKunde);
-            this.tabPage6.Controls.Add(ucProduktverwalten);
+
             this.tabPage1.Controls.Add(ucBestellung);
+            this.tabPage2.Controls.Add(ucKunde);
             this.tabPage3.Controls.Add(ucLagereingang);
             this.tabPage4.Controls.Add(ucLieferung);
             this.tabPage5.Controls.Add(ucProduktion);
+            this.tabPage6.Controls.Add(ucProduktverwalten);
+            this.tabPage7.Controls.Add();
+            this.tabPage8.Controls.Add();
+            this.tabPage9.Controls.Add();
+            this.tabPage10.Controls.Add();
+           
+            
             ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
             ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
             ucProduktverwalten.UCProduktVerwaltenAendern += onUCProduktverwaltenAendern;
