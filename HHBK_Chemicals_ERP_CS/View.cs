@@ -15,6 +15,10 @@ namespace HHBK_Chemicals_ERP_CS
     {
         private IModel model;
         private IController controller;
+
+        IModel IView.IModel1 { set => this.model = value; }
+        IController IView.IController1 { set => this.controller = value; }
+
         private List<Kunde> kundenliste = new List<Kunde>();
         private List<Produkt> produktliste = new List<Produkt>();
 
@@ -108,7 +112,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                //ucProduktion.Produktionsliste = model.getProduktionsliste();
+                ucProduktion.Produktionsliste = model.getProduktionsliste();
             }
 
             catch (Exception ex)
@@ -121,7 +125,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                //ucLieferung.Lieferungen = model.getLieferungen();
+                ucLieferung.Bestellungen = model.getLieferungen();
             }
 
             catch (Exception ex)
@@ -130,17 +134,6 @@ namespace HHBK_Chemicals_ERP_CS
             }
         }
 
-        private void onUCProduktverwaltenAendern(object sender, EventArgs e)
-        {
-            model.aendern(ucProduktverwalten.Produkt);
-        }
-
-        private void onUCProduktverwaltenLoeschen(object sender, EventArgs e)
-        {
-            model.loeschen(ucProduktverwalten.Produkt);
-        }
-
-       
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
         {
            
@@ -155,7 +148,6 @@ namespace HHBK_Chemicals_ERP_CS
             }
 
         }
-       
 
         private void onKundeGotVisible(object sender, EventArgs e)
         {
@@ -201,16 +193,24 @@ namespace HHBK_Chemicals_ERP_CS
 
         }
 
-        IModel IView.IModel1 { set => this.model=value; }
-        IController IView.IController1 { set => this.controller=value; }
+
+
+        private void onUCProduktverwaltenAendern(object sender, EventArgs e)
+        {
+            model.aendern(ucProduktverwalten.Produkt);
+        }
+
+        private void onUCProduktverwaltenLoeschen(object sender, EventArgs e)
+        {
+            model.loeschen(ucProduktverwalten.Produkt);
+        }
+
 
         void onProduktionFreigegeben(object sender, EventArgs e)
         {
             MessageBox.Show("Produktion Freigegeben");
         }
-
         
-
         protected virtual void OnViewProduktionFreigegeben(EventArgs e)
         {
             EventHandler handler = ViewProduktionFreigegeben;

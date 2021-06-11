@@ -54,12 +54,12 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxNameSpedition = new System.Windows.Forms.TextBox();
             this.textBoxVersandkontrolle = new System.Windows.Forms.TextBox();
             this.textBoxBestellnummer = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxKundennummer = new System.Windows.Forms.TextBox();
             this.textBoxVorname = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxStrasse = new System.Windows.Forms.TextBox();
             this.textBoxHausnummer = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxPostleitzahl = new System.Windows.Forms.TextBox();
             this.textBoxOrt = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -121,7 +121,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.24242F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 310F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 311F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(41, 250);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -290,12 +290,12 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxBestellnummer.Size = new System.Drawing.Size(100, 20);
             this.textBoxBestellnummer.TabIndex = 24;
             // 
-            // textBox1
+            // textBoxKundennummer
             // 
-            this.textBox1.Location = new System.Drawing.Point(352, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 25;
+            this.textBoxKundennummer.Location = new System.Drawing.Point(352, 31);
+            this.textBoxKundennummer.Name = "textBoxKundennummer";
+            this.textBoxKundennummer.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKundennummer.TabIndex = 25;
             // 
             // textBoxVorname
             // 
@@ -329,13 +329,13 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxHausnummer.Size = new System.Drawing.Size(100, 20);
             this.textBoxHausnummer.TabIndex = 29;
             // 
-            // textBox2
+            // textBoxPostleitzahl
             // 
-            this.textBox2.Location = new System.Drawing.Point(352, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 30;
+            this.textBoxPostleitzahl.Location = new System.Drawing.Point(352, 109);
+            this.textBoxPostleitzahl.Name = "textBoxPostleitzahl";
+            this.textBoxPostleitzahl.ReadOnly = true;
+            this.textBoxPostleitzahl.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPostleitzahl.TabIndex = 30;
             // 
             // textBoxOrt
             // 
@@ -410,12 +410,12 @@ namespace HHBK_Chemicals_ERP_CS
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBoxOrt);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxPostleitzahl);
             this.Controls.Add(this.textBoxHausnummer);
             this.Controls.Add(this.textBoxStrasse);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxVorname);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxKundennummer);
             this.Controls.Add(this.textBoxBestellnummer);
             this.Controls.Add(this.textBoxVersandkontrolle);
             this.Controls.Add(this.textBoxNameSpedition);
@@ -475,12 +475,12 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.TextBox textBoxNameSpedition;
         private System.Windows.Forms.TextBox textBoxVersandkontrolle;
         private System.Windows.Forms.TextBox textBoxBestellnummer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxKundennummer;
         private System.Windows.Forms.TextBox textBoxVorname;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxStrasse;
         private System.Windows.Forms.TextBox textBoxHausnummer;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxPostleitzahl;
         private System.Windows.Forms.TextBox textBoxOrt;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;

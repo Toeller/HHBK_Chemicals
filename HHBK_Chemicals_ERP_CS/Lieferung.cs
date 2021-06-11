@@ -14,6 +14,7 @@ namespace HHBK_Chemicals_ERP_CS
         private DateTime lieferdatum;
         private string nameVersandkontrolle;
         private string nameSpedition;
+        //private Bestellung bestellung = new Bestellung();
 
         public int IdLieferposition { get => idLieferposition; set => idLieferposition = value; }
         public string Liefernummer { get => liefernummer; set => liefernummer = value; }
@@ -21,5 +22,6 @@ namespace HHBK_Chemicals_ERP_CS
         public DateTime Lieferdatum { get => lieferdatum; set => lieferdatum = value; }
         public string NameVersandkontrolle { get => nameVersandkontrolle; set => nameVersandkontrolle = value; }
         public string NameSpedition { get => nameSpedition; set => nameSpedition = value; }
+        //internal Bestellung Bestellung { get => bestellung; set => bestellung = value; }
     }
 }

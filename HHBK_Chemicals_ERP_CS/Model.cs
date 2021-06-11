@@ -372,5 +372,10 @@ namespace HHBK_Chemicals_ERP_CS
         {
             throw new NotImplementedException();
         }
+
+        List<Bestellung> IModel.getLieferungen()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

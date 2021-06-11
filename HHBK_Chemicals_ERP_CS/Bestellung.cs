@@ -14,7 +14,7 @@ namespace HHBK_Chemicals_ERP_CS
         private DateTime bestelldatum;
         private Produkt produkt=new Produkt();
         private Kunde kunde=new Kunde();
-        private Lieferung lieferung =new Lieferung();
+        private Lieferung lieferung=new Lieferung();
 
         public int Bestellpositionsnummer { get => bestellpositionsnummer; set => bestellpositionsnummer = value; }
         public int Bestellungsnummer { get => bestellungsnummer; set => bestellungsnummer = value; }

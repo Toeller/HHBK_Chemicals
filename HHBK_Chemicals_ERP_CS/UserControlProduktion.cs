@@ -12,13 +12,24 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class UserControlProduktion : UserControl
     {
+        List<Produktionsliste> produktionslisten = new List<Produktionsliste>();
+        
+
+        internal List<Produktionsliste> Produktionslisten {
+            get => produktionslisten;
+            set
+            {
+                produktionslisten = value;
+                textBoxProduktionspositionsnummer.Text = produktionslisten[0].ToString();
+                //textBoxBestellpositionsnummer.Text =;
+            }
+        }
+        
+        public event EventHandler ProduktionFreigegeben;
         public UserControlProduktion()
         {
             InitializeComponent();
         }
-
-        public event EventHandler ProduktionFreigegeben;
-
         protected virtual void OnProduktionFreigegeben(EventArgs e)
         {
             EventHandler handler = ProduktionFreigegeben;
