@@ -158,7 +158,27 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IModel.bestellungSpeichern(List<Bestellposition> bestellung)
         {
-            throw new NotImplementedException();
+            try
+            {
+                conn.Open();
+                foreach (Bestellposition bestellposition in bestellung)
+                {
+                    mycommand.CommandText = Commands.newEntity(bestellposition);
+                    mycommand.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.Message);
+
+                
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            
         }
 
         void IModel.createDB()
@@ -339,7 +359,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         List<Bestellung> IModel.getBestellungen()
         {
-            Bestellung bestellung1 = new Bestellung();
+           
             List<Bestellung> bestellungen = new List<Bestellung>();
 
             mycommand.CommandText = "SELECT * FROM bestellposition";
@@ -350,6 +370,7 @@ namespace HHBK_Chemicals_ERP_CS
 
             while (reader.Read())
             {
+                Bestellung bestellung1 = new Bestellung();
                 bestellung1.Bestellpositionsnummer = Convert.ToInt32(reader["Bestellpositionsnummer"].ToString());
                 bestellung1.Bestellungsnummer = Convert.ToInt32(reader["Bestellungsnummer"].ToString());
                 bestellung1.Menge = Convert.ToInt32(reader["Menge"].ToString());

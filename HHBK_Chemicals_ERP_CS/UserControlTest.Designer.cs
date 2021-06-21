@@ -1,7 +1,7 @@
 ﻿
 namespace HHBK_Chemicals_ERP_CS
 {
-    partial class UserControlRezeptverwaltung
+    partial class UserControlTest
     {
         /// <summary> 
         /// Erforderliche Designervariable.
@@ -29,17 +29,41 @@ namespace HHBK_Chemicals_ERP_CS
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // UserControlRezeptverwaltung
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(40, 95);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // UserControlTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UserControlRezeptverwaltung";
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Name = "UserControlTest";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -344,5 +344,9 @@ namespace HHBK_Chemicals_ERP_CS
             return "Null";
         }
     
+        public static string newEntity(Bestellposition b)
+        {
+            return "INSERT ";
+        }
     }
 }

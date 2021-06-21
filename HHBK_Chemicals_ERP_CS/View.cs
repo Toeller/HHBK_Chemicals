@@ -112,7 +112,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                ucProduktion.Produktionsliste = model.getProduktionsliste();
+                //ucProduktion.Produktionsliste = model.getProduktionsliste();
             }
 
             catch (Exception ex)

@@ -152,6 +152,12 @@
     <Compile Include="UserControlRezeptverwaltung.Designer.cs">
       <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTest.Designer.cs">
+      <DependentUpon>UserControlTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlZahlungseingangpruefen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduktVerwalten.resx">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRezeptverwaltung.resx">
+      <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTest.resx">
+      <DependentUpon>UserControlTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>

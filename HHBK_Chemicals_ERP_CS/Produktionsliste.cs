@@ -2,6 +2,6 @@
 {
     internal class Produktionsliste
     {
-        private produktions
+        //private produktions;
     }
 }
