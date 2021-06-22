@@ -362,7 +362,7 @@ namespace HHBK_Chemicals_ERP_CS
            
             List<Bestellung> bestellungen = new List<Bestellung>();
 
-            mycommand.CommandText = "SELECT * FROM bestellposition";
+            mycommand.CommandText = Commands.getBestellungen;
 
             conn.Open();
 
@@ -374,10 +374,13 @@ namespace HHBK_Chemicals_ERP_CS
                 bestellung1.Bestellpositionsnummer = Convert.ToInt32(reader["Bestellpositionsnummer"].ToString());
                 bestellung1.Bestellungsnummer = Convert.ToInt32(reader["Bestellungsnummer"].ToString());
                 bestellung1.Menge = Convert.ToInt32(reader["Menge"].ToString());
-                //bestellung1.Bestelldatum =Convert.ToDateTime(reader["Bestelldatum"].ToString());
+                bestellung1.Bestelldatum =Convert.ToDateTime(reader["Bestelldatum"].ToString());
                 bestellung1.Produkt.Artikelnummer = Convert.ToInt32(reader["Artikelnummer"].ToString());
                 bestellung1.Kunde.Kundennummer = Convert.ToInt32(reader["Kundennummer"].ToString());
-                if(int.TryParse(reader["Lieferpositionsnummer"].ToString(), out int result))
+                bestellung1.Produkt.Artikelname= reader["Artikelname"].ToString();
+                bestellung1.Produkt.Verkaufseinheit = Convert.ToInt32(reader["Verkaufseinheit"].ToString());
+                bestellung1.Produkt.PreisVK= Convert.ToDouble(reader["PreisVK"].ToString());
+                if (int.TryParse(reader["Lieferpositionsnummer"].ToString(), out int result))
                   bestellung1.Lieferung.IdLieferposition = result;
 
                 bestellungen.Add(bestellung1);

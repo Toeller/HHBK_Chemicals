@@ -348,5 +348,31 @@ namespace HHBK_Chemicals_ERP_CS
         {
             return "INSERT ";
         }
+
+        public static string getBestellungen =
+            "SELECT " +
+            "b.bestellpositionsnummer, " +
+            "b.bestellungsnummer, " +
+            "b.menge, " +
+            "b.bestelldatum, " +
+            "p.artikelnummer, " +
+            "p.artikelname, " +
+            "p.verkaufseinheit, " +
+            "p.einheit, " +
+            "p.preisVK, " +
+            "p.chemischeBezeichnung, " +
+            "k.kundennummer, " +
+            "k.name, " +
+            "k.vorname, " +
+            "k.strasse, " +
+            "k.hausnummer, " +
+            "k.ort, " +
+            "k.postleitzahl, " +
+            "k.emailadresse," +
+            "b.lieferpositionsnummer " +
+            "FROM bestellposition b, produkt p, kunde k " +
+            "WHERE b.artikelnummer=p.artikelnummer " +
+            "AND b.kundennummer=k.kundennummer;";
+        
     }
 }

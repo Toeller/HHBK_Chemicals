@@ -22,8 +22,14 @@ namespace HHBK_Chemicals_ERP_CS
         internal List<Bestellung> Bestellungen { get => bestellungenListe;
             set
             {
+
                 foreach (Bestellung b in Bestellungen)
+                {
+                    textBoxKundennummer.Text = b.Kunde.Kundennummer.ToString();
+                    textBoxBestellungsnummer.Text = b.Bestellungsnummer.ToString();
+                    textBoxBestelldatum.Text = b.Bestelldatum.ToString();
                     dataGridView1.Rows.Add(b.Bestellpositionsnummer, b.Menge, b.Produkt.Artikelnummer, b.Produkt.Artikelname, b.Produkt.Verkaufseinheit, b.Produkt.PreisVK, b.Menge * b.Produkt.PreisVK);
+                }
                 bestellungenListe = value; 
             }
         }
