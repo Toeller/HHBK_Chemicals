@@ -69,7 +69,7 @@ namespace HHBK_Chemicals_ERP_CS
         IControllerLieferung IModel.IControllerLieferung1 { set => this.controllerLieferung=value; }
         IControllerReklamation IModel.IControllerReklamation1 { set => this.controllerReklamation=value; }
         IControllerKunde IModel.IControllerKunde1 { set => this.controllerKunde=value; }
-        IView IModel.IView { set => this.view=value; }
+        IView IModel.IView1 { set => this.view=value; }
         IController IModel.IController1 { set => this.controller=value; }
 
         List<Kunde> IModel.getKunden()

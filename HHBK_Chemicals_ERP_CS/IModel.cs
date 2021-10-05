@@ -8,7 +8,7 @@ namespace HHBK_Chemicals_ERP_CS
 {
     interface IModel
     {
-        IView IView { set; }
+        IView IView1 { set; }
         IViewProduktverwalten IViewProduktverwalten1 { set; }
         IViewRezeptverwalten IViewRezeptverwalten1 { set; }
         IViewLagereingang IViewLagereingang1 { set; }

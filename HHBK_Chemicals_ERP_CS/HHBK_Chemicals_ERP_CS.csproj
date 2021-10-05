@@ -48,120 +48,119 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bestellposition.cs" />
-    <Compile Include="Bestellung.cs" />
-    <Compile Include="Commands.cs" />
+    <Compile Include="model\Bestellposition.cs" />
+    <Compile Include="model\Bestellung.cs" />
+    <Compile Include="controller\Commands.cs" />
     <Compile Include="Controller.cs" />
-    <Compile Include="ControllerKunde.cs" />
-    <Compile Include="ControllerBestellung.cs" />
-    <Compile Include="ControllerLagereingang.cs" />
-    <Compile Include="ControllerLieferung.cs" />
-    <Compile Include="ControllerProduktion.cs" />
-    <Compile Include="ControllerProduktverwalten.cs" />
-    <Compile Include="ControllerRechnungerstellen.cs" />
-    <Compile Include="ControllerReklamation.cs" />
-    <Compile Include="ControllerRezeptverwalten.cs" />
-    <Compile Include="ControllerZahlungseingangpruefen.cs" />
+    <Compile Include="controller\ControllerKunde.cs" />
+    <Compile Include="controller\ControllerBestellung.cs" />
+    <Compile Include="controller\ControllerLagereingang.cs" />
+    <Compile Include="controller\ControllerLieferung.cs" />
+    <Compile Include="controller\ControllerProduktion.cs" />
+    <Compile Include="controller\ControllerProduktverwalten.cs" />
+    <Compile Include="controller\ControllerRechnungerstellen.cs" />
+    <Compile Include="controller\ControllerReklamation.cs" />
+    <Compile Include="controller\ControllerRezeptverwalten.cs" />
+    <Compile Include="controller\ControllerZahlungseingangpruefen.cs" />
     <Compile Include="IController.cs" />
-    <Compile Include="IControllerBestellung.cs" />
-    <Compile Include="IControllerKunde.cs" />
-    <Compile Include="IControllerLagereingang.cs" />
-    <Compile Include="IControllerLieferung.cs" />
-    <Compile Include="IControllerProduktion.cs" />
-    <Compile Include="IControllerProduktverwalten.cs" />
-    <Compile Include="IControllerRechnungerstellen.cs" />
-    <Compile Include="IControllerReklamation.cs" />
-    <Compile Include="IControllerRezeptverwalten.cs" />
-    <Compile Include="IControllerZahlungseingangpruefen.cs" />
+    <Compile Include="Loeschmich\IControllerBestellung.cs" />
+    <Compile Include="Loeschmich\IControllerKunde.cs" />
+    <Compile Include="Loeschmich\IControllerLagereingang.cs" />
+    <Compile Include="Loeschmich\IControllerLieferung.cs" />
+    <Compile Include="Loeschmich\IControllerProduktion.cs" />
+    <Compile Include="Loeschmich\IControllerProduktverwalten.cs" />
+    <Compile Include="Loeschmich\IControllerRechnungerstellen.cs" />
+    <Compile Include="Loeschmich\IControllerReklamation.cs" />
+    <Compile Include="Loeschmich\IControllerRezeptverwalten.cs" />
+    <Compile Include="Loeschmich\IControllerZahlungseingangpruefen.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IView.cs" />
-    <Compile Include="IViewBestellung.cs" />
-    <Compile Include="IViewKunde.cs" />
-    <Compile Include="IViewLagereingang.cs" />
-    <Compile Include="IViewLieferung.cs" />
-    <Compile Include="IViewProduktion.cs" />
-    <Compile Include="IViewProduktverwalten.cs" />
-    <Compile Include="IViewRechnungerstellen.cs" />
-    <Compile Include="IViewReklamation.cs" />
-    <Compile Include="IViewRezeptverwalten.cs" />
-    <Compile Include="IViewZahlungseingangpruefen.cs" />
-    <Compile Include="Kunde.cs" />
-    <Compile Include="KundeExt.cs" />
-    <Compile Include="Lagerposition.cs" />
-    <Compile Include="Lieferposition.cs" />
-    <Compile Include="Lieferung.cs" />
-    <Compile Include="Löschmich.cs" />
+    <Compile Include="Loeschmich\IViewBestellung.cs" />
+    <Compile Include="Loeschmich\IViewKunde.cs" />
+    <Compile Include="Loeschmich\IViewLagereingang.cs" />
+    <Compile Include="Loeschmich\IViewLieferung.cs" />
+    <Compile Include="Loeschmich\IViewProduktion.cs" />
+    <Compile Include="Loeschmich\IViewProduktverwalten.cs" />
+    <Compile Include="Loeschmich\IViewRechnungerstellen.cs" />
+    <Compile Include="Loeschmich\IViewReklamation.cs" />
+    <Compile Include="Loeschmich\IViewRezeptverwalten.cs" />
+    <Compile Include="Loeschmich\IViewZahlungseingangpruefen.cs" />
+    <Compile Include="model\Kunde.cs" />
+    <Compile Include="model\KundeExt.cs" />
+    <Compile Include="model\Lagerposition.cs" />
+    <Compile Include="model\Lieferposition.cs" />
+    <Compile Include="model\Lieferung.cs" />
     <Compile Include="Model.cs" />
-    <Compile Include="Produkt.cs" />
-    <Compile Include="Produkte.cs" />
-    <Compile Include="Produktionsliste.cs" />
+    <Compile Include="model\Produkt.cs" />
+    <Compile Include="model\Produkte.cs" />
+    <Compile Include="model\Produktionsliste.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RezeptExt.cs" />
-    <Compile Include="UserControlRechnungstellen.cs">
+    <Compile Include="model\RezeptExt.cs" />
+    <Compile Include="UC\UserControlRechnungstellen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlRechnungstellen.Designer.cs">
+    <Compile Include="UC\UserControlRechnungstellen.Designer.cs">
       <DependentUpon>UserControlRechnungstellen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlBestellung.cs">
+    <Compile Include="UC\UserControlBestellung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlBestellung.Designer.cs">
+    <Compile Include="UC\UserControlBestellung.Designer.cs">
       <DependentUpon>UserControlBestellung.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlKunde.cs">
+    <Compile Include="UC\UserControlKunde.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlKunde.Designer.cs">
+    <Compile Include="UC\UserControlKunde.Designer.cs">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlLagereingang.cs">
+    <Compile Include="UC\UserControlLagereingang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlLagereingang.Designer.cs">
+    <Compile Include="UC\UserControlLagereingang.Designer.cs">
       <DependentUpon>UserControlLagereingang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlLieferung.cs">
+    <Compile Include="UC\UserControlLieferung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlLieferung.Designer.cs">
+    <Compile Include="UC\UserControlLieferung.Designer.cs">
       <DependentUpon>UserControlLieferung.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlProduktion.cs">
+    <Compile Include="UC\UserControlProduktion.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlProduktion.Designer.cs">
+    <Compile Include="UC\UserControlProduktion.Designer.cs">
       <DependentUpon>UserControlProduktion.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlProduktVerwalten.cs">
+    <Compile Include="UC\UserControlProduktVerwalten.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlProduktVerwalten.Designer.cs">
+    <Compile Include="UC\UserControlProduktVerwalten.Designer.cs">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlReklamation.cs">
+    <Compile Include="UC\UserControlReklamation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlReklamation.Designer.cs">
+    <Compile Include="UC\UserControlReklamation.Designer.cs">
       <DependentUpon>UserControlReklamation.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlRezeptverwaltung.cs">
+    <Compile Include="UC\UserControlRezeptverwaltung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlRezeptverwaltung.Designer.cs">
+    <Compile Include="UC\UserControlRezeptverwaltung.Designer.cs">
       <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlTest.cs">
+    <Compile Include="UC\UserControlTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlTest.Designer.cs">
+    <Compile Include="UC\UserControlTest.Designer.cs">
       <DependentUpon>UserControlTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlZahlungseingangpruefen.cs">
+    <Compile Include="UC\UserControlZahlungseingangpruefen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlZahlungseingangpruefen.Designer.cs">
+    <Compile Include="UC\UserControlZahlungseingangpruefen.Designer.cs">
       <DependentUpon>UserControlZahlungseingangpruefen.cs</DependentUpon>
     </Compile>
     <Compile Include="View.cs">
@@ -180,28 +179,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControlBestellung.resx">
+    <EmbeddedResource Include="UC\UserControlBestellung.resx">
       <DependentUpon>UserControlBestellung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlKunde.resx">
+    <EmbeddedResource Include="UC\UserControlKunde.resx">
       <DependentUpon>UserControlKunde.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlLagereingang.resx">
+    <EmbeddedResource Include="UC\UserControlLagereingang.resx">
       <DependentUpon>UserControlLagereingang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlLieferung.resx">
+    <EmbeddedResource Include="UC\UserControlLieferung.resx">
       <DependentUpon>UserControlLieferung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlProduktion.resx">
+    <EmbeddedResource Include="UC\UserControlProduktion.resx">
       <DependentUpon>UserControlProduktion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlProduktVerwalten.resx">
+    <EmbeddedResource Include="UC\UserControlProduktVerwalten.resx">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlRezeptverwaltung.resx">
+    <EmbeddedResource Include="UC\UserControlRezeptverwaltung.resx">
       <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlTest.resx">
+    <EmbeddedResource Include="UC\UserControlTest.resx">
       <DependentUpon>UserControlTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
@@ -221,5 +220,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
