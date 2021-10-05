@@ -67,11 +67,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="model\RezeptExt.cs" />
-    <Compile Include="UC\UserControlRechnungstellen.cs">
+    <Compile Include="UC\UserControlRechnungen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC\UserControlRechnungstellen.Designer.cs">
-      <DependentUpon>UserControlRechnungstellen.cs</DependentUpon>
+    <Compile Include="UC\UserControlRechnungen.Designer.cs">
+      <DependentUpon>UserControlRechnungen.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UserControlBestellung.cs">
       <SubType>UserControl</SubType>
@@ -121,12 +121,6 @@
     <Compile Include="UC\UserControlRezeptverwaltung.Designer.cs">
       <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC\UserControlTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\UserControlTest.Designer.cs">
-      <DependentUpon>UserControlTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC\UserControlZahlungseingangpruefen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,11 +161,17 @@
     <EmbeddedResource Include="UC\UserControlProduktVerwalten.resx">
       <DependentUpon>UserControlProduktVerwalten.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UserControlRechnungen.resx">
+      <DependentUpon>UserControlRechnungen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UserControlReklamation.resx">
+      <DependentUpon>UserControlReklamation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UserControlRezeptverwaltung.resx">
       <DependentUpon>UserControlRezeptverwaltung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC\UserControlTest.resx">
-      <DependentUpon>UserControlTest.cs</DependentUpon>
+    <EmbeddedResource Include="UC\UserControlZahlungseingangpruefen.resx">
+      <DependentUpon>UserControlZahlungseingangpruefen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>

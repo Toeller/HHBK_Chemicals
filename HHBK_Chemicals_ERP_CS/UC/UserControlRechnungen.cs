@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class UserControlRechnungstellen : UserControl
+    public partial class co : UserControl
     {
-        public UserControlRechnungstellen()
+        public co()
         {
             InitializeComponent();
         }

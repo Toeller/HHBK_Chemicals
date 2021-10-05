@@ -29,7 +29,7 @@ namespace HHBK_Chemicals_ERP_CS
         private UserControlLagereingang ucLagereingang = new UserControlLagereingang();
         private UserControlLieferung ucLieferung = new UserControlLieferung();
 
-        private UserControlRechnungstellen ucRechnungstellen = new UserControlRechnungstellen();
+        private co ucRechnungstellen = new co();
         private UserControlReklamation ucReklamation = new UserControlReklamation();
         private UserControlRezeptverwaltung ucRezeptverwaltung = new UserControlRezeptverwaltung();
         private UserControlZahlungseingangpruefen ucZahlungseingangpruefen = new UserControlZahlungseingangpruefen();
@@ -48,10 +48,10 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage5.Text = "Produktion";
             this.tabPage6.Text = "Produktverwalten";
 
-            this.tabPage7.Text = "Rechnungstellen";
+            this.tabPage7.Text = "Rechnungen";
             this.tabPage8.Text = "Reklamation";
             this.tabPage9.Text = "Rezeptverwaltung";
-            this.tabPage10.Text = "Zahlungseingangprüfen";
+            this.tabPage10.Text = "Zahlungseingänge";
 
             this.tabPage1.Controls.Add(ucBestellung);
             this.tabPage2.Controls.Add(ucKunde);
