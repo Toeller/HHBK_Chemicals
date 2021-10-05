@@ -12,9 +12,12 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class UserControlReklamation : UserControl
     {
+        List<Reklamation> reklamationen = new List<Reklamation>();
         public UserControlReklamation()
         {
             InitializeComponent();
         }
+
+        internal List<Reklamation> Reklamationen { get => reklamationen; set => reklamationen = value; }
     }
 }

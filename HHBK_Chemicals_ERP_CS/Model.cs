@@ -362,5 +362,15 @@ namespace HHBK_Chemicals_ERP_CS
         {
             throw new NotImplementedException();
         }
+
+        List<Reklamation> IModel.getReklamationen()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Produktionsliste> IModel.getProduktionslisten()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

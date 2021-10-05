@@ -41,7 +41,9 @@ namespace HHBK_Chemicals_ERP_CS
 
         void bestellungSpeichern(List<Bestellposition> bestellung);
 
+        List<Reklamation> getReklamationen();
 
+        List<Produktionsliste> getProduktionslisten();
 
     }
 }

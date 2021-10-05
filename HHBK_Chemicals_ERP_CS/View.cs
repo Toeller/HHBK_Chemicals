@@ -29,7 +29,7 @@ namespace HHBK_Chemicals_ERP_CS
         private UserControlLagereingang ucLagereingang = new UserControlLagereingang();
         private UserControlLieferung ucLieferung = new UserControlLieferung();
 
-        private co ucRechnungstellen = new co();
+        private co ucRechnungen = new co();
         private UserControlReklamation ucReklamation = new UserControlReklamation();
         private UserControlRezeptverwaltung ucRezeptverwaltung = new UserControlRezeptverwaltung();
         private UserControlZahlungseingangpruefen ucZahlungseingangpruefen = new UserControlZahlungseingangpruefen();
@@ -59,7 +59,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage4.Controls.Add(ucLieferung);
             this.tabPage5.Controls.Add(ucProduktion);
             this.tabPage6.Controls.Add(ucProduktverwalten);
-            this.tabPage7.Controls.Add(ucRechnungstellen);
+            this.tabPage7.Controls.Add(ucRechnungen);
             this.tabPage8.Controls.Add(ucReklamation);
             this.tabPage9.Controls.Add(ucRezeptverwaltung);
             this.tabPage10.Controls.Add(ucZahlungseingangpruefen);
@@ -75,7 +75,7 @@ namespace HHBK_Chemicals_ERP_CS
             ucLieferung.VisibleChanged += onLieferungGotVisible;
             ucProduktion.VisibleChanged += onProduktionGotVisible;
             ucProduktverwalten.VisibleChanged += onProduktverwaltenGotVisible;
-            ucRechnungstellen.VisibleChanged += onRechnungstellenGotVisible;
+            ucRechnungen.VisibleChanged += onRechnungenGotVisible;
             ucReklamation.VisibleChanged += onReklamationGotVisible;
 
             
@@ -86,7 +86,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                //ucReklamation.Reklamationen = model.getReklamationen();
+                ucReklamation.Reklamationen = model.getReklamationen();
             }
 
             catch (Exception ex)
@@ -95,11 +95,11 @@ namespace HHBK_Chemicals_ERP_CS
             }
         }
 
-        private void onRechnungstellenGotVisible(object sender, EventArgs e)
+        private void onRechnungenGotVisible(object sender, EventArgs e)
         {
             try
             {
-                //ucRechnungstellen.BestellungenOhneRechnung = model.getBestellungenOhneRechnung();
+                //ucRechnungen.Rechnungen = model.getRechnungen();
             }
 
             catch (Exception ex)
@@ -112,7 +112,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             try
             {
-                //ucProduktion.Produktionsliste = model.getProduktionsliste();
+                ucProduktion.Produktionslisten = model.getProduktionslisten();
             }
 
             catch (Exception ex)
