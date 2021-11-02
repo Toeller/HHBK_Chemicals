@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Model:IModel
+    public class Model:IModel
     {
         private IView view;
         

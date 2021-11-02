@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Produkt
+    public class Produkt
     {
         private int artikelnummer;
         private string artikelname;

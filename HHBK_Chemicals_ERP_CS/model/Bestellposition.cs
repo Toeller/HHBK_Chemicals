@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    class Bestellposition
+    public class Bestellposition
     {
         private int bestellpositionsnummer;
         private int bestellungsnummer;

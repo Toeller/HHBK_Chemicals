@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
-    interface IView
+    public interface IView
     {
         IModel IModel1 { set; }
         IController IController1 { set; }
