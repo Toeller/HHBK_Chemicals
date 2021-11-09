@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eVUprPZqAXZPqRAo2YSDZoRVyGzB2Oicq4w9JaGyM+NKj4v3JPgQ/2mN6l42cfwVwtmGw/ONfBwa0DqvoryOmg==",
+  "dgSpecHash": "K8qRZRl5e6J/X7M1UhLlE7vKPECB6c4KQV+WRZHZzAjTuTHlp8aLpvT7ZTEL514UW/i7Fk7Lev7YBhTAKnUmUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\Toeller\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\TOEL.HERTZ\\source\\repos\\Toeller\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TOEL.HERTZ\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\TOEL.HERTZ\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

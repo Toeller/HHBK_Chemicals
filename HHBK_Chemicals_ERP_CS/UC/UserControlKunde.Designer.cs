@@ -48,6 +48,11 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonNeu = new System.Windows.Forms.Button();
             this.buttonAendern = new System.Windows.Forms.Button();
             this.buttonLoeschen = new System.Windows.Forms.Button();
+            this.buttonFirst = new System.Windows.Forms.Button();
+            this.buttonBackwards = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.buttonForward = new System.Windows.Forms.Button();
+            this.buttonLast = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -180,7 +185,7 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             // buttonNeu
             // 
-            this.buttonNeu.Location = new System.Drawing.Point(3, 149);
+            this.buttonNeu.Location = new System.Drawing.Point(6, 149);
             this.buttonNeu.Name = "buttonNeu";
             this.buttonNeu.Size = new System.Drawing.Size(75, 23);
             this.buttonNeu.TabIndex = 16;
@@ -200,17 +205,57 @@ namespace HHBK_Chemicals_ERP_CS
             // 
             // buttonLoeschen
             // 
-            this.buttonLoeschen.Location = new System.Drawing.Point(336, 149);
+            this.buttonLoeschen.Location = new System.Drawing.Point(329, 149);
             this.buttonLoeschen.Name = "buttonLoeschen";
             this.buttonLoeschen.Size = new System.Drawing.Size(75, 23);
             this.buttonLoeschen.TabIndex = 18;
             this.buttonLoeschen.Text = "löschen";
             this.buttonLoeschen.UseVisualStyleBackColor = true;
             // 
+            // buttonFirst
+            // 
+            this.buttonFirst.Location = new System.Drawing.Point(6, 209);
+            this.buttonFirst.Name = "buttonFirst";
+            this.buttonFirst.Size = new System.Drawing.Size(39, 23);
+            this.buttonFirst.TabIndex = 19;
+            this.buttonFirst.Text = "|<-";
+            this.buttonFirst.UseVisualStyleBackColor = true;
+            // 
+            // buttonBackwards
+            // 
+            this.buttonBackwards.Location = new System.Drawing.Point(64, 209);
+            this.buttonBackwards.Name = "buttonBackwards";
+            this.buttonBackwards.Size = new System.Drawing.Size(39, 23);
+            this.buttonBackwards.TabIndex = 20;
+            this.buttonBackwards.Text = "<-";
+            this.buttonBackwards.UseVisualStyleBackColor = true;
+            // 
+            // buttonForward
+            // 
+            this.buttonForward.Location = new System.Drawing.Point(304, 208);
+            this.buttonForward.Name = "buttonForward";
+            this.buttonForward.Size = new System.Drawing.Size(39, 23);
+            this.buttonForward.TabIndex = 21;
+            this.buttonForward.Text = "->";
+            this.buttonForward.UseVisualStyleBackColor = true;
+            // 
+            // buttonLast
+            // 
+            this.buttonLast.Location = new System.Drawing.Point(365, 208);
+            this.buttonLast.Name = "buttonLast";
+            this.buttonLast.Size = new System.Drawing.Size(39, 23);
+            this.buttonLast.TabIndex = 22;
+            this.buttonLast.Text = "->|";
+            this.buttonLast.UseVisualStyleBackColor = true;
+            // 
             // UserControlKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonLast);
+            this.Controls.Add(this.buttonForward);
+            this.Controls.Add(this.buttonBackwards);
+            this.Controls.Add(this.buttonFirst);
             this.Controls.Add(this.buttonLoeschen);
             this.Controls.Add(this.buttonAendern);
             this.Controls.Add(this.buttonNeu);
@@ -231,7 +276,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserControlKunde";
-            this.Size = new System.Drawing.Size(414, 176);
+            this.Size = new System.Drawing.Size(414, 241);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +303,10 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.Button buttonNeu;
         private System.Windows.Forms.Button buttonAendern;
         private System.Windows.Forms.Button buttonLoeschen;
+        private System.Windows.Forms.Button buttonFirst;
+        private System.Windows.Forms.Button buttonBackwards;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button buttonForward;
+        private System.Windows.Forms.Button buttonLast;
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HHBK_Chemicals_ERP_CS.model;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -16,8 +17,10 @@ namespace HHBK_Chemicals_ERP_CS
         IView IModel.IView1 { set => this.view = value; }
         IController IModel.IController1 { set => this.controller = value; }
 
+        private IKundenliste kunden=new Kundenliste();
 
-        private List<Kunde> kunden= new List<Kunde>() ;
+        //private IKundenliste kunden = new KundenlisteXML();
+
 
         #region DB Attribute ändern!
         private string myConnectionString = "server=127.0.0.1;uid=erpModel;pwd=555HHBK;database=HHBK_Chemicals;";
@@ -40,82 +43,30 @@ namespace HHBK_Chemicals_ERP_CS
         
         List<Kunde> IModel.getKunden()
         {
-            Kunde kunde1 = new Kunde();
-            List<Kunde> kundenliste = new List<Kunde>(); 
-
-            mycommand.CommandText = "Select * from kunde";
-            
-            conn.Open();
-
-            MySqlDataReader reader = mycommand.ExecuteReader(); 
-            
-            while (reader.Read())
-            {
-                kunde1.Kundennummer    = Convert.ToInt32(reader["kundennummer"]);
-                kunde1.Name         = reader["name"].ToString();
-                kunde1.Vorname      = reader["vorname"].ToString();
-                kunde1.Strasse = reader["strasse"].ToString();
-                kunde1.Hausnummer = reader["hausnummer"].ToString();
-                kunde1.Ort = reader["ort"].ToString();
-                kunde1.Postleitzahl    = Convert.ToInt32(reader["postleitzahl"]);
-                kunde1.Emailadresse = reader["emailadresse"].ToString();
-
-                kundenliste.Add(kunde1);
-
-            }
-            reader.Close();
-            conn.Close();
-            //kunde1 = new Kunde(kundennummer, name, vorname, strasse, hausnummer, ort, postleitzahl, emailadresse);
-
-            return kundenliste;
+            return kunden.Kunden;
         }
 
         void IModel.aendern(Kunde kunde)
         {
-            if (kunde.Kundennummer != -1)
-                mycommand.CommandText = Commands.change(kunde);
-            else
-                mycommand.CommandText = Commands.newEntity(kunde);
-
-            MessageBox.Show(mycommand.CommandText);
-
-
-            conn.Open();
-            try
-            {
-                mycommand.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            //Über Event lösen!
-
-            IModel a = this;
-            view.Show(a.getKunden());
+            kunden.alter(kunde);
         }
         void IModel.loeschen(Kunde kunde)
         {
-            throw new NotImplementedException();
+            kunden.delete(kunde);
         }
         void IModel.speichern(Kunde kunde)
         {
-            throw new NotImplementedException();
+            kunden.save(kunde);
         }
 
         Kunde IModel.sucheKunde(int kundennummer)
         {
-            throw new NotImplementedException();
+            return kunden.getKunde(kundennummer);
         }
 
         List<Kunde> IModel.sucheKunde()
         {
-            throw new NotImplementedException();
+            return kunden.Kunden;
         }
 
         #endregion

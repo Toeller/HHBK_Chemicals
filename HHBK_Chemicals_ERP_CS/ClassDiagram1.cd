@@ -1,2 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HHBK_Chemicals_ERP_CS.Commands" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAAAAAAAAAAAAAQCGAEAAIAAAAAAAAAAACEA=</HashCode>
+      <FileName>controller\Commands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Controller" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAEAAAQAAAAAAEAAAAQAAAAAIAAA=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Bestellposition" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgSAAAAAgAAAAIAAAAAAAAAAAAAAQAKAAEgCgAAEAA=</HashCode>
+      <FileName>model\Bestellposition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Bestellung" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAgAAAAIAAAAAIAAAACAAIQACACEAAgAAEAA=</HashCode>
+      <FileName>model\Bestellung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Kunde" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICEAAAAgAAAQAAAAAAAAQAACAECAAgBAiAEAQCgBA=</HashCode>
+      <FileName>model\Kunde.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.KundeExt" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\KundeExt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Kundenliste" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAEgAAAAAAAAAAAAAAAQAIgAAAgAAAAAgAAA=</HashCode>
+      <FileName>model\Kundenliste.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Lagerposition" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAEQAAARAAAAEAAAAAAAAAAAAAEAAACAAA=</HashCode>
+      <FileName>model\Lagerposition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Lieferposition" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAABAYAAAQEAAACAAgAAAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>model\Lieferposition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Lieferung" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAABAYAAAQEAAACAAgAAAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>model\Lieferung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Produkt" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEQAACAAAAAgAgAAAAAAIgAAACIACgAAAAgAA=</HashCode>
+      <FileName>model\Produkt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Produkte" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\Produkte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Produktionsliste" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\Produktionsliste.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Reklamation" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\Reklamation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.RezeptExt" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\RezeptExt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Model" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACSgAIAAIAAEAAAAAAABAIF1BIAAEDwAAAAABCAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Program" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlBestellung" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEKAAAFABAgCpAAACACggAQAWQAQAAgIAAAA=</HashCode>
+      <FileName>UC\UserControlBestellung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlKunde" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAAABABAACICEACQAAAAACEAABAAAIAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlLagereingang" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgAAEAACAAABAAAACAAAACAEBAAAAAUAAAAAIAAAA=</HashCode>
+      <FileName>UC\UserControlLagereingang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlLieferung" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAgAAAAKAAABABAgCYKAACSAAhAAAEAAhAAAMAADA=</HashCode>
+      <FileName>UC\UserControlLieferung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlProduktion" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cCAgAAEAASDiABCAAACgAEBCIAAAAAhAEQAAgAAAAQQ=</HashCode>
+      <FileName>UC\UserControlProduktion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlProduktVerwalten" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAABAiAAARBwAACMAAACAAAAEAAESggABAqBEAA=</HashCode>
+      <FileName>UC\UserControlProduktVerwalten.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.co" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAABAAAACAAAACEAAACAAAEAAABAAAAAA=</HashCode>
+      <FileName>UC\UserControlRechnungen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlReklamation" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEABBABACAAAACAAAAAAAAEAAAAAAAAAI=</HashCode>
+      <FileName>UC\UserControlReklamation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlRezeptverwaltung" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAABAAAACAAABCAEAAAAAgAAAAAAIAAgQ=</HashCode>
+      <FileName>UC\UserControlRezeptverwaltung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.UserControlZahlungseingangpruefen" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAABAAAACAAAACEAAECAAAEAAABAAAAAA=</HashCode>
+      <FileName>UC\UserControlZahlungseingangpruefen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.View" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoCBQYACADAAwhMAIAKgIAACEAABEQAKoAEBAAIJDhA=</HashCode>
+      <FileName>View.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Properties.Resources" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HHBK_Chemicals_ERP_CS.Properties.Settings" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HHBK_Chemicals_ERP_CS.IController" Collapsed="true">
+    <Position X="1.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAABAAAAAA=</HashCode>
+      <FileName>IController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HHBK_Chemicals_ERP_CS.IModel" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAQAAAAAUAAABUgEAQAACBIAAAAAAICUAAAABAAAA=</HashCode>
+      <FileName>IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HHBK_Chemicals_ERP_CS.IView" Collapsed="true">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HHBK_Chemicals_ERP_CS.model.IKundenliste">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAACAAQAAAAAAAQAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>model\IKundenliste.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

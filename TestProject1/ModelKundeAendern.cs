@@ -13,5 +13,6 @@ namespace TestProject1
     class ModelKundeAendern
     {
         [TestMethod]
+        void testen() { }
     }
 }

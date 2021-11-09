@@ -55,8 +55,10 @@
     <Compile Include="IController.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IView.cs" />
+    <Compile Include="model\IKundenliste.cs" />
     <Compile Include="model\Kunde.cs" />
     <Compile Include="model\KundeExt.cs" />
+    <Compile Include="model\Kundenliste.cs" />
     <Compile Include="model\Lagerposition.cs" />
     <Compile Include="model\Lieferposition.cs" />
     <Compile Include="model\Lieferung.cs" />

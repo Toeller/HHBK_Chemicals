@@ -28,15 +28,9 @@ namespace HHBK_Chemicals_ERP_CS
             this.Ort = ort;
             this.postleitzahl = postleitzahl;
             this.emailadresse = emailadresse;
-            
         }
 
-        public Kunde()
-
-        {
-
-
-        }
+        public Kunde(){ }
 
         public int Postleitzahl
         {
@@ -75,5 +69,6 @@ namespace HHBK_Chemicals_ERP_CS
         public string Hausnummer { get => hausnummer; set => hausnummer = value; }
         public string Ort { get => ort; set => ort = value; }
         public string Passwort { get => passwort; set => passwort = value; }
+
     }
 }
