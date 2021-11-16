@@ -211,6 +211,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonLoeschen.TabIndex = 18;
             this.buttonLoeschen.Text = "löschen";
             this.buttonLoeschen.UseVisualStyleBackColor = true;
+            this.buttonLoeschen.Click += new System.EventHandler(this.buttonLoeschen_Click);
             // 
             // buttonFirst
             // 
@@ -220,6 +221,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonFirst.TabIndex = 19;
             this.buttonFirst.Text = "|<-";
             this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
             // buttonBackwards
             // 
@@ -229,6 +231,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonBackwards.TabIndex = 20;
             this.buttonBackwards.Text = "<-";
             this.buttonBackwards.UseVisualStyleBackColor = true;
+            this.buttonBackwards.Click += new System.EventHandler(this.buttonBackwards_Click);
             // 
             // buttonForward
             // 
@@ -238,6 +241,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonForward.TabIndex = 21;
             this.buttonForward.Text = "->";
             this.buttonForward.UseVisualStyleBackColor = true;
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
             // 
             // buttonLast
             // 
@@ -247,6 +251,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonLast.TabIndex = 22;
             this.buttonLast.Text = "->|";
             this.buttonLast.UseVisualStyleBackColor = true;
+            this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
             // 
             // UserControlKunde
             // 

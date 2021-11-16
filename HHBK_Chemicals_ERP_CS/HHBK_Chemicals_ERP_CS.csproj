@@ -58,6 +58,7 @@
     <Compile Include="model\IKundenliste.cs" />
     <Compile Include="model\Kunde.cs" />
     <Compile Include="model\KundeExt.cs" />
+    <Compile Include="model\KundenlisteXML.cs" />
     <Compile Include="model\Kundenliste.cs" />
     <Compile Include="model\Lagerposition.cs" />
     <Compile Include="model\Lieferposition.cs" />
@@ -193,6 +194,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="kundenliste.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

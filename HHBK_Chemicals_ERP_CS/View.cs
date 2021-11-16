@@ -35,12 +35,12 @@ namespace HHBK_Chemicals_ERP_CS
         private UserControlZahlungseingangpruefen ucZahlungseingangpruefen = new UserControlZahlungseingangpruefen();
 
         public event EventHandler ViewProduktionFreigegeben;
-        
+
 
         public View()
         {
             InitializeComponent();
-            
+
             this.tabPage1.Text = "Bestellung";
             this.tabPage2.Text = "Kunde";
             this.tabPage3.Text = "Lagereingang";
@@ -63,14 +63,18 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage8.Controls.Add(ucReklamation);
             this.tabPage9.Controls.Add(ucRezeptverwaltung);
             this.tabPage10.Controls.Add(ucZahlungseingangpruefen);
-           
-            
+
+
             ucProduktion.ProduktionFreigegeben += onProduktionFreigegeben;
             ucProduktverwalten.UCProduktVerwaltenAendern += onUCProduktverwaltenAendern;
             ucProduktverwalten.UCProduktVerwaltenLoeschen += onUCProduktverwaltenLoeschen;
 
             ucBestellung.VisibleChanged += onBestellungGotVisible;
+            
             ucKunde.VisibleChanged += onKundeGotVisible;
+            ucKunde.UCKundeAendern += onUCKundeAendern;
+            ucKunde.UCKundeLoeschen += onUCKundeLoeschen;
+
             ucLagereingang.VisibleChanged += onLagereingangGotVisible;
             ucLieferung.VisibleChanged += onLieferungGotVisible;
             ucProduktion.VisibleChanged += onProduktionGotVisible;
@@ -78,8 +82,8 @@ namespace HHBK_Chemicals_ERP_CS
             ucRechnungen.VisibleChanged += onRechnungenGotVisible;
             ucReklamation.VisibleChanged += onReklamationGotVisible;
 
-            
-           
+
+
         }
 
         private void onReklamationGotVisible(object sender, EventArgs e)
@@ -136,7 +140,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void onProduktverwaltenGotVisible(object sender, EventArgs e)
         {
-           
+
             try
             {
                 ucProduktverwalten.Produktliste = model.getProdukte();
@@ -151,8 +155,8 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void onKundeGotVisible(object sender, EventArgs e)
         {
-            
-            
+
+
             try
             {
                 ucKunde.KundenListe = model.getKunden();
@@ -167,7 +171,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void onBestellungGotVisible(object sender, EventArgs e)
         {
-            
+
             try
             {
                 ucBestellung.Bestellungen = model.getBestellungen();
@@ -204,6 +208,20 @@ namespace HHBK_Chemicals_ERP_CS
         {
             model.loeschen(ucProduktverwalten.Produkt);
         }
+
+        private void onUCKundeAendern(object sender, EventArgs e)
+        {
+            if (ucKunde.Kunde.Kundennummer == -1)
+                model.speichern(ucKunde.Kunde);
+            else
+                model.aendern(ucKunde.Kunde);
+        }
+
+        private void onUCKundeLoeschen(object sender, EventArgs e)
+        {
+            model.loeschen(ucKunde.Kunde);
+        }
+
 
 
         void onProduktionFreigegeben(object sender, EventArgs e)
