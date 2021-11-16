@@ -58,13 +58,25 @@ namespace HHBK_Chemicals_ERP_CS
         void IKundenliste.save(Kunde kunde)
         {
             doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+
+            int kundennummer=0;
+            foreach(XElement el in doc.Descendants("kunde"))
+            {
+                if (Convert.ToInt32(el.Attribute("kundennummer").Value) > kundennummer)
+                    kundennummer = Convert.ToInt32(el.Attribute("kundennummer").Value);
+            }
+                
+           
+
+
+
             doc.Descendants("kunde").
                 Where(
                         element =>
                         Convert.ToInt32(element.Attribute("kundennummer").Value) < kunde.Kundennummer).
                         Last().AddAfterSelf(
                             new XElement("kunde",
-                                new XAttribute("kundennummer", kunde.Kundennummer.ToString()),
+                                new XAttribute("kundennummer", kundennummer.ToString()),
                                 new XElement("nachname", kunde.Name),
                                 new XElement("vorname", kunde.Vorname),
                                 new XElement("strasse", kunde.Strasse),
