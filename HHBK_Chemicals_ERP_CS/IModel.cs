@@ -13,8 +13,8 @@ namespace HHBK_Chemicals_ERP_CS
 
         IController IController1 {set;}
 
-        
 
+        void createXML();
         void createDB();
         bool createTestData();
         List<Kunde> getKunden();

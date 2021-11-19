@@ -142,5 +142,10 @@ namespace HHBK_Chemicals_ERP_CS
             conn.Close();
             //kunde1 = new Kunde(kundennummer, name, vorname, strasse, hausnummer, ort, postleitzahl, emailadresse);
         }
+
+        void IKundenliste.generate()
+        {
+            refresh();
+        }
     }
 }

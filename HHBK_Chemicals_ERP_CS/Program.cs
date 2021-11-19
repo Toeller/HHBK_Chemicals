@@ -41,6 +41,8 @@ namespace HHBK_Chemicals_ERP_CS
             model.createDB();
             model.createTestData();
 
+            model.createXML();
+
             Application.Run((Form)view);
         }
     }

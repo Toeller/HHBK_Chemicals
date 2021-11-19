@@ -334,6 +334,11 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
-       
+        void IModel.createXML()
+        {
+
+
+            kunden.generate();
+        }
     }
 }

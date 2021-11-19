@@ -17,6 +17,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         public KundenlisteXML()
         {
+            //this.generate();
             this.refresh();
         }
 
@@ -24,7 +25,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IKundenliste.alter(Kunde kunde)
         {
-            doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+            doc = XDocument.Load(@"kundenliste.xml");
 
             foreach (XElement el in doc.Descendants("kunde").Where(
                          element => element.Attribute("kundennummer").Value == kunde.Kundennummer.ToString()))
@@ -46,7 +47,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IKundenliste.delete(Kunde kunde)
         {
-            doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+            doc = XDocument.Load(@"kundenliste.xml");
             doc.Descendants("kunde").
                 Where(
                         element =>
@@ -57,7 +58,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         void IKundenliste.save(Kunde kunde)
         {
-            doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+            doc = XDocument.Load(@"kundenliste.xml");
 
             int kundennummer=0;
             foreach(XElement el in doc.Descendants("kunde"))
@@ -93,7 +94,7 @@ namespace HHBK_Chemicals_ERP_CS
         Kunde IKundenliste.getKunde(int kundennummer)
         {
             Kunde kunde = new Kunde();
-            doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+            doc = XDocument.Load(@"kundenliste.xml");
 
             foreach (XElement el in doc.Descendants("kunde").Where(
                          element => element.Attribute("kundennummer").Value == kunde.Kundennummer.ToString()))
@@ -114,7 +115,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         void refresh()
         {
-            XDocument doc = XDocument.Load(@"C:\Users\TOEL.HERTZ\source\repos\Toeller\HHBK_Chemicals\HHBK_Chemicals_ERP_CS\kundenliste.xml");
+            XDocument doc = XDocument.Load("kundenliste.xml");
             
             kunden.Clear();
             foreach (XElement el in doc.Descendants("kunde"))
@@ -132,8 +133,49 @@ namespace HHBK_Chemicals_ERP_CS
                 kunden.Add(kunde1);
 
             }
+
+            MessageBox.Show(doc.ToString());
             
             
+        }
+
+        void IKundenliste.generate()
+        {
+            doc = new XDocument(new XElement("kundenliste",
+                                    new XElement("kunde",
+                                        new XAttribute("kundennummer","1"),
+                                        new XElement( "nachname","Lichtleitner"),
+                                        new XElement ("vorname", "Alexander"),
+                                        new XElement("strasse","Steinstrasse"), 
+                                        new XElement("hausnummer","12"), 
+                                        new XElement("plz","40225"),
+                                        new XElement("ort","Düsseldorf"),
+                                        new XElement("email","LichtleitnerAlexander@test-subjet.ru")
+                                                ),
+                                    new XElement("kunde",
+                                        new XAttribute("kundennummer", "3"),
+                                        new XElement("nachname", "Autrum"),
+                                        new XElement("vorname", "Maximilian"),
+                                        new XElement("strasse", "Am Ackerweg"),
+                                        new XElement("hausnummer", "4"),
+                                        new XElement("plz", "20764"),
+                                        new XElement("ort", "Hamburg"),
+                                        new XElement("email", "AurtumMaximilian@test-subjet.ru")
+                                                ),
+                                    new XElement("kunde",
+                                        new XAttribute("kundennummer", "61"),
+                                        new XElement("nachname", "Schwarz"),
+                                        new XElement("vorname", "Dominik"),
+                                        new XElement("strasse", "Am BergischWeg"),
+                                        new XElement("hausnummer", "20c"),
+                                        new XElement("plz", "90668"),
+                                        new XElement("ort", "Ansbach"),
+                                        new XElement("email", "SchwarzDominik@test-subjet.ru")
+                                                )
+
+                                            )
+                             );
+            doc.Save("kundenliste.xml");
         }
     }
 }
