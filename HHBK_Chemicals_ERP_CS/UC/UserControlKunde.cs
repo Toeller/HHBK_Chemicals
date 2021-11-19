@@ -63,12 +63,33 @@ namespace HHBK_Chemicals_ERP_CS
             }
         }
 
-        public Kunde Kunde { get => kunde; set => kunde = value; }
+        public Kunde Kunde
+        {
+            get => kunde;
+            set
+            {
+                kunde = value;
 
+                textBoxKundennummer.Text = Convert.ToString(kunde.Kundennummer);
+                textBoxName.Text = kunde.Name;
+                textBoxVorname.Text = kunde.Vorname;
+                textBoxStrasse.Text = kunde.Strasse;
+                textBoxHausnummer.Text = kunde.Hausnummer;
+                textBoxPLZ.Text = Convert.ToString(kunde.Postleitzahl);
+                textBoxOrt.Text = kunde.Ort;
+                textBoxEmailadresse.Text = kunde.Emailadresse;
+            }
+        }
 
         public event EventHandler UCKundeAendern;
         public event EventHandler UCKundeLoeschen;
+        public event EventHandler UCKundeSuchen;
 
+        protected virtual void OnUCKundeSuchen(object sender, EventArgs e)
+        {
+            EventHandler handler = UCKundeSuchen;
+            handler?.Invoke(this, e);
+        }
         protected virtual void OnUCKundeAendern(object sender, EventArgs e)
         {
             EventHandler handler = UCKundeAendern;
@@ -160,7 +181,14 @@ namespace HHBK_Chemicals_ERP_CS
             Kunde.Vorname = textBoxVorname.Text;
             Kunde.Strasse = textBoxStrasse.Text;
             Kunde.Hausnummer = textBoxHausnummer.Text;
-            Kunde.Postleitzahl = Convert.ToInt32(textBoxPLZ.Text);
+            try
+            {
+                Kunde.Postleitzahl = Convert.ToInt32(textBoxPLZ.Text);
+            }
+            catch
+            {
+                Kunde.Postleitzahl = 0;
+            }
             Kunde.Ort = textBoxOrt.Text;
             Kunde.Emailadresse = textBoxEmailadresse.Text;
         }
@@ -169,6 +197,55 @@ namespace HHBK_Chemicals_ERP_CS
         {
             OnUCKundeLoeschen(this, e);
             Index = 0;
+        }
+
+        private void buttonSuchen_Click(object sender, EventArgs e)
+        {
+            if (buttonSuchen.Text == "suchen")
+            {
+                textBoxKundennummer.ReadOnly = false;
+              
+                textBoxKundennummer.Text = "";
+                textBoxName.Text = "";
+                textBoxVorname.Text = "";
+                textBoxStrasse.Text = "";
+                textBoxHausnummer.Text = "";
+                textBoxPLZ.Text = "";
+                textBoxOrt.Text = "";
+                textBoxEmailadresse.Text = "";
+
+                buttonSuchen.Text = "abbrechen";
+
+                buttonLoeschen.Visible = false;
+                buttonAendern.Visible = false;
+            }
+            else
+            {
+                buttonSuchen.Text = "suchen";
+
+                buttonLoeschen.Visible = true;
+                buttonAendern.Visible = true;
+                textBoxKundennummer.ReadOnly = true;
+                Index = 0;
+            }
+        }
+
+        private void textBoxKundennummer_Validated(object sender, EventArgs e)
+        {
+            if(buttonSuchen.Text=="abbrechen")
+            {
+                setKunde();
+                OnUCKundeSuchen(this, e);
+
+                textBoxKundennummer.Text = kunde.Kundennummer.ToString();
+                textBoxName.Text = kunde.Name;
+                textBoxVorname.Text = kunde.Vorname;
+                textBoxStrasse.Text = kunde.Strasse;
+                textBoxHausnummer.Text = kunde.Hausnummer;
+                textBoxPLZ.Text = Convert.ToString(kunde.Postleitzahl);
+                textBoxOrt.Text = kunde.Ort;
+                textBoxEmailadresse.Text = kunde.Emailadresse;
+            }
         }
     }
 }

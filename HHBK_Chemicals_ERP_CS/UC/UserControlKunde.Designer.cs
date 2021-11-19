@@ -53,6 +53,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.buttonForward = new System.Windows.Forms.Button();
             this.buttonLast = new System.Windows.Forms.Button();
+            this.buttonSuchen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -133,6 +134,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxKundennummer.ReadOnly = true;
             this.textBoxKundennummer.Size = new System.Drawing.Size(100, 20);
             this.textBoxKundennummer.TabIndex = 8;
+            this.textBoxKundennummer.Validated += new System.EventHandler(this.textBoxKundennummer_Validated);
             // 
             // textBoxName
             // 
@@ -253,10 +255,21 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonLast.UseVisualStyleBackColor = true;
             this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
             // 
+            // buttonSuchen
+            // 
+            this.buttonSuchen.Location = new System.Drawing.Point(182, 208);
+            this.buttonSuchen.Name = "buttonSuchen";
+            this.buttonSuchen.Size = new System.Drawing.Size(75, 23);
+            this.buttonSuchen.TabIndex = 23;
+            this.buttonSuchen.Text = "suchen";
+            this.buttonSuchen.UseVisualStyleBackColor = true;
+            this.buttonSuchen.Click += new System.EventHandler(this.buttonSuchen_Click);
+            // 
             // UserControlKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonSuchen);
             this.Controls.Add(this.buttonLast);
             this.Controls.Add(this.buttonForward);
             this.Controls.Add(this.buttonBackwards);
@@ -313,5 +326,6 @@ namespace HHBK_Chemicals_ERP_CS
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button buttonForward;
         private System.Windows.Forms.Button buttonLast;
+        private System.Windows.Forms.Button buttonSuchen;
     }
 }

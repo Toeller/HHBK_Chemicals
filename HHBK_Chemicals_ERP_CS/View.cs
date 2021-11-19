@@ -74,6 +74,7 @@ namespace HHBK_Chemicals_ERP_CS
             ucKunde.VisibleChanged += onKundeGotVisible;
             ucKunde.UCKundeAendern += onUCKundeAendern;
             ucKunde.UCKundeLoeschen += onUCKundeLoeschen;
+            ucKunde.UCKundeSuchen += onUCKundeSuchen;
 
             ucLagereingang.VisibleChanged += onLagereingangGotVisible;
             ucLieferung.VisibleChanged += onLieferungGotVisible;
@@ -153,21 +154,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         }
 
-        private void onKundeGotVisible(object sender, EventArgs e)
-        {
-
-
-            try
-            {
-                ucKunde.KundenListe = model.getKunden();
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-        }
+        
 
         private void onBestellungGotVisible(object sender, EventArgs e)
         {
@@ -209,6 +196,22 @@ namespace HHBK_Chemicals_ERP_CS
             model.loeschen(ucProduktverwalten.Produkt);
         }
 
+        private void onKundeGotVisible(object sender, EventArgs e)
+        {
+
+
+            try
+            {
+                ucKunde.KundenListe = model.getKunden();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
         private void onUCKundeAendern(object sender, EventArgs e)
         {
             if (ucKunde.Kunde.Kundennummer == -1)
@@ -220,6 +223,11 @@ namespace HHBK_Chemicals_ERP_CS
         private void onUCKundeLoeschen(object sender, EventArgs e)
         {
             model.loeschen(ucKunde.Kunde);
+        }
+
+        private void onUCKundeSuchen(object sender, EventArgs e)
+        {
+            ucKunde.Kunde=model.sucheKunde(ucKunde.Kunde.Kundennummer);
         }
 
 
