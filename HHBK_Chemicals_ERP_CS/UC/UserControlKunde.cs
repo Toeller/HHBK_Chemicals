@@ -99,6 +99,7 @@ namespace HHBK_Chemicals_ERP_CS
                 buttonAendern.Text = "speichern";
                 buttonNeu.Text = "abbrechen";
                 buttonLoeschen.Visible = false;
+                
             }
 
             else
@@ -110,18 +111,21 @@ namespace HHBK_Chemicals_ERP_CS
                 buttonAendern.Text = "ändern";
                 buttonNeu.Text = "neu";
                 buttonLoeschen.Visible = true;
+                
             }
 
         }
 
         private void buttonAendern_Click(object sender, EventArgs e)
         {
+            
+            
+            setKunde();
+            OnUCKundeAendern(this, e);
+            Index = 0; //Besser Index auf geändertes/neues Element legen!!!
             buttonAendern.Text = "ändern";
             buttonNeu.Text = "neu";
             buttonLoeschen.Visible = true;
-            Index = 0; //Besser Index auf geändertes/neues Element legen!!!
-
-            OnUCKundeAendern(this, e);
 
         }
 
@@ -164,6 +168,7 @@ namespace HHBK_Chemicals_ERP_CS
         private void buttonLoeschen_Click(object sender, EventArgs e)
         {
             OnUCKundeLoeschen(this, e);
+            Index = 0;
         }
     }
 }

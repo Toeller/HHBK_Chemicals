@@ -27,4 +27,13 @@
     <ort>Ansbach</ort>
     <email>SchwarzDominik@test-subjet.ru</email>
   </kunde>
+  <kunde kundennummer="62">
+    <nachname>Enegls</nachname>
+    <vorname>asd</vorname>
+    <strasse>asd</strasse>
+    <hausnummer>23</hausnummer>
+    <plz>40225</plz>
+    <ort>asd</ort>
+    <email>asd</email>
+  </kunde>
 </kundenliste>
