@@ -50,11 +50,7 @@ namespace HHBK_Chemicals_ERP_CS
         {
             doc = XDocument.Load(@"kundenliste.xml");
 
-            MessageBox.Show(doc.Descendants("kunde").
-                Where(
-                        element =>
-                        element.Attribute("kundennummer").Value == kunde.Kundennummer.ToString()
-                      ).First().ToString());
+           
             
             doc.Descendants("kunde").
                 Where(
@@ -121,6 +117,113 @@ namespace HHBK_Chemicals_ERP_CS
             }
 
             return kunde;
+        }
+
+        Kunde IKundenliste.getKunde(Kunde kunde)
+        {
+            Kunde kundeResult = new Kunde();
+            IEnumerable<XElement> kundenResults=doc.Descendants("Kunde");
+            doc = XDocument.Load(fileName);
+            kundenResults=doc.Descendants("kunde");
+
+            
+
+            if (kunde.Kundennummer != 0)
+            {
+                foreach (XElement el in kundenResults)
+                {
+                    if (Convert.ToInt32(el.Attribute("kundennummer").Value) ==
+                        kunde.Kundennummer)
+                    {
+                        kundeResult.Kundennummer = Convert.ToInt32(el.Attribute("kundennummer").Value);
+                        kundeResult.Name = el.Element("nachname").Value;
+                        kundeResult.Vorname = el.Element("vorname").Value;
+                        kundeResult.Strasse = el.Element("strasse").Value;
+                        kundeResult.Hausnummer = el.Element("hausnummer").Value;
+                        kundeResult.Ort = el.Element("ort").Value;
+                        kundeResult.Postleitzahl = Convert.ToInt32(el.Element("plz").Value);
+                        kundeResult.Emailadresse = el.Element("email").Value;
+                    }
+                }
+
+                return kundeResult;
+            }
+
+            else
+            {
+                if(kunde.Name!="")
+                {
+                    
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("nachname").Value) == kunde.Name);
+                }
+
+                if (kunde.Vorname!="")
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("vorname").Value) == kunde.Vorname);
+                }
+
+                if (kunde.Strasse != "") 
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("strasse").Value) == kunde.Strasse);
+                }
+
+                if(kunde.Hausnummer!="")
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("hausnummer").Value) == kunde.Hausnummer);
+                }
+
+                if(kunde.Postleitzahl!=0)
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("plz").Value) == Convert.ToString(kunde.Postleitzahl));
+                }
+
+                if(kunde.Ort!="")
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("ort").Value) == kunde.Ort);
+                }
+
+                if(kunde.Emailadresse!="")
+                {
+                    kundenResults = kundenResults.
+                        Where(element =>
+                            (element.Element("email").Value) == kunde.Emailadresse);
+
+                }
+
+                if(kundenResults.Count()==1)
+                {
+                    kundeResult.Kundennummer =Convert.ToInt32(kundenResults.First().Attribute("kundennummer").Value);
+                    kundeResult.Name = kundenResults.First().Element("nachname").Value;
+                    kundeResult.Vorname = kundenResults.First().Element("vorname").Value;
+                    kundeResult.Strasse = kundenResults.First().Element("strasse").Value;
+                    kundeResult.Hausnummer = kundenResults.First().Element("hausnummer").Value;
+                    kundeResult.Ort = kundenResults.First().Element("ort").Value;
+                    kundeResult.Postleitzahl = Convert.ToInt32(kundenResults.First().Element("plz").Value);
+                    kundeResult.Emailadresse = kundenResults.First().Element("email").Value;
+                    return kundeResult;
+                }
+                else if(kundenResults.Count()>1)
+                {
+                    return kunde;
+                }
+
+                else 
+                {
+                    return kundeResult;
+                }
+            }
         }
 
 

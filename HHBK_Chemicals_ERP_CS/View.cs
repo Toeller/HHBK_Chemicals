@@ -227,7 +227,7 @@ namespace HHBK_Chemicals_ERP_CS
 
         private void onUCKundeSuchen(object sender, EventArgs e)
         {
-            ucKunde.Kunde=model.sucheKunde(ucKunde.Kunde.Kundennummer);
+            ucKunde.Kunde=model.sucheKunde(ucKunde.Kunde);
         }
 
 

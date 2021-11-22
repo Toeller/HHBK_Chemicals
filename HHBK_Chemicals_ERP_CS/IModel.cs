@@ -35,6 +35,9 @@ namespace HHBK_Chemicals_ERP_CS
         void loeschen(Kunde kunde);
         void loeschen(Produkt produkt);
         Kunde sucheKunde(int kundennummer);
+
+        Kunde sucheKunde(Kunde kunde);
+
         List<Kunde> sucheKunde();
         Produkt suchenProdukt(int artikelnummer);
         List<Produkt> sucheProdukt();

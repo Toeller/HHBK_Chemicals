@@ -64,6 +64,11 @@ namespace HHBK_Chemicals_ERP_CS
             return kunden.getKunde(kundennummer);
         }
 
+        Kunde IModel.sucheKunde(Kunde kunde)
+        {
+            return kunden.getKunde(kunde);
+        }
+
         List<Kunde> IModel.sucheKunde()
         {
             return kunden.Kunden;

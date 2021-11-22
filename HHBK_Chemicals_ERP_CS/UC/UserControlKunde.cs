@@ -16,6 +16,8 @@ namespace HHBK_Chemicals_ERP_CS
 
         private Kunde kunde = new Kunde();
 
+        private Kunde kundeNeu = new Kunde();
+
         private int index = 0;
         
         public UserControlKunde()
@@ -50,15 +52,15 @@ namespace HHBK_Chemicals_ERP_CS
                     index = value;
                 }
 
-                textBoxKundennummer.Text = Convert.ToString(kundenListe[Index].Kundennummer);
-                textBoxName.Text = kundenListe[Index].Name;
-                textBoxVorname.Text = kundenListe[Index].Vorname;
-                textBoxStrasse.Text = kundenListe[Index].Strasse;
-                textBoxHausnummer.Text = kundenListe[Index].Hausnummer;
-                textBoxPLZ.Text = Convert.ToString(kundenListe[Index].Postleitzahl);
-                textBoxOrt.Text = kundenListe[Index].Ort;
-                textBoxEmailadresse.Text = kundenListe[Index].Emailadresse;
-                setKunde();
+                kundeNeu.Kundennummer = kundenListe[Index].Kundennummer;
+                kundeNeu.Name = kundenListe[Index].Name;
+                kundeNeu.Vorname = kundenListe[Index].Vorname;
+                kundeNeu.Strasse = kundenListe[Index].Strasse;
+                kundeNeu.Hausnummer = kundenListe[Index].Hausnummer;
+                kundeNeu.Postleitzahl = kundenListe[Index].Postleitzahl;
+                kundeNeu.Ort = kundenListe[Index].Ort;
+                kundeNeu.Emailadresse = kundenListe[Index].Emailadresse;
+                Kunde = kundeNeu;
 
             }
         }
@@ -69,15 +71,78 @@ namespace HHBK_Chemicals_ERP_CS
             set
             {
                 kunde = value;
+                if (value.Kundennummer == 0)
+                {
+                    textBoxKundennummer.Text = "";
+                    textBoxKundennummer.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBoxKundennummer.Text = Convert.ToString(value.Kundennummer);
+                    textBoxKundennummer.BackColor = Color.White;
+                }
 
-                textBoxKundennummer.Text = Convert.ToString(kunde.Kundennummer);
-                textBoxName.Text = kunde.Name;
-                textBoxVorname.Text = kunde.Vorname;
-                textBoxStrasse.Text = kunde.Strasse;
-                textBoxHausnummer.Text = kunde.Hausnummer;
-                textBoxPLZ.Text = Convert.ToString(kunde.Postleitzahl);
-                textBoxOrt.Text = kunde.Ort;
-                textBoxEmailadresse.Text = kunde.Emailadresse;
+                if (value.Name == "")
+                    textBoxName.BackColor = Color.Red;
+                else
+                {
+                    textBoxName.BackColor = Color.White;
+                    textBoxName.Text = value.Name;
+                }
+
+                if (value.Vorname == "")
+                    textBoxVorname.BackColor = Color.Red;
+                else
+                {
+                    textBoxVorname.BackColor = Color.White;
+                    textBoxVorname.Text = value.Vorname;
+                }
+
+                if (value.Strasse == "")
+                    textBoxStrasse.BackColor = Color.Red;
+                else
+                {
+                    textBoxStrasse.BackColor = Color.White;
+                    textBoxStrasse.Text = value.Strasse;
+                }
+
+                if (value.Hausnummer == "")
+                    textBoxHausnummer.BackColor = Color.Red;
+                else
+                {
+                    textBoxHausnummer.BackColor = Color.White;
+                    textBoxHausnummer.Text = value.Hausnummer;
+                }
+                
+                if(value.Postleitzahl==0)
+                {
+                    textBoxPLZ.Text = "";
+                    textBoxPLZ.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBoxPLZ.Text = Convert.ToString(value.Postleitzahl);
+                    textBoxPLZ.BackColor = Color.White;
+                }
+
+                if (value.Ort == "")
+                    textBoxOrt.BackColor = Color.Red;
+                else
+                {
+                    textBoxOrt.BackColor = Color.White;
+                    textBoxOrt.Text = value.Ort;
+                }
+
+                if (value.Emailadresse=="")
+                    textBoxEmailadresse.BackColor = Color.Red;
+                else
+                {
+                    textBoxEmailadresse.BackColor = Color.White;
+                    textBoxEmailadresse.Text = value.Emailadresse;
+                }
+
+
+                
             }
         }
 
@@ -95,7 +160,6 @@ namespace HHBK_Chemicals_ERP_CS
             EventHandler handler = UCKundeAendern;
             handler?.Invoke(this, e);
         }
-
         protected virtual void OnUCKundeLoeschen(object sender, EventArgs e)
         {
             EventHandler handler = UCKundeLoeschen;
@@ -119,8 +183,14 @@ namespace HHBK_Chemicals_ERP_CS
 
                 buttonAendern.Text = "speichern";
                 buttonNeu.Text = "abbrechen";
-                buttonLoeschen.Visible = false;
                 
+                buttonLoeschen.Visible = false;
+                buttonSuchen.Visible = false;
+                buttonLast.Visible = false;
+                buttonBackwards.Visible = false;
+                buttonForward.Visible = false;
+                buttonFirst.Visible = false;
+
             }
 
             else
@@ -132,7 +202,12 @@ namespace HHBK_Chemicals_ERP_CS
                 buttonAendern.Text = "ändern";
                 buttonNeu.Text = "neu";
                 buttonLoeschen.Visible = true;
-                
+                buttonSuchen.Visible = true;
+                buttonLast.Visible = true;
+                buttonBackwards.Visible = true;
+                buttonForward.Visible = true;
+                buttonFirst.Visible = true;
+
             }
 
         }
@@ -141,12 +216,17 @@ namespace HHBK_Chemicals_ERP_CS
         {
             
             
-            setKunde();
+            uebernehmeKundeAusFormular();
             OnUCKundeAendern(this, e);
             Index = 0; //Besser Index auf geändertes/neues Element legen!!!
             buttonAendern.Text = "ändern";
             buttonNeu.Text = "neu";
             buttonLoeschen.Visible = true;
+            buttonSuchen.Visible = true;
+            buttonLast.Visible = true;
+            buttonBackwards.Visible = true;
+            buttonForward.Visible = true;
+            buttonFirst.Visible = true;
 
         }
 
@@ -170,10 +250,20 @@ namespace HHBK_Chemicals_ERP_CS
             Index = KundenListe.Count-1;
         }
 
-        private void setKunde()
+        private void uebernehmeKundeAusFormular()
         {
             if (buttonAendern.Text == "ändern")
-                Kunde.Kundennummer = Convert.ToInt32(textBoxKundennummer.Text);
+            {
+                try
+                {
+                    Kunde.Kundennummer = Convert.ToInt32(textBoxKundennummer.Text);
+                }
+                catch
+                {
+                    Kunde.Kundennummer = 0;
+                }
+
+            }
             else if (buttonAendern.Text == "speichern")
                 Kunde.Kundennummer = -1;
 
@@ -218,6 +308,11 @@ namespace HHBK_Chemicals_ERP_CS
 
                 buttonLoeschen.Visible = false;
                 buttonAendern.Visible = false;
+                buttonNeu.Visible = false;
+                buttonLast.Visible = false;
+                buttonBackwards.Visible = false;
+                buttonForward.Visible = false;
+                buttonFirst.Visible = false;
             }
             else
             {
@@ -225,26 +320,22 @@ namespace HHBK_Chemicals_ERP_CS
 
                 buttonLoeschen.Visible = true;
                 buttonAendern.Visible = true;
+                buttonNeu.Visible = true;
+                buttonLast.Visible = true;
+                buttonBackwards.Visible = true;
+                buttonForward.Visible = true;
+                buttonFirst.Visible = true;
                 textBoxKundennummer.ReadOnly = true;
                 Index = 0;
             }
         }
 
-        private void textBoxKundennummer_Validated(object sender, EventArgs e)
+       private void textBox_Validated(object sender, EventArgs e)
         {
-            if(buttonSuchen.Text=="abbrechen")
+            if (buttonSuchen.Text == "abbrechen")
             {
-                setKunde();
+                uebernehmeKundeAusFormular();
                 OnUCKundeSuchen(this, e);
-
-                textBoxKundennummer.Text = kunde.Kundennummer.ToString();
-                textBoxName.Text = kunde.Name;
-                textBoxVorname.Text = kunde.Vorname;
-                textBoxStrasse.Text = kunde.Strasse;
-                textBoxHausnummer.Text = kunde.Hausnummer;
-                textBoxPLZ.Text = Convert.ToString(kunde.Postleitzahl);
-                textBoxOrt.Text = kunde.Ort;
-                textBoxEmailadresse.Text = kunde.Emailadresse;
             }
         }
     }

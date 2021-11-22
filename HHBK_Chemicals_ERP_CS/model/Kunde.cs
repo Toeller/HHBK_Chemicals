@@ -40,7 +40,7 @@ namespace HHBK_Chemicals_ERP_CS
             }
             set
             {
-                if(value>=01000 && value<=99999)
+                if(value>=00000 && value<=99999)
                 {
                     postleitzahl = value;
                 }

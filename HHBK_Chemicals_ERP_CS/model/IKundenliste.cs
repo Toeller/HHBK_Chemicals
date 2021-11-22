@@ -17,6 +17,8 @@ namespace HHBK_Chemicals_ERP_CS.model
 
         Kunde getKunde(int kundennummer);
 
+        Kunde getKunde(Kunde kunde);
+
         void generate();
     }
 }

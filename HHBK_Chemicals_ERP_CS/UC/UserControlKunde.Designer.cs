@@ -50,7 +50,6 @@ namespace HHBK_Chemicals_ERP_CS
             this.buttonLoeschen = new System.Windows.Forms.Button();
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonBackwards = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.buttonForward = new System.Windows.Forms.Button();
             this.buttonLast = new System.Windows.Forms.Button();
             this.buttonSuchen = new System.Windows.Forms.Button();
@@ -134,7 +133,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxKundennummer.ReadOnly = true;
             this.textBoxKundennummer.Size = new System.Drawing.Size(100, 20);
             this.textBoxKundennummer.TabIndex = 8;
-            this.textBoxKundennummer.Validated += new System.EventHandler(this.textBoxKundennummer_Validated);
+            this.textBoxKundennummer.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxName
             // 
@@ -142,6 +141,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 9;
+            this.textBoxName.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxVorname
             // 
@@ -149,6 +149,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxVorname.Name = "textBoxVorname";
             this.textBoxVorname.Size = new System.Drawing.Size(100, 20);
             this.textBoxVorname.TabIndex = 10;
+            this.textBoxVorname.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxStrasse
             // 
@@ -156,6 +157,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxStrasse.Name = "textBoxStrasse";
             this.textBoxStrasse.Size = new System.Drawing.Size(100, 20);
             this.textBoxStrasse.TabIndex = 11;
+            this.textBoxStrasse.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxHausnummer
             // 
@@ -163,6 +165,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxHausnummer.Name = "textBoxHausnummer";
             this.textBoxHausnummer.Size = new System.Drawing.Size(51, 20);
             this.textBoxHausnummer.TabIndex = 12;
+            this.textBoxHausnummer.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxPLZ
             // 
@@ -170,6 +173,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxPLZ.Name = "textBoxPLZ";
             this.textBoxPLZ.Size = new System.Drawing.Size(100, 20);
             this.textBoxPLZ.TabIndex = 13;
+            this.textBoxPLZ.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxOrt
             // 
@@ -177,6 +181,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxOrt.Name = "textBoxOrt";
             this.textBoxOrt.Size = new System.Drawing.Size(100, 20);
             this.textBoxOrt.TabIndex = 14;
+            this.textBoxOrt.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // textBoxEmailadresse
             // 
@@ -184,6 +189,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.textBoxEmailadresse.Name = "textBoxEmailadresse";
             this.textBoxEmailadresse.Size = new System.Drawing.Size(298, 20);
             this.textBoxEmailadresse.TabIndex = 15;
+            this.textBoxEmailadresse.Validated += new System.EventHandler(this.textBox_Validated);
             // 
             // buttonNeu
             // 
@@ -323,7 +329,6 @@ namespace HHBK_Chemicals_ERP_CS
         private System.Windows.Forms.Button buttonLoeschen;
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button buttonBackwards;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button buttonForward;
         private System.Windows.Forms.Button buttonLast;
         private System.Windows.Forms.Button buttonSuchen;

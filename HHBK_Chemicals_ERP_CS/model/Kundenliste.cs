@@ -147,5 +147,10 @@ namespace HHBK_Chemicals_ERP_CS
         {
             refresh();
         }
+
+        Kunde IKundenliste.getKunde(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
