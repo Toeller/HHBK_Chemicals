@@ -83,8 +83,16 @@ namespace HHBK_Chemicals_ERP_CS
             ucRechnungen.VisibleChanged += onRechnungenGotVisible;
             ucReklamation.VisibleChanged += onReklamationGotVisible;
 
+            Model testmodel = new Model();
+            testmodel.ModelProductsChanged += onModelProductsChanged;
 
 
+
+        }
+
+        private void onModelProductsChanged(object sender, EventArgs e)
+        {
+            model.getProdukte();
         }
 
         private void onReklamationGotVisible(object sender, EventArgs e)

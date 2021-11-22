@@ -12,14 +12,22 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public class Model:IModel
     {
-        private IView view;
-        private IController controller;
-        IView IModel.IView1 { set => this.view = value; }
-        IController IModel.IController1 { set => this.controller = value; }
+        //private IView view;
+        //private IController controller;
+        //IView IModel.IView1 { set => this.view = value; }
+        //IController IModel.IController1 { set => this.controller = value; }
 
         //private IKundenliste kunden=new Kundenliste();
 
         private IKundenliste kunden = new KundenlisteXML();
+
+        public event EventHandler ModelProductsChanged;
+
+        protected virtual void OnModelProductsChanged(object sender, EventArgs e)
+        {
+            EventHandler handler = ModelProductsChanged;
+            handler?.Invoke(this, e);
+        }
 
 
         #region DB Attribute ändern!
@@ -35,6 +43,9 @@ namespace HHBK_Chemicals_ERP_CS
         {
             conn = new MySqlConnection(myConnectionString);
             mycommand = conn.CreateCommand();
+
+            createDB();
+            createTestData();
         }
         
         
@@ -85,7 +96,7 @@ namespace HHBK_Chemicals_ERP_CS
             else
                 mycommand.CommandText = Commands.newEntity(produkt);
 
-            MessageBox.Show(mycommand.CommandText);
+            //MessageBox.Show(mycommand.CommandText);
 
 
             conn.Open();
@@ -93,7 +104,7 @@ namespace HHBK_Chemicals_ERP_CS
             {
                 mycommand.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
@@ -103,9 +114,15 @@ namespace HHBK_Chemicals_ERP_CS
             }
 
             //Über Event lösen!
-            IModel a = this;
-            view.Show(a.getProdukte());
+            //IModel a = this;
+            //view.Show(a.getProdukte());
+            
+            EventArgs e = new EventArgs();
+            
+            OnModelProductsChanged(this,e);
         }
+
+        
 
         void IModel.loeschen(Produkt produkt)
         {
@@ -265,7 +282,7 @@ namespace HHBK_Chemicals_ERP_CS
             Kunde kunde1 = null;
             //return kunde1;
         }
-        void IModel.createDB()
+        private void createDB()
         {
             try
             {
@@ -290,7 +307,7 @@ namespace HHBK_Chemicals_ERP_CS
             //return true;
 
         }
-        bool IModel.createTestData()
+        private bool createTestData()
         {
             try
             {
