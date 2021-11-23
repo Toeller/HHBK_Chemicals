@@ -311,29 +311,34 @@ namespace HHBK_Chemicals_ERP_CS
         
         public static string newEntity(Kunde k)
         {
-            /*return "INSERT INTO produkt VALUES( " +
+            return "INSERT INTO kunde VALUES( " +
                 "NULL, '" +
-                p.Artikelname + "', '" +
-                p.Verkaufseinheit + "', '" +
-                p.Einheit + "', '" +
-                p.PreisVK + "', '" +
-                p.ChemischeBezeichnung + "'); ";
-            */
-            return "Null";
+                k.Name + "', '" +
+                k.Vorname + "', '" +
+                k.Strasse + "', '" +
+                k.Hausnummer + "', '" +
+                k.Postleitzahl + "', '" +
+                k.Ort + "', '" +
+                k.Emailadresse + "', '" +
+                k.Passwort     + "'); ";
+            
+            
         }
         public static string change(Kunde k)
         {
 
-            /*
-            return "UPDATE produkt SET " +
-                "artikelname='" + p.Artikelname + "', " +
-                "verkaufseinheit='" + p.Verkaufseinheit + "', " +
-                "einheit='" + p.Einheit + "', " +
-                "preisVK='" + p.PreisVK + "', " +
-                "chemischeBezeichnung='" + p.ChemischeBezeichnung + "' " +
-                "WHERE artikelnummer='" + p.Artikelnummer + "';";
-            */
-            return "Null";
+            return "UPDATE kunde SET " +
+                "Name='"+k.Name + "', " +
+                "Vorname='"+k.Vorname + "'," +
+                "Strasse='"+k.Strasse + "'," +
+                "Hausnummer='"+k.Hausnummer + "'," +
+                "Postleitzahl='"+k.Postleitzahl + "'," +
+                "Ort='"+k.Ort + "'," +
+                "emailadresse='"+k.Emailadresse + "'," +
+                "password='"+k.Passwort + "' "+
+                "WHERE Kundennummer='" + k.Kundennummer + "';";
+            
+            
         }
 
         public static string delete(Kunde k)

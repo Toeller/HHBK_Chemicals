@@ -70,10 +70,7 @@ namespace HHBK_Chemicals_ERP_CS
             kunden.save(kunde);
         }
 
-        Kunde IModel.sucheKunde(int kundennummer)
-        {
-            return kunden.getKunde(kundennummer);
-        }
+        
 
         Kunde IModel.sucheKunde(Kunde kunde)
         {
@@ -356,11 +353,6 @@ namespace HHBK_Chemicals_ERP_CS
             throw new NotImplementedException();
         }
 
-        void IModel.createXML()
-        {
-
-
-            kunden.generate();
-        }
+        
     }
 }

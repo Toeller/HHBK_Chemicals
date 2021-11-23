@@ -14,7 +14,7 @@ namespace HHBK_Chemicals_ERP_CS
         //IController IController1 {set;}
 
 
-        void createXML();
+        
         
         List<Kunde> getKunden();
 
@@ -33,7 +33,7 @@ namespace HHBK_Chemicals_ERP_CS
         void aendern(Produkt produkt);
         void loeschen(Kunde kunde);
         void loeschen(Produkt produkt);
-        Kunde sucheKunde(int kundennummer);
+        
 
         Kunde sucheKunde(Kunde kunde);
 

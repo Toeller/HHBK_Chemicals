@@ -19,6 +19,12 @@ namespace HHBK_Chemicals_ERP_CS
 
         public Kundenliste()
         {
+            //Prüfen, ob XAMPP läuft
+            // -> Sonst Fehlermeldung
+            //Prüfen, ob die Datenbank vorhanden ist
+            // -> Sonst anlegen
+            //Prüfen, ob es Daten gibt
+            // -> Sonst anlegen
             this.refresh();
         }
 
@@ -76,19 +82,7 @@ namespace HHBK_Chemicals_ERP_CS
                 conn.Close();
             }
         }
-
-        Kunde IKundenliste.getKunde(int kundennummer)
-        {
-            
-            foreach(Kunde k in kunden)
-            {
-                if (k.Kundennummer == kundennummer)
-                    return k;
-
-            }
-            return null;
-        }
-
+        
         void IKundenliste.save(Kunde kunde)
         {
             if (kunde.Kundennummer != -1)
@@ -96,7 +90,7 @@ namespace HHBK_Chemicals_ERP_CS
             else
                 mycommand.CommandText = Commands.newEntity(kunde);
 
-            MessageBox.Show(mycommand.CommandText);
+           
 
 
             conn.Open();
@@ -112,11 +106,13 @@ namespace HHBK_Chemicals_ERP_CS
             {
                 conn.Close();
             }
+
+            refresh();
         }
 
         private void refresh()
         {
-            Kunde kunde1 = new Kunde();
+            kunden.Clear();
             mycommand = conn.CreateCommand();
             mycommand.CommandText = "Select * from kunde";
 
@@ -126,6 +122,7 @@ namespace HHBK_Chemicals_ERP_CS
 
             while (reader.Read())
             {
+                Kunde kunde1 = new Kunde();
                 kunde1.Kundennummer = Convert.ToInt32(reader["kundennummer"]);
                 kunde1.Name = reader["name"].ToString();
                 kunde1.Vorname = reader["vorname"].ToString();
@@ -143,14 +140,17 @@ namespace HHBK_Chemicals_ERP_CS
             //kunde1 = new Kunde(kundennummer, name, vorname, strasse, hausnummer, ort, postleitzahl, emailadresse);
         }
 
-        void IKundenliste.generate()
-        {
-            refresh();
-        }
+  
 
         Kunde IKundenliste.getKunde(Kunde kunde)
         {
-            throw new NotImplementedException();
+            foreach (Kunde k in kunden)
+            {
+                if (k.Kundennummer == kunde.Kundennummer)
+                    return k;
+
+            }
+            return null;
         }
     }
 }

@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj": {}
+    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj": {
+    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj",
+        "projectUniqueName": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj",
         "projectName": "TestProject2",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\obj\\",
+        "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\TestProject2.csproj",
+        "packagesPath": "C:\\Users\\TOEL.HERTZ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TOEL.HERTZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
