@@ -335,18 +335,20 @@ namespace HHBK_Chemicals_ERP_CS
                 "Postleitzahl='"+k.Postleitzahl + "'," +
                 "Ort='"+k.Ort + "'," +
                 "emailadresse='"+k.Emailadresse + "'," +
-                "password='"+k.Passwort + "' "+
+                "passwort='"+k.Passwort + "' "+
                 "WHERE Kundennummer='" + k.Kundennummer + "';";
-            
-            
+
+            /*
+             * UPDATE `kunde` SET `Strasse` = 'teststr' WHERE `kunde`.`Kundennummer` = 40443;
+             * UPDATE kunde SET Name='Test', Vorname='Teddi',Strasse='Teststr.',Hausnummer='11',Postleitzahl='56889',Ort='Testdorf',emailadresse='Test@ffm.com',password='' WHERE Kundennummer='40443';
+             */
         }
 
         public static string delete(Kunde k)
         {
-            /*
-            return "DELETE from produkt WHERE artikelnummer=" + p.Artikelnummer + ";";
-            */
-            return "Null";
+
+            return "DELETE FROM kunde WHERE Kundennummer = '" + k.Kundennummer + "';";
+             
         }
     
         public static string newEntity(Bestellposition b)

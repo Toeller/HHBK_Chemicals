@@ -37,9 +37,6 @@ namespace HHBK_Chemicals_ERP_CS
             else
                 mycommand.CommandText = Commands.newEntity(kunde);
 
-            MessageBox.Show(mycommand.CommandText);
-
-
             conn.Open();
             try
             {
@@ -54,26 +51,20 @@ namespace HHBK_Chemicals_ERP_CS
                 conn.Close();
             }
 
-            //Über Event lösen!
-            /*
-            IModel a = this;
-            view.Show(a.getKunden());
-            */
+            refresh();
+            
         }
 
         void IKundenliste.delete(Kunde kunde)
         {
-           mycommand.CommandText = Commands.delete(kunde);
-
-           MessageBox.Show(mycommand.CommandText);
-
+            mycommand.CommandText = Commands.delete(kunde);
 
             conn.Open();
             try
             {
                 mycommand.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
@@ -81,6 +72,7 @@ namespace HHBK_Chemicals_ERP_CS
             {
                 conn.Close();
             }
+            refresh();
         }
         
         void IKundenliste.save(Kunde kunde)
@@ -144,13 +136,99 @@ namespace HHBK_Chemicals_ERP_CS
 
         Kunde IKundenliste.getKunde(Kunde kunde)
         {
-            foreach (Kunde k in kunden)
+            refresh();
+            List<Kunde> kundenResults = kunden;
+            Kunde kundeResult = new Kunde();
+
+            if (kunde.Kundennummer != 0)
             {
-                if (k.Kundennummer == kunde.Kundennummer)
-                    return k;
+                foreach (Kunde k in kundenResults)
+                {
+                    if (k.Kundennummer ==
+                        kunde.Kundennummer)
+                    {
+                        kundeResult.Kundennummer = k.Kundennummer;
+                        kundeResult.Name = k.Name;
+                        kundeResult.Vorname = k.Vorname;
+                        kundeResult.Strasse = k.Strasse;
+                        kundeResult.Hausnummer = k.Hausnummer;
+                        kundeResult.Ort = k.Ort;
+                        kundeResult.Postleitzahl = k.Postleitzahl;
+                        kundeResult.Emailadresse = k.Emailadresse;
+                    }
+                }
+
 
             }
-            return null;
+
+            else
+            {
+                if (kunde.Name != "")
+                {
+
+                    kundenResults = kundenResults.FindAll(x => x.Name==kunde.Name);
+                }
+
+                if (kunde.Vorname != "")
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Vorname==kunde.Vorname);
+                }
+
+                if (kunde.Strasse != "")
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Strasse.Contains(kunde.Strasse));
+                }
+
+                if (kunde.Hausnummer != "")
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Hausnummer ==kunde.Hausnummer);
+                }
+
+                if (kunde.Postleitzahl != 0)
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Postleitzahl == kunde.Postleitzahl);
+                }
+
+                if (kunde.Ort != "")
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Ort == kunde.Ort);
+                }
+
+                if (kunde.Emailadresse != "")
+                {
+                    kundenResults = kundenResults.FindAll(x => x.Emailadresse==kunde.Emailadresse);
+
+                }
+
+
+
+
+            }
+
+            if (kundenResults.Count() == 1)
+            {
+                kundeResult.Kundennummer = Convert.ToInt32(kundenResults.First().Kundennummer);
+                kundeResult.Name = kundenResults.First().Name;
+                kundeResult.Vorname = kundenResults.First().Vorname;
+                kundeResult.Strasse = kundenResults.First().Strasse;
+                kundeResult.Hausnummer = kundenResults.First().Hausnummer;
+                kundeResult.Ort = kundenResults.First().Ort;
+                kundeResult.Postleitzahl = Convert.ToInt32(kundenResults.First().Postleitzahl);
+                kundeResult.Emailadresse = kundenResults.First().Emailadresse;
+                return kundeResult;
+            }
+
+
+            else if (kundenResults.Count() > 1)
+            {
+                return kunde;
+            }
+
+            else
+            {
+                return kundeResult;
+            }
         }
+    
     }
 }
