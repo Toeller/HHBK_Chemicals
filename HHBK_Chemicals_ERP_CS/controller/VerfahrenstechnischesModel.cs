@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HHBK_Chemicals_ERP_CS.model
 {
@@ -13,7 +14,14 @@ namespace HHBK_Chemicals_ERP_CS.model
     {
         public VerfahrenstechnischesModel()
         {
-            AsynchronousSocketListener.StartListening();
+            Thread newThread = new Thread(AsynchronousSocketListener.StartListening);
+            newThread.Start();
+            //AsynchronousSocketListener.StartListening();
+        }
+
+        public void test()
+        {
+
         }
     }
 
@@ -46,8 +54,9 @@ namespace HHBK_Chemicals_ERP_CS.model
             // Establish the local endpoint for the socket.  
             // The DNS name of the computer  
             // running the listener is "host.contoso.com".  
-            IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-            IPAddress ipAddress = ipHostInfo.AddressList[0];
+            //IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
+            //IPAddress ipAddress = ipHostInfo.AddressList[0];
+            IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
 
             // Create a TCP/IP socket.  
@@ -60,13 +69,15 @@ namespace HHBK_Chemicals_ERP_CS.model
                 listener.Bind(localEndPoint);
                 listener.Listen(100);
 
+                
                 while (true)
                 {
                     // Set the event to nonsignaled state.  
                     allDone.Reset();
 
                     // Start an asynchronous socket to listen for connections.  
-                    Console.WriteLine("Waiting for a connection...");
+                    //Console.WriteLine("Waiting for a connection...");
+                    MessageBox.Show("Waiting for a connection...");
                     listener.BeginAccept(
                         new AsyncCallback(AcceptCallback),
                         listener);
@@ -74,15 +85,18 @@ namespace HHBK_Chemicals_ERP_CS.model
                     // Wait until a connection is made before continuing.  
                     allDone.WaitOne();
                 }
+                
 
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                //Console.WriteLine(e.ToString());
+                MessageBox.Show(e.ToString());
             }
-
+            /*
             Console.WriteLine("\nPress ENTER to continue...");
             Console.Read();
+            */
 
         }
 
@@ -127,8 +141,8 @@ namespace HHBK_Chemicals_ERP_CS.model
                 {
                     // All the data has been read from the
                     // client. Display it on the console.  
-                    Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
-                        content.Length, content);
+                    //Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",bytes from socket. \n Data : { 1}",) content.Length, content);
+                    MessageBox.Show("Read "+ content.Length + "bytes from socket. \n Data : "+content);
                     // Echo the data back to the client.  
                     Send(handler, content);
                 }
@@ -179,6 +193,7 @@ namespace HHBK_Chemicals_ERP_CS.model
                 //
                 //Console.WriteLine(e.ToString());
                 //
+                MessageBox.Show(e.ToString());
             }
         }
 
