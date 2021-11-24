@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HHBK_Chemicals_ERP_CS.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,13 @@ namespace HHBK_Chemicals_ERP_CS
         private IView view;
         IModel IController.IModel1 { set => this.model = value; }
         IView IController.IView1 { set => this.view = value; }
+
+        private VerfahrenstechnischesModel verfahrenstechnischesModel;
+
+        public Controller()
+        {
+            verfahrenstechnischesModel = new VerfahrenstechnischesModel();
+        }
 
         void IController.bestellungSpeichern(List<Bestellposition> bestellung)
         {

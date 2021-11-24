@@ -1,35 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
+    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
+        "projectUniqueName": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
         "projectName": "HHBK_Chemicals_ERP_CS",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
-        "frameworks": {
-          "net461": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\obj\\",
+        "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\TOEL.HERTZ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TOEL.HERTZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +43,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
+              "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
+                "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
               }
             }
           }
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
