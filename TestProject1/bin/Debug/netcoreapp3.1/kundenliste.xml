@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kundenliste>
+  <kunde kundennummer="1">
+    <nachname>Lichtleitner</nachname>
+    <vorname>Alexander</vorname>
+    <strasse>Steinstrasse</strasse>
+    <hausnummer>12</hausnummer>
+    <plz>40225</plz>
+    <ort>Düsseldorf</ort>
+    <email>LichtleitnerAlexander@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="3">
+    <nachname>Autrum</nachname>
+    <vorname>Maximilian</vorname>
+    <strasse>Am Ackerweg</strasse>
+    <hausnummer>4</hausnummer>
+    <plz>20764</plz>
+    <ort>Hamburg</ort>
+    <email>AurtumMaximilian@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="61">
+    <nachname>Schwarz</nachname>
+    <vorname>Dominik</vorname>
+    <strasse>Am BergischWeg</strasse>
+    <hausnummer>20c</hausnummer>
+    <plz>90668</plz>
+    <ort>Ansbach</ort>
+    <email>SchwarzDominik@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="62">
+    <nachname>von Hinten</nachname>
+    <vorname>Reinhardt</vorname>
+    <strasse>Reperbahn</strasse>
+    <hausnummer>1a</hausnummer>
+    <plz>40225</plz>
+    <ort>DuEselDorf</ort>
+    <email>hotboy@ice.com</email>
+  </kunde>
+  <kunde kundennummer="63">
+    <nachname>von Hinten</nachname>
+    <vorname>Reinhardt</vorname>
+    <strasse>Reperbahn</strasse>
+    <hausnummer>1a</hausnummer>
+    <plz>40225</plz>
+    <ort>DuEselDorf</ort>
+    <email>hotboy@ice.com</email>
+  </kunde>
+  <kunde kundennummer="64">
+    <nachname>von Hinten</nachname>
+    <vorname>Reinhardt</vorname>
+    <strasse>Reperbahn</strasse>
+    <hausnummer>1a</hausnummer>
+    <plz>40225</plz>
+    <ort>DuEselDorf</ort>
+    <email>hotboy@ice.com</email>
+  </kunde>
+  <kunde kundennummer="65">
+    <nachname>von Hinten</nachname>
+    <vorname>Reinhardt</vorname>
+    <strasse>Reperbahn</strasse>
+    <hausnummer>1a</hausnummer>
+    <plz>40225</plz>
+    <ort>DuEselDorf</ort>
+    <email>hotboy@ice.com</email>
+  </kunde>
+</kundenliste>

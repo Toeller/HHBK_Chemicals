@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS.model
 {
-    interface IKundenliste
+    public interface IKundenliste
     {
         List<Kunde> Kunden { get; }
 
