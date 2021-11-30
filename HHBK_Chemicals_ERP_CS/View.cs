@@ -13,6 +13,9 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public partial class View : Form, IView
     {
+
+        private UserControlKunde ucKunde = new UserControlKunde();
+
         private IModel model;
         private IController controller;
 
@@ -22,7 +25,8 @@ namespace HHBK_Chemicals_ERP_CS
         private List<Kunde> kundenliste = new List<Kunde>();
         private List<Produkt> produktliste = new List<Produkt>();
 
-        private UserControlKunde ucKunde = new UserControlKunde();
+        
+
         private UserControlProduktion ucProduktion = new UserControlProduktion();
         private UserControlProduktVerwalten ucProduktverwalten = new UserControlProduktVerwalten();
         private UserControlBestellung ucBestellung = new UserControlBestellung();
@@ -41,8 +45,14 @@ namespace HHBK_Chemicals_ERP_CS
         {
             InitializeComponent();
 
-            this.tabPage1.Text = "Bestellung";
             this.tabPage2.Text = "Kunde";
+            this.tabPage2.Controls.Add(ucKunde);
+
+            
+            this.tabPage2.Controls.Remove(ucKunde);
+
+            this.tabPage1.Text = "Bestellung";
+            
             this.tabPage3.Text = "Lagereingang";
             this.tabPage4.Text = "Lieferung";
             this.tabPage5.Text = "Produktion";
@@ -54,7 +64,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage10.Text = "Zahlungseingänge";
 
             this.tabPage1.Controls.Add(ucBestellung);
-            this.tabPage2.Controls.Add(ucKunde);
+            
             this.tabPage3.Controls.Add(ucLagereingang);
             this.tabPage4.Controls.Add(ucLieferung);
             this.tabPage5.Controls.Add(ucProduktion);
