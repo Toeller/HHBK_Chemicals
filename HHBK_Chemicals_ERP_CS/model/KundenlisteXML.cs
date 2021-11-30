@@ -65,9 +65,18 @@ namespace HHBK_Chemicals_ERP_CS
         {
             doc = XDocument.Load(@"kundenliste.xml");
 
+            
             int kundennummer=0;
             foreach(XElement el in doc.Descendants("kunde"))
             {
+                if (el.Element("nachname").Value==kunde.Name &&
+                    el.Element("vorname").Value==kunde.Vorname&&
+                    el.Element("strasse").Value==kunde.Strasse&&
+                    el.Element("hausnummer").Value==kunde.Hausnummer&&
+                    el.Element("ort").Value==kunde.Ort&&
+                    el.Element("plz").Value==kunde.Postleitzahl.ToString()&&
+                    el.Element("email").Value==kunde.Emailadresse)
+                    return;
                 if (Convert.ToInt32(el.Attribute("kundennummer").Value) > kundennummer)
                     kundennummer = Convert.ToInt32(el.Attribute("kundennummer").Value);
             }

@@ -17,9 +17,9 @@ namespace HHBK_Chemicals_ERP_CS
         //IView IModel.IView1 { set => this.view = value; }
         //IController IModel.IController1 { set => this.controller = value; }
 
-        private IKundenliste kunden=new Kundenliste();
+        //private IKundenliste kunden=new Kundenliste();
 
-        //private IKundenliste kunden = new KundenlisteXML();
+        private IKundenliste kunden = new KundenlisteXML();
 
         public event EventHandler ModelProductsChanged;
 

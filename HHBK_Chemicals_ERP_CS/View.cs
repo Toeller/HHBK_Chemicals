@@ -49,7 +49,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage2.Controls.Add(ucKunde);
 
             
-            this.tabPage2.Controls.Remove(ucKunde);
+           
 
             this.tabPage1.Text = "Bestellung";
             
