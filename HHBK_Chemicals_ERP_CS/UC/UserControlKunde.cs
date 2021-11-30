@@ -219,8 +219,10 @@ namespace HHBK_Chemicals_ERP_CS
             uebernehmeKundeAusFormular();
             OnUCKundeAendern(this, e);
             Index = 0; //Besser Index auf geändertes/neues Element legen!!!
+            
             buttonAendern.Text = "ändern";
             buttonNeu.Text = "neu";
+
             buttonLoeschen.Visible = true;
             buttonSuchen.Visible = true;
             buttonLast.Visible = true;

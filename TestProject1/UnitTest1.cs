@@ -9,17 +9,39 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void KundenlisteXML_alter_neuerKunde()
         {
+            //Arrange
             bool equals = false;
+
             IKundenliste kl = new KundenlisteXML();
 
-            Kunde testkunde =
-                new Kunde(69, "von Hinten", "Reinhardt", "Reperbahn", "1a", "DuEselDorf", 40225, "hotboy@ice.com");
+            Kunde testkunde = new Kunde();
+            testkunde.Name = "von Hinten";
+            testkunde.Vorname = "Reinhardt";
+            testkunde.Strasse = "Reperbahn";
+            testkunde.Hausnummer = "1a";
+            testkunde.Ort = "DuEselDorf";
+            testkunde.Postleitzahl = 40225;
+            testkunde.Emailadresse= "hotboy@ice.com";
 
             kl.save(testkunde);
 
-            Kunde erg1 = kl.getKunde(testkunde);
+            //Um die Kundennummer zu erhalten
+            testkunde=kl.getKunde(testkunde);
+
+            testkunde.Hausnummer = "11";
+
+            //Act
+            kl.alter(testkunde);
+
+            //Assert
+            Kunde suchKunde = new Kunde();
+            suchKunde.Name = testkunde.Name;
+            Kunde erg1 = kl.getKunde(suchKunde);
+
+            //Console.WriteLine(suchKunde);
+            //Console.ReadKey();
 
             if (erg1.Name == testkunde.Name &&
                 erg1.Vorname == testkunde.Vorname &&
@@ -30,10 +52,8 @@ namespace TestProject1
                 equals = true;
             equals = false;
 
-
-
-
-            //Act
+            
+           
 
 
             //Assert
