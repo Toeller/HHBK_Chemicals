@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using HHBK_Chemicals_ERP_CS.Exceptions;
 
 namespace HHBK_Chemicals_ERP_CS
 {
@@ -216,7 +217,8 @@ namespace HHBK_Chemicals_ERP_CS
 
             else
             {
-                return kundeResult;
+                throw new CustomerDoesNotExistException("Es existiert kein Kunde mit den gesuchten Parametern");
+                //return kundeResult;
             }
         }
 

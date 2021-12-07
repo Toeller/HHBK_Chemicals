@@ -4,6 +4,7 @@ using System.Text;
 using HHBK_Chemicals_ERP_CS;
 using HHBK_Chemicals_ERP_CS.model;
 
+
 //Fuer den Test hinzugefügt:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -29,6 +30,8 @@ namespace TestProject1
             testkunde.Ort = "TestOrt";
             testkunde.Postleitzahl = 99999;
             testkunde.Emailadresse = "Test@Email.adresse";
+
+            //Testen, ob es diesen Kunden schon im XML-File gibt.
 
             //Act
             kl.save(testkunde); 
