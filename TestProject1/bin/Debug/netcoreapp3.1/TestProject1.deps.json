@@ -1076,75 +1076,19 @@
           "HHBK_Chemicals_ERP_CS.exe": {}
         }
       },
-      "MySql.Data/8.0.20.0": {
+      "MySql.Data/8.0.13.0": {
         "runtime": {
           "MySql.Data.dll": {
-            "assemblyVersion": "8.0.20.0",
-            "fileVersion": "8.0.20.0"
+            "assemblyVersion": "8.0.13.0",
+            "fileVersion": "8.0.13.0"
           }
         }
       },
-      "Google.Protobuf/3.6.1.0": {
+      "Google.Protobuf/3.5.1.0": {
         "runtime": {
           "Google.Protobuf.dll": {
-            "assemblyVersion": "3.6.1.0",
-            "fileVersion": "3.6.1.0"
-          }
-        }
-      },
-      "Zstandard.Net/1.1.7.0": {
-        "runtime": {
-          "Zstandard.Net.dll": {
-            "assemblyVersion": "1.1.7.0",
-            "fileVersion": "1.1.7.0"
-          }
-        }
-      },
-      "K4os.Compression.LZ4.Streams/1.1.11.0": {
-        "runtime": {
-          "K4os.Compression.LZ4.Streams.dll": {
-            "assemblyVersion": "1.1.11.0",
-            "fileVersion": "1.1.11.0"
-          }
-        }
-      },
-      "BouncyCastle.Crypto/1.8.3.0": {
-        "runtime": {
-          "BouncyCastle.Crypto.dll": {
-            "assemblyVersion": "1.8.3.0",
-            "fileVersion": "1.8.18223.1"
-          }
-        }
-      },
-      "Ubiety.Dns.Core/2.2.1.0": {
-        "runtime": {
-          "Ubiety.Dns.Core.dll": {
-            "assemblyVersion": "2.2.1.0",
-            "fileVersion": "2.2.1.0"
-          }
-        }
-      },
-      "Renci.SshNet/2016.1.0.0": {
-        "runtime": {
-          "Renci.SshNet.dll": {
-            "assemblyVersion": "2016.1.0.0",
-            "fileVersion": "2016.1.0.0"
-          }
-        }
-      },
-      "K4os.Compression.LZ4/1.1.11.0": {
-        "runtime": {
-          "K4os.Compression.LZ4.dll": {
-            "assemblyVersion": "1.1.11.0",
-            "fileVersion": "1.1.11.0"
-          }
-        }
-      },
-      "K4os.Hash.xxHash/1.0.6.0": {
-        "runtime": {
-          "K4os.Hash.xxHash.dll": {
-            "assemblyVersion": "1.0.6.0",
-            "fileVersion": "1.0.6.0"
+            "assemblyVersion": "3.5.1.0",
+            "fileVersion": "3.5.1.0"
           }
         }
       }
@@ -1770,47 +1714,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MySql.Data/8.0.20.0": {
+    "MySql.Data/8.0.13.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Google.Protobuf/3.6.1.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Zstandard.Net/1.1.7.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "K4os.Compression.LZ4.Streams/1.1.11.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BouncyCastle.Crypto/1.8.3.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Ubiety.Dns.Core/2.2.1.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Renci.SshNet/2016.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "K4os.Compression.LZ4/1.1.11.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "K4os.Hash.xxHash/1.0.6.0": {
+    "Google.Protobuf/3.5.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
