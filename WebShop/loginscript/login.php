@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "login_ai");
+$conn = mysqli_connect("localhost", "root", "", "hhbk_chemicals");
 include("templates/header.inc.php");
 ?>
 
@@ -12,7 +12,7 @@ if(isset($_GET['login'])) {
     $passwort = $_POST['passwort'];
     $user=array('id'=>'','email'=>'','passwort'=>'','vorname'=>'','nachname'=>'');  // user array
 	// Überprüfung der E-Mail
-    if($statement = mysqli_prepare($conn, "SELECT id, email, passwort, vorname, nachname FROM users WHERE email = ?")){
+    if($statement = mysqli_prepare($conn, "SELECT kundennummer, emailadresse, passwort, vorname, name FROM kunde WHERE email = ?")){
 		    mysqli_stmt_bind_param($statement,'s',$email);
 			mysqli_stmt_execute($statement);
 		    mysqli_stmt_bind_result($statement,$user['id'],$user['email'],$user['passwort'],$user['vorname'],$user['nachname']);
