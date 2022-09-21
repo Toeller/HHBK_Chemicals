@@ -68,7 +68,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(810, 363);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Bestellung";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -78,7 +78,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(810, 363);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Kunde";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -88,7 +88,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(810, 363);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Lagereingang";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
@@ -98,7 +98,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(810, 363);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.Text = "Lieferung";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
@@ -108,7 +108,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(810, 363);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.Text = "Produktion";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
@@ -118,7 +118,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(810, 363);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "tabPage6";
+            this.tabPage6.Text = "Produktverwalten";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabPage7
@@ -128,7 +128,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(810, 363);
             this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.Text = "Rechnungen";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage8
@@ -138,7 +138,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(810, 363);
             this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.Text = "Reklamation";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage9
@@ -148,7 +148,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage9.Size = new System.Drawing.Size(810, 363);
             this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "tabPage9";
+            this.tabPage9.Text = "Rezeptverwaltung";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // tabPage10
@@ -158,7 +158,7 @@ namespace HHBK_Chemicals_ERP_CS
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage10.Size = new System.Drawing.Size(810, 363);
             this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "tabPage10";
+            this.tabPage10.Text = "Zahlungseingänge";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // View

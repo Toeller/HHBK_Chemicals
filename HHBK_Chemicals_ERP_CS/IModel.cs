@@ -8,15 +8,14 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public interface IModel
     {
-        IView IView1 { set; }
+        //IView IView1 { set; }
         
 
-        IController IController1 {set;}
+        //IController IController1 {set;}
 
 
-        void createXML();
-        void createDB();
-        bool createTestData();
+        
+        
         List<Kunde> getKunden();
 
         List<Produkt> getProdukte();
@@ -34,7 +33,10 @@ namespace HHBK_Chemicals_ERP_CS
         void aendern(Produkt produkt);
         void loeschen(Kunde kunde);
         void loeschen(Produkt produkt);
-        Kunde sucheKunde(int kundennummer);
+        
+
+        Kunde sucheKunde(Kunde kunde);
+
         List<Kunde> sucheKunde();
         Produkt suchenProdukt(int artikelnummer);
         List<Produkt> sucheProdukt();

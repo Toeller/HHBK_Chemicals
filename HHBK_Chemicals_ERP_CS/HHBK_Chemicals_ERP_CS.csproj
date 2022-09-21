@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\CustomerDoesNotExistException.cs" />
     <Compile Include="model\Bestellposition.cs" />
     <Compile Include="model\Bestellung.cs" />
     <Compile Include="controller\Commands.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="model\Produkt.cs" />
     <Compile Include="model\Produkte.cs" />
     <Compile Include="model\Produktionsliste.cs" />
+    <Compile Include="controller\VerfahrenstechnischesModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="model\RezeptExt.cs" />
@@ -181,6 +183,7 @@
       <DependentUpon>View.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram3.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kundenliste>
+  <kunde kundennummer="1">
+    <nachname>Lichtleitner</nachname>
+    <vorname>Alexander</vorname>
+    <strasse>Steinstrasse</strasse>
+    <hausnummer>12</hausnummer>
+    <plz>40225</plz>
+    <ort>Düsseldorf</ort>
+    <email>LichtleitnerAlexander@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="3">
+    <nachname>Autrum</nachname>
+    <vorname>Maximilian</vorname>
+    <strasse>Am Ackerweg</strasse>
+    <hausnummer>4</hausnummer>
+    <plz>20764</plz>
+    <ort>Hamburg</ort>
+    <email>AurtumMaximilian@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="61">
+    <nachname>Schwarz</nachname>
+    <vorname>Dominik</vorname>
+    <strasse>Am BergischWeg</strasse>
+    <hausnummer>20c</hausnummer>
+    <plz>90668</plz>
+    <ort>Ansbach</ort>
+    <email>SchwarzDominik@test-subjet.ru</email>
+  </kunde>
+  <kunde kundennummer="62">
+    <nachname>TestName2</nachname>
+    <vorname>TestVorname2</vorname>
+    <strasse>TestStrasse2</strasse>
+    <hausnummer>TestHausnummer2</hausnummer>
+    <plz>99998</plz>
+    <ort>TestOrt2</ort>
+    <email>Test2@Email2.adresse2</email>
+  </kunde>
+  <kunde kundennummer="63">
+    <nachname>TestName</nachname>
+    <vorname>TestVorname</vorname>
+    <strasse>TestStrasse</strasse>
+    <hausnummer>TestHausnummer</hausnummer>
+    <plz>99999</plz>
+    <ort>TestOrt</ort>
+    <email>Test@Email.adresse</email>
+  </kunde>
+</kundenliste>

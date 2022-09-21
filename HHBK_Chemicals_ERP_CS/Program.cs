@@ -27,10 +27,10 @@ namespace HHBK_Chemicals_ERP_CS
             IView view = new View();
             IController controller = new Controller();
 
-            model.IView1 = view;
-            model.IController1 = controller;
+            //model.IView1 = view;
+            //model.IController1 = controller;
 
-            view.IController1 = controller;
+            //view.IController1 = controller;
             view.IModel1 = model;
             
             controller.IView1 = view;
@@ -38,11 +38,6 @@ namespace HHBK_Chemicals_ERP_CS
             
 
             
-            model.createDB();
-            model.createTestData();
-
-            //model.createXML();
-
             Application.Run((Form)view);
         }
     }

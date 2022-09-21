@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace HHBK_Chemicals_ERP_CS
 {
+
+    //Methode equals überladen für UnitTest!
     public class Kunde
     {
         private int kundennummer;
@@ -40,7 +42,7 @@ namespace HHBK_Chemicals_ERP_CS
             }
             set
             {
-                if(value>=01000 && value<=99999)
+                if(value>=00000 && value<=99999)
                 {
                     postleitzahl = value;
                 }
@@ -69,6 +71,15 @@ namespace HHBK_Chemicals_ERP_CS
         public string Hausnummer { get => hausnummer; set => hausnummer = value; }
         public string Ort { get => ort; set => ort = value; }
         public string Passwort { get => passwort; set => passwort = value; }
+
+        public Boolean equals(Kunde kunde)
+        {
+            if (this.kundennummer == kunde.kundennummer && this.name == kunde.Name)
+                return true;
+            else
+                return false;
+
+        }
 
     }
 }
