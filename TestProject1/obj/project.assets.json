@@ -6780,9 +6780,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\toel\\source\\repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+      "projectPath": "C:\\Users\\toel\\source\\repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
       "packagesPath": "C:\\Users\\toel\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
@@ -6801,8 +6801,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-              "projectPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
+            "C:\\Users\\toel\\source\\repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
+              "projectPath": "C:\\Users\\toel\\source\\repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
             }
           }
         }

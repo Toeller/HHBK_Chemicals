@@ -23,7 +23,12 @@ namespace HHBK_Chemicals_ERP_CS
             this.refresh();
         }
 
-        List<Kunde> IKundenliste.Kunden { get { this.refresh(); return kunden; }}
+        List<Kunde> IKundenliste.Kunden { 
+            get { 
+                this.refresh(); 
+                return kunden; 
+            }
+        }
 
         void IKundenliste.alter(Kunde kunde)
         {
