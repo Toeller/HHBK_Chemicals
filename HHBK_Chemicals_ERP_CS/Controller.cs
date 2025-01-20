@@ -11,8 +11,8 @@ namespace HHBK_Chemicals_ERP_CS
     {
         private IModel model;
         private IView view;
-        IModel IController.IModel1 { set => this.model = value; }
-        IView IController.IView1 { set => this.view = value; }
+        IModel IController.IModel { set => this.model = value; }
+        IView IController.IView { set => this.view = value; }
 
         private VerfahrenstechnischesModel verfahrenstechnischesModel;
 

@@ -8,8 +8,8 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public interface IView
     {
-        IModel IModel1 { set; }
-        IController IController1 { set; }
+        IModel IModel { set; }
+        IController IController { set; }
 
         void Show(List<Produkt> produktliste);
         void Show(List<Kunde> kundenListe);

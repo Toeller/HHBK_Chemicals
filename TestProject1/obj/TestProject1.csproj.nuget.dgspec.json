@@ -1,55 +1,92 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
-        "projectName": "HHBK_Chemicals_ERP_CS",
-        "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
-        "frameworks": {
-          "net461": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net461": {}
-      }
-    },
-    "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
-        "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\TOEL.HERTZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\TestProject1\\obj\\",
+        "projectUniqueName": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
+        "projectName": "HHBK_Chemicals_ERP_CS",
+        "projectPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj",
+        "packagesPath": "C:\\Users\\toel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
+        "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\TOEL.HERTZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\toel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+        "projectName": "TestProject1",
+        "projectPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\toel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\TestProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\toel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
-                "projectPath": "C:\\Users\\TOEL.HERTZ\\Source\\Repos\\CToellerPriv\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
+              "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj": {
+                "projectPath": "C:\\Users\\toel\\Source\\Repos\\HHBK_Chemicals\\HHBK_Chemicals_ERP_CS\\HHBK_Chemicals_ERP_CS.csproj"
               }
             }
           }
@@ -58,11 +95,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -75,6 +117,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -97,7 +143,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

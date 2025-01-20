@@ -19,8 +19,8 @@ namespace HHBK_Chemicals_ERP_CS
         private IModel model;
         private IController controller;
 
-        IModel IView.IModel1 { set => this.model = value; }
-        IController IView.IController1 { set => this.controller = value; }
+        IModel IView.IModel { set => this.model = value; }
+        IController IView.IController { set => this.controller = value; }
 
         private List<Kunde> kundenliste = new List<Kunde>();
         private List<Produkt> produktliste = new List<Produkt>();

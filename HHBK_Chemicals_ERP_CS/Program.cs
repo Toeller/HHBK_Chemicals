@@ -27,14 +27,14 @@ namespace HHBK_Chemicals_ERP_CS
             IView view = new View();
             IController controller = new Controller();
 
-            //model.IView1 = view;
-            //model.IController1 = controller;
+            model.IView = view;
+            model.IController = controller;
 
-            //view.IController1 = controller;
-            view.IModel1 = model;
+            view.IController = controller;
+            view.IModel = model;
             
-            controller.IView1 = view;
-            controller.IModel1 = model;
+            controller.IView = view;
+            controller.IModel = model;
             
 
             

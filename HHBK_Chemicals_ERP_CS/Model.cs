@@ -12,10 +12,10 @@ namespace HHBK_Chemicals_ERP_CS
 {
     public class Model:IModel
     {
-        //private IView view;
-        //private IController controller;
-        //IView IModel.IView1 { set => this.view = value; }
-        //IController IModel.IController1 { set => this.controller = value; }
+        private IView view;
+        private IController controller;
+        IView IModel.IView { set => this.view = value; }
+        IController IModel.IController { set => this.controller = value; }
 
         //private IKundenliste kunden=new Kundenliste();
 
